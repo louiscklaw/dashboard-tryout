@@ -1,0 +1,32 @@
+{
+  "hosting": {
+    "public": "public",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**/admin/**",
+        "destination": "/admin/index.html"
+      },
+      {
+        "source": "**/client/**",
+        "destination": "/client/index.html"
+      },
+      {
+        "source": "**/cms/**",
+        "destination": "/cms/index.html"
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "emulators": {
+    "hosting": {
+      "port": 5000
+    },
+    "ui": {
+      "enabled": true
+    }
+  }
+}

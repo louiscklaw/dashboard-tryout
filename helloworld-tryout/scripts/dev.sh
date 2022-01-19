@@ -2,4 +2,5 @@
 
 set -ex
 
-serve -s .
+# serve -s .
+firebase emulators:start
