@@ -10,15 +10,20 @@ export default function Home() {
   return (
     <>
       <Grid container>
-        <Grid item sx={{ height: height_100vh }}>
+        <Grid item xs={6} sx={{ width: "100%", height: height_100vh }}>
           <iframe
             src="http://192.168.10.61:50102/dashboard"
             target="_parent"
             height={height_100vh}
+            width="100%"
           />
         </Grid>
-        <Grid item sx={{ height: height_100vh }}>
-          <iframe src="http://192.168.10.61:50080/" height={height_100vh} />
+        <Grid item xs={6} sx={{ width: "100%", height: height_100vh }}>
+          <iframe
+            src="http://192.168.10.61:50080/"
+            height={height_100vh}
+            width="100%"
+          />
         </Grid>
       </Grid>
     </>

@@ -64,6 +64,13 @@ const config = {
             label: "setup notes",
           },
           {
+            type: "doc",
+            docId: "intro",
+            position: "left",
+            label: "up_time_dashboard",
+            href: "/up_time_dashboard",
+          },
+          {
             href: "https://github.com/facebook/docusaurus",
             label: "GitHub",
             position: "right",
