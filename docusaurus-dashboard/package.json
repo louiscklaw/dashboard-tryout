@@ -7,7 +7,8 @@
     "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
-    "deploy": "yarn clear && yarn build && firebase deploy",
+    "deploy_firebase": "yarn clear && yarn build && firebase deploy",
+    "deploy_gh_pages": "yarn clear && yarn build && gh-pages -d build",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
@@ -33,6 +34,7 @@
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "2.0.0-beta.20",
+    "gh-pages": "^4.0.0",
     "prettier": "^2.6.2"
   },
   "browserslist": {
