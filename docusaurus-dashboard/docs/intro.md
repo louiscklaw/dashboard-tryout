@@ -14,6 +14,8 @@ traefik dashboard: http://192.168.10.61:8080/dashboard/
 
 drone : https://drone.iamon99.com/
 
+changedetection: http://192.168.10.61:5000/
+
 ```
 working directory:
 D:\_workspace\dashboard-tryout\docusaurus-dashboard
