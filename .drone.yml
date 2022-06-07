@@ -1,10 +1,10 @@
 kind: pipeline
-name: hello-alpine
+name: deploy_firebase
 type: docker
 
 steps:
   - name: deploy_firebase
-    image: alpine
+    image: yarnpkg/node-yarn
     commands:
       - cd docusaurus-dashboard
       - yarn
