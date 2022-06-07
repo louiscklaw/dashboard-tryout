@@ -13,7 +13,7 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "gitUpdate": "git pull && git add . && git commit -m\"update docusaurus-dashboard,\" && git pull && git push",
+    "gitUpdate": "git add . && git commit -m\"update docusaurus-dashboard,\" && git pull && git push",
     "dev": "yarn --dev && yarn start",
     "update_root_docs": "yarn --dev && yarn build && rm -rf ../docs &&  mkdir \"../docs\" && touch ../docs/.gitkeep && cp -R build/* ../docs",
     "prettier_file": "prettier --write \"./src/**/*.{js,jsx}\"",
