@@ -3,9 +3,9 @@ name: hello-alpine
 type: docker
 
 steps:
-  - name: helloworld
+  - name: deploy_firebase
     image: alpine
     commands:
-      - echo hello
-      - echo world
-      - echo $DRONE_BRANCH
+      - cd docusaurus-dashboard
+      - yarn build
+      - yarn deploy_firebase
