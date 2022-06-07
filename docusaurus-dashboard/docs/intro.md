@@ -8,6 +8,8 @@ uptime kuma: http://192.168.10.61:50102/dashboard
 
 Homer dashboard: http://192.168.10.61:50080/
 
+portainer: http://192.168.10.61:9000/
+
 ```
 working directory:
 D:\_workspace\dashboard-tryout\docusaurus-dashboard
