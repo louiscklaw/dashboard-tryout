@@ -10,6 +10,8 @@ Homer dashboard: http://192.168.10.61:50080/
 
 portainer: http://192.168.10.61:9000/
 
+traefik dashboard: http://192.168.10.61:8080/dashboard/
+
 ```
 working directory:
 D:\_workspace\dashboard-tryout\docusaurus-dashboard
