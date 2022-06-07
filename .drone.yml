@@ -7,5 +7,6 @@ steps:
     image: alpine
     commands:
       - cd docusaurus-dashboard
+      - yarn
       - yarn build
       - yarn deploy_firebase
