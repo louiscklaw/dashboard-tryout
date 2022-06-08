@@ -57,7 +57,7 @@ export default function Layout(props: Props): JSX.Element {
           <ErrorBoundary fallback={ErrorPageContent}>{children}</ErrorBoundary>
         </div>
 
-        {!noFooter && <Footer />}
+        {/* {!noFooter && <Footer />} */}
       </LayoutProviders>
     </>
   );

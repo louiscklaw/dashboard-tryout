@@ -5,6 +5,8 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./index.module.css";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
+import { use100vh } from "react-div-100vh";
+import { Grid, Typography } from "@mui/material";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -28,15 +30,28 @@ function HomepageHeader() {
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
+  const height_100vh = use100vh();
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />"
     >
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
+      <Grid
+        container
+        sx={{
+          height: "50vh",
+        }}
+      >
+        <Grid
+          item
+          xs={12}
+          container
+          justifyContent="center"
+          alignItems="center"
+        >
+          <Typography variant="h3">louis dashboard</Typography>
+        </Grid>
+      </Grid>
     </Layout>
   );
 }

@@ -20,5 +20,12 @@
   "bugs": {
     "url": "https://github.com/louiscklaw/dashboard-tryout/issues"
   },
-  "homepage": "https://github.com/louiscklaw/dashboard-tryout#readme"
+  "homepage": "https://github.com/louiscklaw/dashboard-tryout#readme",
+  "dependencies": {
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.8.3",
+    "@mui/material": "^5.8.3",
+    "react-div-100vh": "^0.7.0"
+  }
 }
