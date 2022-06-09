@@ -6,7 +6,8 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./index.module.css";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import { use100vh } from "react-div-100vh";
-import { Grid, Typography } from "@mui/material";
+import { Stack, Button, Grid, Typography } from "@mui/material";
+import ButtonLink from "../components/ButtonLink";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -36,20 +37,54 @@ export default function Home() {
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />"
     >
-      <Grid
-        container
-        sx={{
-          height: "50vh",
-        }}
-      >
+      <Grid container spacing={2}>
         <Grid
           item
           xs={12}
           container
           justifyContent="center"
           alignItems="center"
+          m={2}
         >
-          <Typography variant="h3">louis dashboard</Typography>
+          <Typography variant={"h4"}>louis dashboard</Typography>
+        </Grid>
+        <Grid item xs={4}>
+          <Stack direction="column" spacing={2}>
+            <ButtonLink
+              to="https://www.carousell.com.hk/u/louiscklaw/"
+              text={"carousel"}
+            />
+
+            <ButtonLink
+              to="http://192.168.10.61:5000"
+              text={"changedetection"}
+            />
+          </Stack>
+        </Grid>
+
+        <Grid item xs={4}>
+          <Stack direction="column" spacing={2}>
+            <ButtonLink
+              to="http://192.168.10.61:50102/dashboard"
+              text={"uptime kuma"}
+            />
+
+            <ButtonLink to="http://192.168.10.61:9000" text={"portainer"} />
+
+            <ButtonLink
+              to="http://192.168.10.61:8080/dashboard/"
+              text={"traefik dashboard"}
+            />
+
+            <ButtonLink to="https://drone.iamon99.com/" text={"drone ci"} />
+
+            <ButtonLink
+              to="https://docs.google.com/spreadsheets/d/1nwIj4Jt-LvN-RLqtY2O9Jbe-XsMyVs-04DWGLUPwzEM/edit#gid=0"
+              text={"port schedule"}
+            />
+
+            <ButtonLink to="http://localhost:8082/" text={"luigi dashboard"} />
+          </Stack>
         </Grid>
       </Grid>
     </Layout>
