@@ -1,7 +1,15 @@
 // http://localhost:3000/up_time_dashboard
 
 import React from "react";
-import { Link, Button, createTheme, ThemeProvider, Grid } from "@mui/material";
+import {
+  Typography,
+  Box,
+  Button,
+  createTheme,
+  ThemeProvider,
+  Grid,
+} from "@mui/material";
+import Link from "@docusaurus/Link";
 import { use100vh } from "react-div-100vh";
 
 export default function Home() {
@@ -9,8 +17,10 @@ export default function Home() {
 
   return (
     <>
-      <Box>
-        <Button>Back</Button>
+      <Box sx={{ position: "absolute", bottom: "3vh", left: "3vh" }}>
+        <Link to="/">
+          <Typography variant="h5">Back</Typography>
+        </Link>
       </Box>
       <Grid container sx={{ height: height_100vh, overflowY: "hidden" }}>
         <Grid item xs={6} sx={{ width: "100%", height: height_100vh }}>
