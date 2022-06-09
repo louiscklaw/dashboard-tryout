@@ -9,7 +9,10 @@ export default function Home() {
 
   return (
     <>
-      <Grid container>
+      <Box>
+        <Button>Back</Button>
+      </Box>
+      <Grid container sx={{ height: height_100vh, overflowY: "hidden" }}>
         <Grid item xs={6} sx={{ width: "100%", height: height_100vh }}>
           <iframe
             src="http://192.168.10.61:50102/dashboard"
@@ -20,7 +23,7 @@ export default function Home() {
         </Grid>
         <Grid item xs={6} sx={{ width: "100%", height: height_100vh }}>
           <iframe
-            src="http://192.168.10.61:50080/"
+            src="http://192.168.10.61:5000/"
             height={height_100vh}
             width="100%"
           />
