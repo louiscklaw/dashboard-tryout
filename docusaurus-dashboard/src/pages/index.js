@@ -86,6 +86,18 @@ export default function Home() {
             />
 
             <ButtonLink to="http://localhost:8082/" text={"luigi dashboard"} />
+            <ButtonLink
+              to="https://console.firebase.google.com/u/0/project/fir-tryout-f4e7a/overview"
+              text={"firebase console"}
+            />
+          </Stack>
+        </Grid>
+        <Grid item xs={4}>
+          <Stack direction="column" spacing={2}>
+            <ButtonLink
+              to="https://console.firebase.google.com/u/0/project/fir-tryout-f4e7a/overview"
+              text={"firebase console"}
+            />
           </Stack>
         </Grid>
       </Grid>

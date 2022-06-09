@@ -66,6 +66,27 @@ const config = {
           href: "/up_time_dashboard",
         },
         {
+          type: "doc",
+          docId: "intro",
+          position: "left",
+          label: "MTR",
+          href: "/MTR",
+        },
+        {
+          type: "doc",
+          docId: "intro",
+          position: "left",
+          label: "BUS",
+          href: "/BUS",
+        },
+        {
+          type: "doc",
+          docId: "intro",
+          position: "left",
+          label: "weather",
+          href: "/weather",
+        },
+        {
           href: "https://github.com/louiscklaw/docusaurus-playlist",
           label: "GitHub",
           position: "right",
