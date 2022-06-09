@@ -6,4 +6,4 @@ sidebar_position: 1
 
 Link: https://portfolio.iamon99.com/
 
-repository: D:\_workspace\nextjs-playlist\nextjs-portfolio-tryout
+repository: git@github.com:louiscklaw/nextjs-playlist.git
