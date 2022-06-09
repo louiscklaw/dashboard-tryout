@@ -46,7 +46,9 @@ export default function Home() {
           alignItems="center"
           m={2}
         >
-          <Typography variant={"h4"}>louis dashboard</Typography>
+          <Link to="http://aboutme.louislabs.com">
+            <Typography variant={"h4"}>louis portfolio</Typography>
+          </Link>
         </Grid>
         <Grid item xs={4}>
           <Stack direction="column" spacing={2}>
