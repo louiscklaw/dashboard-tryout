@@ -9,4 +9,3 @@ steps:
       - cd docusaurus-dashboard
       - yarn --dev
       - yarn build
-      - yarn deploy_firebase
