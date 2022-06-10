@@ -60,6 +60,12 @@ const config = {
         },
         {
           type: "doc",
+          docId: "build_mon",
+          position: "left",
+          label: "build_mon",
+        },
+        {
+          type: "doc",
           docId: "intro",
           position: "left",
           label: "up_time_dashboard",
