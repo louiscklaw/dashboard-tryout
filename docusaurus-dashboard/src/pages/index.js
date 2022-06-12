@@ -50,7 +50,7 @@ export default function Home() {
             <Typography variant={"h4"}>louis portfolio</Typography>
           </Link>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={3}>
           <Stack direction="column" spacing={2}>
             <ButtonLink
               to="https://www.carousell.com.hk/u/louiscklaw/"
@@ -64,7 +64,7 @@ export default function Home() {
           </Stack>
         </Grid>
 
-        <Grid item xs={4}>
+        <Grid item xs={3}>
           <Stack direction="column" spacing={2}>
             <ButtonLink
               to="http://192.168.10.61:50102/dashboard"
@@ -92,7 +92,7 @@ export default function Home() {
             />
           </Stack>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={3}>
           <Stack direction="column" spacing={2}>
             <ButtonLink
               to="https://console.firebase.google.com/u/0/project/fir-tryout-f4e7a/overview"
