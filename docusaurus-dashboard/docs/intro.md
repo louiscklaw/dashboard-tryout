@@ -22,6 +22,8 @@ luigi dashboard: http://localhost:8082/
 
 pgadmin: http://192.168.10.61:5050
 
+phpmyadmin: http://192.168.10.61:8081
+
 ```
 working directory:
 D:\_workspace\dashboard-tryout\docusaurus-dashboard
