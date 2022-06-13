@@ -24,6 +24,8 @@ pgadmin: http://192.168.10.61:5050
 
 phpmyadmin: http://192.168.10.61:8081
 
+checkmk: http://192.168.10.61:8089
+
 ```
 working directory:
 D:\_workspace\dashboard-tryout\docusaurus-dashboard
