@@ -61,6 +61,10 @@ export default function Home() {
               to="http://192.168.10.61:5000"
               text={"changedetection"}
             />
+            <ButtonLink
+              to="https://console.firebase.google.com/u/0/project/fir-tryout-f4e7a/overview"
+              text={"firebase console"}
+            />
           </Stack>
         </Grid>
 
@@ -86,17 +90,17 @@ export default function Home() {
             />
 
             <ButtonLink to="http://localhost:8082/" text={"luigi dashboard"} />
-            <ButtonLink
-              to="https://console.firebase.google.com/u/0/project/fir-tryout-f4e7a/overview"
-              text={"firebase console"}
-            />
           </Stack>
         </Grid>
         <Grid item xs={3}>
           <Stack direction="column" spacing={2}>
             <ButtonLink
-              to="https://console.firebase.google.com/u/0/project/fir-tryout-f4e7a/overview"
-              text={"firebase console"}
+              to="http://192.168.10.21:9000/"
+              text={"nuc portainer"}
+            />
+            <ButtonLink
+              to="http://192.168.10.61:9000/"
+              text={"m73 portainer"}
             />
           </Stack>
         </Grid>
