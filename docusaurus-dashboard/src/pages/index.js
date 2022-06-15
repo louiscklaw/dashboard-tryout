@@ -65,7 +65,7 @@ export default function Home() {
               text={"changedetection"}
             />
             <ButtonLink
-              to="https://console.firebase.google.com/u/0/project/fir-tryout-f4e7a/overview"
+              to="https://console.firebase.google.com/project/dashboard-76c7d/overview"
               text={"firebase console"}
             />
           </Stack>
@@ -89,6 +89,8 @@ export default function Home() {
             />
 
             <ButtonLink to="https://drone.iamon99.com/" text={"drone ci"} />
+
+            <ButtonLink to="http://192.168.10.61:8087" text={"jenkins"} />
 
             <ButtonLink
               to="https://docs.google.com/spreadsheets/d/1nwIj4Jt-LvN-RLqtY2O9Jbe-XsMyVs-04DWGLUPwzEM/edit#gid=0"
