@@ -6,7 +6,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./index.module.css";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import { use100vh } from "react-div-100vh";
-import { Stack, Button, Grid, Typography } from "@mui/material";
+import { Box, Stack, Button, Grid, Typography } from "@mui/material";
 import ButtonLink from "../components/ButtonLink";
 
 function HomepageHeader() {
@@ -50,8 +50,11 @@ export default function Home() {
             <Typography variant={"h4"}>louis portfolio</Typography>
           </Link>
         </Grid>
-        <Grid item xs={12} md={3}>
-          <Stack direction="column" spacing={2}>
+        <Grid item xs={12} md={2}>
+          <Stack direction="column" spacing={1}>
+            <Typography variant={"h6"} align="center">
+              social Profiles
+            </Typography>
             <ButtonLink
               to="https://www.carousell.com.hk/u/louiscklaw/"
               text={"carousel"}
@@ -68,8 +71,11 @@ export default function Home() {
           </Stack>
         </Grid>
 
-        <Grid item xs={12} md={3}>
-          <Stack direction="column" spacing={2}>
+        <Grid item xs={12} md={2}>
+          <Stack direction="column" spacing={1}>
+            <Typography variant={"h6"} align="center">
+              dashboards
+            </Typography>
             <ButtonLink
               to="http://192.168.10.61:50102/dashboard"
               text={"uptime kuma"}
@@ -92,8 +98,11 @@ export default function Home() {
             <ButtonLink to="http://localhost:8082/" text={"luigi dashboard"} />
           </Stack>
         </Grid>
-        <Grid item xs={12} md={3}>
-          <Stack direction="column" spacing={2}>
+        <Grid item xs={12} md={2}>
+          <Stack direction="column" spacing={1}>
+            <Typography variant={"h6"} align="center">
+              containers
+            </Typography>
             <ButtonLink
               to="http://192.168.10.21:9000/"
               text={"nuc portainer"}
@@ -102,6 +111,19 @@ export default function Home() {
               to="http://192.168.10.61:9000/"
               text={"m73 portainer"}
             />
+          </Stack>
+        </Grid>
+
+        <Grid item xs={12} md={2}>
+          <Stack direction="column" spacing={1}>
+            <Typography variant={"h6"} align="center">
+              tools
+            </Typography>
+            <ButtonLink
+              to="https://colorhunt.co/palettes/retro"
+              text={"colorhunt"}
+            />
+            <ButtonLink to="https://flatuicolors.com/" text={"flatuicolors"} />
           </Stack>
         </Grid>
       </Grid>
