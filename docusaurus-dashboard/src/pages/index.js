@@ -76,12 +76,13 @@ export default function Home() {
             <Typography variant={"h6"} align="center">
               dashboards
             </Typography>
+
+            <ButtonLink to="http://192.168.10.61:8089" text={"checkmk"} />
+
             <ButtonLink
               to="http://192.168.10.61:50102/dashboard"
               text={"uptime kuma"}
             />
-
-            <ButtonLink to="http://192.168.10.61:9000" text={"portainer"} />
 
             <ButtonLink
               to="http://192.168.10.61:8080/dashboard/"
@@ -95,6 +96,11 @@ export default function Home() {
             <ButtonLink
               to="https://docs.google.com/spreadsheets/d/1nwIj4Jt-LvN-RLqtY2O9Jbe-XsMyVs-04DWGLUPwzEM/edit#gid=0"
               text={"port schedule"}
+            />
+
+            <ButtonLink
+              to="http://192.168.10.61:50080/"
+              text={"Homer dashboard"}
             />
 
             <ButtonLink to="http://localhost:8082/" text={"luigi dashboard"} />
@@ -113,6 +119,8 @@ export default function Home() {
               to="http://192.168.10.61:9000/"
               text={"m73 portainer"}
             />
+            <ButtonLink to="http://192.168.10.61:5050" text={"pgadmin"} />{" "}
+            <ButtonLink to="http://192.168.10.61:8081" text={"phpmyadmin"} />
           </Stack>
         </Grid>
 
