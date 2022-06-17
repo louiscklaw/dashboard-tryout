@@ -68,6 +68,13 @@ const config = {
           type: "doc",
           docId: "intro",
           position: "left",
+          label: "hacmkd",
+          href: "/hacmkd",
+        },
+        {
+          type: "doc",
+          docId: "intro",
+          position: "left",
           label: "up_time_dashboard",
           href: "/up_time_dashboard",
         },
