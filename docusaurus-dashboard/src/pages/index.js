@@ -134,6 +134,22 @@ export default function Home() {
               text={"colorhunt"}
             />
             <ButtonLink to="https://flatuicolors.com/" text={"flatuicolors"} />
+            <ButtonLink
+              to="https://github.com/webkul/coolhue"
+              text={"coolhue"}
+            />
+            <ButtonLink to="https://colors.dopely.top/" text={"dopely"} />
+            <ButtonLink to="https://www.gradientos.app/" text={"gradientos"} />
+            <ButtonLink
+              to="https://brandpalettes.com/"
+              text={"brandpalettes"}
+            />
+            <ButtonLink to="http://brandcolors.net/" text={"brandcolors"} />
+            <ButtonLink to="https://material.colorion.co/" text={"colorion"} />
+            <ButtonLink
+              to="https://github.com/bradtraversy/design-resources-for-developers/"
+              text={"design-resources-for-developers"}
+            />
           </Stack>
         </Grid>
       </Grid>
