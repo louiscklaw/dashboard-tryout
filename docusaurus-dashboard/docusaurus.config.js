@@ -75,8 +75,8 @@ const config = {
           type: "doc",
           docId: "intro",
           position: "left",
-          label: "up_time_dashboard",
-          href: "/up_time_dashboard",
+          label: "up_time",
+          href: "/up_time",
         },
         {
           type: "doc",
