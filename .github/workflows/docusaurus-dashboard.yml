@@ -24,4 +24,4 @@ jobs:
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_DASHBOARD_76C7D }}"
           channelId: live
           projectId: dashboard-76c7d
-          entryPoint: docusaurus-dashboard/firebase.json
+          entryPoint: docusaurus-dashboard
