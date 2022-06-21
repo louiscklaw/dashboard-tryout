@@ -78,6 +78,7 @@ export default function Home() {
             </Typography>
 
             <ButtonLink to="http://192.168.10.61:8089" text={"checkmk"} />
+            <ButtonLink to="http://192.168.10.61:8086" text={"influxdb"} />
 
             <ButtonLink
               to="http://192.168.10.61:50102/dashboard"
