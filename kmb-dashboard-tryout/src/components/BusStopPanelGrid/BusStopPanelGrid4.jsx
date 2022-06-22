@@ -22,19 +22,19 @@ export default function BusStopPanelGrid4() {
     <>
       <Paper>
         <Grid container>
-          <Grid item xs={3}>
+          <Grid item xs={12} md={3}>
             <BusStopPanelContainer
               bus_stop_id={bus_stop_id1}
               show_loading={true}
             />
           </Grid>
-          <Grid item xs={3}>
+          <Grid item xs={12} md={3}>
             <BusStopPanelContainer bus_stop_id={bus_stop_id2} />
           </Grid>
-          <Grid item xs={3}>
+          <Grid item xs={12} md={3}>
             <BusStopPanelContainer bus_stop_id={bus_stop_id3} />
           </Grid>
-          <Grid item xs={3}>
+          <Grid item xs={12} md={3}>
             <BusStopPanelContainer bus_stop_id={bus_stop_id4} />
           </Grid>
         </Grid>

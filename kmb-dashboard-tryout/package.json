@@ -32,7 +32,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "gitSync": "git fetch --all && git pull",
-    "gitUpdate": "git add . && git commit -m'update kmb-dashboard-tryout,'&& yarn gitSync && git push"
+    "gitUpdate": "git add . && git commit -m\"update kmb-dashboard-tryout,\"&& yarn gitSync && git push"
   },
   "eslintConfig": {
     "extends": [
