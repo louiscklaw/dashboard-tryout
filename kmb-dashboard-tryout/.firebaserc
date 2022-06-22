@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "dashboard-76c7d"
+  },
+  "targets": {
+    "dashboard-76c7d": {
+      "hosting": {
+        "louiscklaw-bus-dashboard": [
+          "louiscklaw-bus-dashboard"
+        ]
+      }
+    }
+  }
+}
