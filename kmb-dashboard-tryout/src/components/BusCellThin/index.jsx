@@ -49,20 +49,18 @@ export default function BusCell({ stop_eta_data, route }) {
             <Grid container spacing={1}>
               <Grid
                 item
-                xs={12}
+                xs={6}
                 md={6}
                 container
                 flexDirection="column"
                 alignItems="flex-start"
               >
-                <Box>
-                  <Typography
-                    variant={"h4"}
-                    sx={{ fontSize: { xs: "2rem", md: "2rem" } }}
-                  >
-                    {route}
-                  </Typography>
-                </Box>
+                <Typography
+                  variant={"h4"}
+                  sx={{ fontSize: { xs: "2rem", md: "2rem" } }}
+                >
+                  {route}
+                </Typography>
 
                 <Stack direction={"row"} alignItems="baseline" spacing={1}>
                   <Typography variant={"h6"}>往</Typography>
@@ -84,7 +82,7 @@ export default function BusCell({ stop_eta_data, route }) {
 
               <Grid
                 item
-                xs={12}
+                xs={6}
                 md={6}
                 container
                 flexDirection="column"
@@ -97,14 +95,14 @@ export default function BusCell({ stop_eta_data, route }) {
                       <Typography
                         variant={"h3"}
                         color="#1e3799"
-                        sx={{ fontSize: { xs: "2rem", md: "1.3rem" } }}
+                        sx={{ fontSize: { xs: "1.5rem", md: "1.3rem" } }}
                       >
                         {moment(bus_cell_data[0].eta).format("HH:mm")}
                       </Typography>
                       <Typography
                         variant={"h3"}
                         color="#1e3799"
-                        sx={{ fontSize: { xs: "2rem", md: "1.3rem" } }}
+                        sx={{ fontSize: { xs: "1.5rem", md: "1.3rem" } }}
                       >
                         {moment(bus_cell_data[0].eta).fromNow()}
                       </Typography>
@@ -114,7 +112,7 @@ export default function BusCell({ stop_eta_data, route }) {
                   <Typography
                     variant={"h3"}
                     color={"#f39c12"}
-                    sx={{ fontSize: { xs: "2rem", md: "1.3rem" } }}
+                    sx={{ fontSize: { xs: "1.5rem", md: "1.3rem" } }}
                   >
                     未有班次資料
                   </Typography>

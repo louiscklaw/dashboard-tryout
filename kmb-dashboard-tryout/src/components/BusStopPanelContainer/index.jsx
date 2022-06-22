@@ -123,10 +123,17 @@ export default function BusStopPanelContainer({
         )}
       </Box>
 
-      <Box sx={{ paddingLeft: { xs: "0rem", md: "2rem" } }}>
+      <Box
+        sx={{
+          paddingLeft: { xs: "0rem", md: "2rem" },
+          paddingTop: { xs: "1rem", md: "0rem" },
+          paddingBottom: { xs: "1rem", md: "0rem" },
+          backgroundColor: "#f0f0f0",
+        }}
+      >
         <Typography
           sx={{
-            fontSize: { xs: "3rem", md: "2rem" },
+            fontSize: { xs: "2rem", md: "2rem" },
             textAlign: { xs: "center", md: "left" },
           }}
         >
