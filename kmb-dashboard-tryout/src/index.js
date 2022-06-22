@@ -11,6 +11,8 @@ import BusStopPanelGrid4 from "./components/BusStopPanelGrid/BusStopPanelGrid4";
 
 import AppContext from "./contexts/AppContext";
 
+import UserGetLink from "./pages/UserGetLink";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>
@@ -30,7 +32,7 @@ root.render(
             path="/bus_stops/:bus_stop_id1/:bus_stop_id2/:bus_stop_id3/:bus_stop_id4"
             element={<BusStopPanelGrid4 />}
           />
-          <Route path="/" element={<App />}>
+          <Route path="/" element={<UserGetLink />}>
             {/* <Route index element={<Home />} /> */}
             {/* <Route path="teams" element={<Teams />}> */}
 
