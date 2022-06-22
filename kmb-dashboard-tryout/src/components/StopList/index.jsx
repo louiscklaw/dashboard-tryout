@@ -31,29 +31,9 @@ import { RouteListContext } from "./RouteList";
 import { set, uniq } from "lodash";
 import TestLink from "../TestLink";
 import ClipLoader from "react-spinners/ClipLoader";
+import LoadingStopList from "../LoadingStopList";
 
 const LISTBOX_PADDING = 8; // px
-
-function LoadingStopList() {
-  let [color, setColor] = useState("#ffffff");
-
-  const override = {
-    display: "block",
-    margin: "0 auto",
-    borderColor: "red",
-  };
-
-  return (
-    <>
-      <ClipLoader
-        color={color}
-        loading={true}
-        cssOverride={override}
-        size={150}
-      />
-    </>
-  );
-}
 
 function renderRow(props) {
   const { data, index, style } = props;
