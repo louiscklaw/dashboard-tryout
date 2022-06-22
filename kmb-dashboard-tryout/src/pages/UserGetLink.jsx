@@ -93,7 +93,9 @@ export default function StickyFooter() {
           >
             個人化 巴士站 dashboard
           </Typography>
-          <Typography variant="body1">Sticky footer placeholder.</Typography>
+          <Typography variant="body1">
+            協助你製造一個個人化巴士站報時
+          </Typography>
           <img
             src={screencapture_png}
             style={{

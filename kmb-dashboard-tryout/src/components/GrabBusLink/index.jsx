@@ -36,7 +36,7 @@ import { set, uniq } from "lodash";
 import TestLink from "../TestLink";
 
 import { CopyToClipboard } from "react-copy-to-clipboard";
-import ClipLoader from "react-spinners/ClipLoader";
+import PuffLoader from "react-spinners/PuffLoader";
 
 let page_url = "http://localhost:3000";
 
@@ -53,12 +53,16 @@ function LoadingStopList() {
 
   return (
     <>
-      <ClipLoader
-        color={color}
-        loading={true}
-        cssOverride={override}
-        size={150}
-      />
+      <Stack
+        direction="column"
+        justifyContent="center"
+        alignItems="center"
+        spacing={5}
+        sx={{ paddingTop: "3rem" }}
+      >
+        <PuffLoader color={`rgb(31, 45, 84)`} loading={true} size={100} />
+        <Typography variant="body1">正在更新巴士站列表...</Typography>
+      </Stack>
     </>
   );
 }
@@ -267,7 +271,7 @@ function GrabBusLink() {
     }
   }, [stop_list, route_stop_list, route_list]);
 
-  if (!stop_list) return <LoadingStopList />;
+  if (is_updating_bus_stop) return <LoadingStopList />;
 
   return (
     <>

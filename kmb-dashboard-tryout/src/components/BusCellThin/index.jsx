@@ -66,7 +66,7 @@ export default function BusCell({ stop_eta_data, route }) {
                   <Typography variant={"h6"}>往</Typography>
                   <Typography
                     component="h3"
-                    sx={{ fontSize: { xs: "2rem", md: "1.5rem" } }}
+                    sx={{ fontSize: { xs: "1.4rem", md: "1.5rem" } }}
                   >
                     {bus_cell_data[0].dest_tc}
                   </Typography>
