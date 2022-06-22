@@ -128,7 +128,7 @@ export default function BusStopPanelContainer({
           paddingLeft: { xs: "0rem", md: "2rem" },
           paddingTop: { xs: "1rem", md: "0rem" },
           paddingBottom: { xs: "1rem", md: "0rem" },
-          backgroundColor: "#f0f0f0",
+          backgroundColor: { xs: "#f0f0f0", md: "unset" },
         }}
       >
         <Typography
