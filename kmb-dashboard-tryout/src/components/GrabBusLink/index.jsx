@@ -36,10 +36,32 @@ import { set, uniq } from "lodash";
 import TestLink from "../TestLink";
 
 import { CopyToClipboard } from "react-copy-to-clipboard";
+import ClipLoader from "react-spinners/ClipLoader";
 
 let page_url = "http://localhost:3000";
 
 const LISTBOX_PADDING = 8; // px
+
+function LoadingStopList() {
+  let [color, setColor] = useState("#ffffff");
+
+  const override = {
+    display: "block",
+    margin: "0 auto",
+    borderColor: "red",
+  };
+
+  return (
+    <>
+      <ClipLoader
+        color={color}
+        loading={true}
+        cssOverride={override}
+        size={150}
+      />
+    </>
+  );
+}
 
 function renderRow(props) {
   const { data, index, style } = props;
@@ -245,7 +267,7 @@ function GrabBusLink() {
     }
   }, [stop_list, route_stop_list, route_list]);
 
-  if (!stop_list) return <>loading stop_list</>;
+  if (!stop_list) return <LoadingStopList />;
 
   return (
     <>
