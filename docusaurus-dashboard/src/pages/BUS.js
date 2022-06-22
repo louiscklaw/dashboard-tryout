@@ -8,6 +8,7 @@ import {
   createTheme,
   ThemeProvider,
   Grid,
+  Paper,
 } from "@mui/material";
 import Link from "@docusaurus/Link";
 import { use100vh } from "react-div-100vh";
@@ -17,17 +18,19 @@ export default function Home() {
 
   return (
     <>
-      <Box sx={{ position: "absolute", bottom: "3vh", left: "3vh" }}>
-        <Link to="/">
-          <Typography variant="h5">Back</Typography>
-        </Link>
-      </Box>
-      <iframe
-        src="https://louiscklaw-bus-dashboard.web.app/bus_stops/41E81A921D79F375/C3201264CC8E5C5D/C1DAF9F8B637B776/6F58AF0D366EB8CA"
-        target="_parent"
-        height={height_100vh}
-        width="100%"
-      />
+      <Paper>
+        <Box sx={{ position: "absolute", bottom: "3vh", left: "3vh" }}>
+          <Link to="/">
+            <Typography variant="h5">Back</Typography>
+          </Link>
+        </Box>
+        <iframe
+          src="https://louiscklaw-bus-dashboard.web.app/bus_stops/41E81A921D79F375/C3201264CC8E5C5D/C1DAF9F8B637B776/6F58AF0D366EB8CA"
+          target="_parent"
+          height={height_100vh}
+          width="100%"
+        />
+      </Paper>
     </>
   );
 }
