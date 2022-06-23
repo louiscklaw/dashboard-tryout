@@ -1,10 +1,6 @@
+import { Box, CircularProgress, Grid, Typography } from "@mui/material";
 import _ from "lodash";
-import React from "react";
-import Helloworld from "../../apis/helloworld";
-import { Box, Grid, Typography, CircularProgress } from "@mui/material";
-import { useParams, useRoutes } from "react-router-dom";
-import { useState } from "react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import BusCellThin from "../BusCellThin";
 
 const stop_eta_link = (stop_id) =>
