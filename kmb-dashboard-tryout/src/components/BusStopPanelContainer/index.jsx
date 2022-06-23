@@ -47,7 +47,7 @@ export default function BusStopPanelContainer({
     let countdown = default_refresh_interval;
     let countdown_timer = setInterval(() => {
       countdown = countdown - 1000;
-      console.log({ countdown });
+      // console.log({ countdown });
 
       if (countdown <= 0) {
         countdown = default_refresh_interval;

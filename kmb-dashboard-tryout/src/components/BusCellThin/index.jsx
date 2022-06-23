@@ -1,12 +1,12 @@
 // https://data.etabus.gov.hk/datagovhk/kmb_eta_data_dictionary.pdf
 // https://data.etabus.gov.hk/datagovhk/kmb_eta_api_specification.pdf
 
-import { Box, Grid, Stack, Typography } from "@mui/material";
+import { Box, Grid, Stack, Typography, useMediaQuery } from "@mui/material";
 import moment from "moment";
 import "moment/locale/zh-hk";
 
 import _ from "lodash";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 // https://flatuicolors.com/palette/fr
 
@@ -14,6 +14,8 @@ moment().locale("zh-hk");
 
 export default function BusCell({ stop_eta_data, route }) {
   let [bus_cell_data, setBusCellData] = useState();
+  let bus_cell_ref = useRef();
+  let [bus_cell_width, setBusCellWidth] = useState();
 
   useEffect(() => {
     if (stop_eta_data && route) {
@@ -21,11 +23,18 @@ export default function BusCell({ stop_eta_data, route }) {
     }
   }, [stop_eta_data, route]);
 
+  useEffect(() => {
+    if (bus_cell_ref) setBusCellWidth(bus_cell_ref.current);
+  }, [bus_cell_ref]);
+
   return (
     <>
       {bus_cell_data ? (
         <>
-          <Box sx={{ padding: "2rem" }}>
+          <Box
+            ref={bus_cell_ref}
+            sx={{ padding: "2rem", backgroundColor: "tomato" }}
+          >
             <Grid container spacing={1}>
               <Grid
                 item
