@@ -122,7 +122,7 @@ export default function StickyFooter() {
                 alignItems={"flex-end"}
               >
                 <IconButtonWithLink
-                  link="https://github.com/louiscklaw/dashboard-tryout/tree/master/kmb-dashboard-tryout"
+                  link="https://louiscklaw-bus-dashboard.web.app"
                   icon={<FiSettings />}
                 />{" "}
                 <IconButtonWithLink
