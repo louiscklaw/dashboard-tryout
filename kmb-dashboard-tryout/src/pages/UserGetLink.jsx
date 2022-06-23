@@ -1,6 +1,5 @@
 import CssBaseline from "@mui/material/CssBaseline";
 import * as React from "react";
-import { useQuery } from "react-query";
 import screencapture_png from "../assets/screencapture.png";
 import IconButtonWithLink from "../components/IconButtonWithLink";
 
