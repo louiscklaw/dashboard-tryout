@@ -5,7 +5,7 @@ import IconButtonWithLink from "../components/IconButtonWithLink";
 import { FiSettings } from "react-icons/fi";
 import { Box, Container, Grid, Stack, Typography } from "@mui/material";
 
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTrophy } from "react-icons/fa";
 import Joyride from "react-joyride";
 
 import GrabBusLink from "../components/GrabBusLink";
@@ -132,6 +132,10 @@ export default function StickyFooter() {
                 <IconButtonWithLink
                   link="https://www.linkedin.com/in/louiscklaw"
                   icon={<FaLinkedin />}
+                />
+                <IconButtonWithLink
+                  link="https://louiscklaw-bus-dashboard.web.app/Credit"
+                  icon={<FaTrophy />}
                 />
               </Stack>
             </Grid>
