@@ -12,22 +12,6 @@ import _ from "lodash";
 import { useEffect } from "react";
 import { useState } from "react";
 
-const route_list_link = "https://data.etabus.gov.hk/v1/transport/kmb/route/";
-const route_link =
-  "https://data.etabus.gov.hk/v1/transport/kmb/route/{route}/{direction}/{service_type}";
-const stop_list_link = "https://data.etabus.gov.hk/v1/transport/kmb/stop";
-const stop_link = "https://data.etabus.gov.hk/v1/transport/kmb/stop/{stop_id}";
-const route_stop_list_link =
-  "https://data.etabus.gov.hk/v1/transport/kmb/route-stop";
-const route_stop_link = (route, direction, service_type) =>
-  `https://data.etabus.gov.hk/v1/transport/kmb/route-stop/${route}/${direction}/${service_type}`;
-const eta_link =
-  "https://data.etabus.gov.hk/v1/transport/kmb/eta/{stop_id}/{route}/{service_type}";
-const stop_eta_link = (stop_id) =>
-  `https://data.etabus.gov.hk/v1/transport/kmb/stop-eta/${stop_id}`;
-const route_eta_link =
-  "https://data.etabus.gov.hk/v1/transport/kmb/route-eta/{route}/{service_type}";
-
 // https://flatuicolors.com/palette/fr
 
 moment().locale("zh-hk");
