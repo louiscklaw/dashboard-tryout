@@ -23,7 +23,7 @@ const queryClient = new QueryClient();
 
 let tour_processed_ls_key = "welcome_tour";
 
-export default function StickyFooter() {
+export default function App() {
   let [tour_shown] = React.useState(
     JSON.parse(localStorage.getItem("tour_processed_ls_key"))
   );
