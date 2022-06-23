@@ -8,6 +8,7 @@ import BusStopPanel from "./components/BusStopPanel";
 import BusStopPanelGrid from "./components/BusStopPanelGrid";
 import BusStopPanelGrid3 from "./components/BusStopPanelGrid/BusStopPanelGrid3";
 import BusStopPanelGrid4 from "./components/BusStopPanelGrid/BusStopPanelGrid4";
+import BusStopPanelGrid6 from "./components/BusStopPanelGrid/BusStopPanelGrid6";
 
 import AppContext from "./contexts/AppContext";
 
@@ -31,6 +32,10 @@ root.render(
           <Route
             path="/bus_stops/:bus_stop_id1/:bus_stop_id2/:bus_stop_id3/:bus_stop_id4"
             element={<BusStopPanelGrid4 />}
+          />
+          <Route
+            path="/bus_stops/:bus_stop_id1/:bus_stop_id2/:bus_stop_id3/:bus_stop_id4/:bus_stop_id5/:bus_stop_id6"
+            element={<BusStopPanelGrid6 />}
           />
           <Route path="/" element={<UserGetLink />}>
             {/* <Route index element={<Home />} /> */}
