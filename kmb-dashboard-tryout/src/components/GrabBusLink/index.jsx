@@ -28,10 +28,10 @@ import CheckBoxIcon from "@mui/icons-material/CheckBox";
 import Autocomplete, { autocompleteClasses } from "@mui/material/Autocomplete";
 
 // import { BusStopContext } from "./BusStop";
-import { BusStopContext } from "../StopList/BusStop";
+import { BusStopContext } from "../../contexts/StopList/BusStop";
 import { useContext, useEffect, useMemo, useState } from "react";
-import { RouteStopListContext } from "../StopList/RouteStopList";
-import { RouteListContext } from "../StopList/RouteList";
+import { RouteStopListContext } from "../../contexts/StopList/RouteStopList";
+import { RouteListContext } from "../../contexts/StopList/RouteList";
 import { set, uniq } from "lodash";
 import TestLink from "../TestLink";
 
