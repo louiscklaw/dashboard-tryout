@@ -1,20 +1,12 @@
-import * as React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
+import * as React from "react";
+import { useQuery } from "react-query";
 import screencapture_png from "../assets/screencapture.png";
-import { QueryClient, QueryClientProvider, useQuery } from "react-query";
 import IconButtonWithLink from "../components/IconButtonWithLink";
 
-import {
-  Stack,
-  IconButton,
-  Link,
-  Box,
-  Typography,
-  Container,
-  Grid,
-} from "@mui/material";
+import { Box, Container, Grid, Stack, Typography } from "@mui/material";
 
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Joyride from "react-joyride";
 
 import GrabBusLink from "../components/GrabBusLink";

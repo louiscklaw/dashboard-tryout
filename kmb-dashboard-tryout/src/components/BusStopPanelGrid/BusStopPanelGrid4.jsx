@@ -1,28 +1,8 @@
-import _ from "lodash";
-import React from "react";
-import Helloworld from "../../apis/helloworld";
-import {
-  Box,
-  Grid,
-  Typography,
-  CircularProgress,
-  Paper,
-  Stack,
-  Container,
-} from "@mui/material";
-import { useParams, useRoutes } from "react-router-dom";
-import { useState } from "react";
-import { useEffect } from "react";
-import BusCell from "../BusCell";
+import { Box, Container, Grid, Paper, Stack, Typography } from "@mui/material";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { useParams } from "react-router-dom";
 import BusStopPanelContainer from "../BusStopPanelContainer";
 import IconButtonWithLink from "../IconButtonWithLink";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-
-const stop_eta_link = (stop_id) =>
-  `https://data.etabus.gov.hk/v1/transport/kmb/stop-eta/${stop_id}`;
-
-const stop_link = (stop_id) =>
-  `https://data.etabus.gov.hk/v1/transport/kmb/stop/${stop_id}`;
 
 export default function BusStopPanelGrid4() {
   let params = useParams();
