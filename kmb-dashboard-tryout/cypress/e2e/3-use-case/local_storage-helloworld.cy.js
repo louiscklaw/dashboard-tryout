@@ -2,7 +2,12 @@
 
 context("Local Storage", () => {
   beforeEach(() => {
+    cy.clearLocalStorage().should((ls) => {
+      expect(ls.getItem("tour_processed_ls_key")).to.be.null;
+    });
+
     cy.visit("http://localhost:3000");
+
     cy.get(
       ".MuiAutocomplete-root > .MuiFormControl-root > .MuiOutlinedInput-root",
       { timeout: 10 * 1000 }
@@ -26,7 +31,7 @@ context("Local Storage", () => {
     cy.get('[aria-label="Done"]')
       .click()
       .should(() => {
-        expect(localStorage.getItem("tour_processed_ls_key")).to.eq("false");
+        expect(localStorage.getItem("tour_processed_ls_key")).to.eq("true");
       });
   });
 });
