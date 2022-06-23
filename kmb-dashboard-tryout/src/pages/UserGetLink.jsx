@@ -1,6 +1,8 @@
 import * as React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
 import screencapture_png from "../assets/screencapture.png";
+import { QueryClient, QueryClientProvider, useQuery } from "react-query";
+import IconButtonWithLink from "../components/IconButtonWithLink";
 
 import {
   Stack,
@@ -19,13 +21,25 @@ import GrabBusLink from "../components/GrabBusLink";
 
 let tour_processed_ls_key = "welcome_tour";
 
-function IconButtonWithLink({ link, icon }) {
+function Example() {
+  const { isLoading, error, data } = useQuery("repoData", () =>
+    fetch("https://api.github.com/repos/tannerlinsley/react-query").then(
+      (res) => res.json()
+    )
+  );
+
+  if (isLoading) return "Loading...";
+
+  if (error) return "An error has occurred: " + error.message;
+
   return (
-    <>
-      <IconButton aria-label="delete" size="small" href={link}>
-        {icon}{" "}
-      </IconButton>
-    </>
+    <div>
+      <h1>{data.name}</h1>
+      <p>{data.description}</p>
+      <strong>👀 {data.subscribers_count}</strong>{" "}
+      <strong>✨ {data.stargazers_count}</strong>{" "}
+      <strong>🍴 {data.forks_count}</strong>
+    </div>
   );
 }
 
@@ -65,6 +79,7 @@ export default function StickyFooter() {
         minHeight: "100vh",
       }}
     >
+      <Example />
       <CssBaseline />
       {tour_shown ? (
         <></>
