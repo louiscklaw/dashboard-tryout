@@ -1,6 +1,8 @@
 import * as React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
 import screencapture_png from "./assets/screencapture.png";
+import { QueryClient, QueryClientProvider, useQuery } from "react-query";
+import IconButtonWithLink from "./components/IconButtonWithLink";
 
 import {
   Stack,
@@ -17,17 +19,9 @@ import Joyride from "react-joyride";
 
 import GrabBusLink from "./components/GrabBusLink";
 
-let tour_processed_ls_key = "welcome_tour";
+const queryClient = new QueryClient();
 
-function IconButtonWithLink({ link, icon }) {
-  return (
-    <>
-      <IconButton aria-label="delete" size="small" href={link}>
-        {icon}{" "}
-      </IconButton>
-    </>
-  );
-}
+let tour_processed_ls_key = "welcome_tour";
 
 export default function StickyFooter() {
   let [tour_shown] = React.useState(
