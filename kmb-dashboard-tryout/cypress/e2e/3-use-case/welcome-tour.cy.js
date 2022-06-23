@@ -2,9 +2,9 @@
 
 context("Local Storage", () => {
   beforeEach(() => {
-    cy.clearLocalStorage().should((ls) => {
-      expect(ls.getItem("tour_processed_ls_key")).to.be.null;
-    });
+    cy.clearLocalStorage().should(
+      (ls) => expect(ls.getItem("tour_processed_ls_key")).to.be.null
+    );
 
     cy.visit("http://localhost:3000");
 
@@ -13,11 +13,9 @@ context("Local Storage", () => {
       { timeout: 10 * 1000 }
     ).should("be.visible");
   });
-  // Although local storage is automatically cleared
-  // in between tests to maintain a clean state
-  // sometimes we need to clear the local storage manually
 
-  it("cy.clearLocalStorage() - clear all data in local storage", () => {
+  it("process welcome tour", () => {
+    // process welcome tour
     cy.get(
       '[style="animation: 1.2s ease-in-out 0s infinite normal none running joyride-beacon-outer; background-color: rgba(255, 0, 68, 0.2); border: 2px solid rgb(255, 0, 68); border-radius: 50%; box-sizing: border-box; display: block; height: 100%; left: 0px; opacity: 0.9; position: absolute; top: 0px; transform-origin: center center; width: 100%;"]'
     ).click();

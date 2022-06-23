@@ -33,6 +33,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
     "eject": "react-scripts eject",
     "gitSync": "git fetch --all && git pull",
     "gitUpdate": "git add . && git commit -m\"update kmb-dashboard-tryout,\"&& yarn gitSync && git push"
