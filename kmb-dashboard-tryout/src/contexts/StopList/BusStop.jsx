@@ -7,7 +7,7 @@ const BusStopContext = createContext();
 function BusStopContextProvider({ children }) {
   let [stop_list, setStopList] = useState();
 
-  const { isLoading, error, data } = useQuery("repoData", () =>
+  const { isLoading, error, data } = useQuery("stop", () =>
     fetch("https://data.etabus.gov.hk/v1/transport/kmb/stop").then((res) =>
       res.json()
     )
