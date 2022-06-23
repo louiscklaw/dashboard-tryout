@@ -2,7 +2,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import * as React from "react";
 import screencapture_png from "../assets/screencapture.png";
 import IconButtonWithLink from "../components/IconButtonWithLink";
-
+import { FiSettings } from "react-icons/fi";
 import { Box, Container, Grid, Stack, Typography } from "@mui/material";
 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -121,6 +121,10 @@ export default function StickyFooter() {
                 justifyContent="flex-end"
                 alignItems={"flex-end"}
               >
+                <IconButtonWithLink
+                  link="https://github.com/louiscklaw/dashboard-tryout/tree/master/kmb-dashboard-tryout"
+                  icon={<FiSettings />}
+                />{" "}
                 <IconButtonWithLink
                   link="https://github.com/louiscklaw/dashboard-tryout/tree/master/kmb-dashboard-tryout"
                   icon={<FaGithub />}

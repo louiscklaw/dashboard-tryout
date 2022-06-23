@@ -1,5 +1,6 @@
 import { Box, Container, Grid, Paper, Stack, Typography } from "@mui/material";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FiSettings } from "react-icons/fi";
 import { useParams } from "react-router-dom";
 import BusStopPanelContainer from "../BusStopPanelContainer";
 import IconButtonWithLink from "../IconButtonWithLink";
@@ -70,6 +71,10 @@ export default function BusStopPanelGrid4() {
                   justifyContent="flex-end"
                   alignItems={"flex-end"}
                 >
+                  <IconButtonWithLink
+                    link="https://github.com/louiscklaw/dashboard-tryout/tree/master/kmb-dashboard-tryout"
+                    icon={<FiSettings />}
+                  />
                   <IconButtonWithLink
                     link="https://github.com/louiscklaw/dashboard-tryout/tree/master/kmb-dashboard-tryout"
                     icon={<FaGithub />}
