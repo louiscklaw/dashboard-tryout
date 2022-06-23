@@ -2,15 +2,11 @@
 // https://data.etabus.gov.hk/datagovhk/kmb_eta_api_specification.pdf
 
 import { Box, Grid, Stack, Typography } from "@mui/material";
-import * as React from "react";
 import moment from "moment";
 import "moment/locale/zh-hk";
 
-import Helloworld from "../../apis/helloworld";
-
 import _ from "lodash";
-import { useEffect } from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 // https://flatuicolors.com/palette/fr
 
