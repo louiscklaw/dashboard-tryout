@@ -10,7 +10,7 @@ export default function BusStopPanelGrid4() {
 
   return (
     <>
-      <Paper>
+      <Paper square>
         <Grid container>
           <Grid item xs={12} md={3}>
             <BusStopPanelContainer

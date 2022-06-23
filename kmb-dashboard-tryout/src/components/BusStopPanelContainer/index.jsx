@@ -1,6 +1,6 @@
 import { Box, CircularProgress, Grid, Typography } from "@mui/material";
 import _ from "lodash";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import BusCellThin from "../BusCellThin";
 
 const stop_eta_link = (stop_id) =>
@@ -17,6 +17,9 @@ export default function BusStopPanelContainer({
   let [uniq_route, setUniqRoute] = useState([]);
   let [stop_eta_data, setStopEtaData] = useState();
   let [stop_info, setStopInfo] = useState();
+  let [thin_mode, setThinMode] = useState(false);
+  let bus_cell_ref = useRef();
+  let [bus_cell_width, setBusCellWidth] = useState();
 
   let default_refresh_interval = 30 * 1000;
   let [show_countdown, setShowCountdown] = useState();
@@ -77,6 +80,18 @@ export default function BusStopPanelContainer({
     ]).then(() => setIsLoading(false));
   }, []);
 
+  useEffect(() => {
+    setBusCellWidth(bus_cell_ref?.current?.clientWidth);
+    if (bus_cell_ref?.current?.clientWidth) {
+      // adopt 6 columns
+      if (bus_cell_ref?.current?.clientWidth < 400) {
+        setThinMode(true);
+      } else {
+        setThinMode(false);
+      }
+    }
+  }, [bus_cell_ref?.current?.clientWidth]);
+
   if (is_loading) return <>loading</>;
 
   return (
@@ -120,8 +135,9 @@ export default function BusStopPanelContainer({
       </Box>
 
       <Box
+        ref={bus_cell_ref}
         sx={{
-          paddingLeft: { xs: "0rem", md: "2rem" },
+          paddingLeft: { xs: "0rem", md: thin_mode ? "1rem" : "2rem" },
           paddingTop: { xs: "1rem", md: "0rem" },
           paddingBottom: { xs: "1rem", md: "0rem" },
           backgroundColor: { xs: "#f0f0f0", md: "unset" },
@@ -129,7 +145,7 @@ export default function BusStopPanelContainer({
       >
         <Typography
           sx={{
-            fontSize: { xs: "2rem", md: "2rem" },
+            fontSize: thin_mode ? "1.5rem" : "2rem",
             textAlign: { xs: "center", md: "left" },
           }}
         >

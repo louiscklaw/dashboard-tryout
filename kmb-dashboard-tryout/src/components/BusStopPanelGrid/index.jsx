@@ -20,7 +20,7 @@ export default function BusStopPanelGrid() {
 
   return (
     <>
-      <Paper>
+      <Paper square>
         <Grid container>
           <Grid item xs={6}>
             <BusStopPanelContainer

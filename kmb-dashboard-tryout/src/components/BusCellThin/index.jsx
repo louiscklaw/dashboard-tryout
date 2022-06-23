@@ -1,7 +1,7 @@
 // https://data.etabus.gov.hk/datagovhk/kmb_eta_data_dictionary.pdf
 // https://data.etabus.gov.hk/datagovhk/kmb_eta_api_specification.pdf
 
-import { Box, Grid, Stack, Typography, useMediaQuery } from "@mui/material";
+import { Box, Grid, Stack, Typography } from "@mui/material";
 import moment from "moment";
 import "moment/locale/zh-hk";
 
@@ -16,6 +16,7 @@ export default function BusCell({ stop_eta_data, route }) {
   let [bus_cell_data, setBusCellData] = useState();
   let bus_cell_ref = useRef();
   let [bus_cell_width, setBusCellWidth] = useState();
+  let [thin_mode, setThinMode] = useState(false);
 
   useEffect(() => {
     if (stop_eta_data && route) {
@@ -24,17 +25,22 @@ export default function BusCell({ stop_eta_data, route }) {
   }, [stop_eta_data, route]);
 
   useEffect(() => {
-    if (bus_cell_ref) setBusCellWidth(bus_cell_ref.current);
-  }, [bus_cell_ref]);
+    setBusCellWidth(bus_cell_ref?.current?.clientWidth);
+    if (bus_cell_ref?.current?.clientWidth) {
+      // adopt 6 columns
+      if (bus_cell_ref?.current?.clientWidth < 400) {
+        setThinMode(true);
+      } else {
+        setThinMode(false);
+      }
+    }
+  }, [bus_cell_ref?.current?.clientWidth]);
 
   return (
     <>
       {bus_cell_data ? (
         <>
-          <Box
-            ref={bus_cell_ref}
-            sx={{ padding: "2rem", backgroundColor: "tomato" }}
-          >
+          <Box ref={bus_cell_ref} sx={{ padding: thin_mode ? "1rem" : "2rem" }}>
             <Grid container spacing={1}>
               <Grid
                 item
@@ -46,16 +52,18 @@ export default function BusCell({ stop_eta_data, route }) {
               >
                 <Typography
                   variant={"h4"}
-                  sx={{ fontSize: { xs: "2rem", md: "2rem" } }}
+                  sx={{ fontSize: thin_mode ? "1.4rem" : "2rem" }}
                 >
                   {route}
                 </Typography>
 
                 <Stack direction={"row"} alignItems="baseline" spacing={1}>
-                  <Typography variant={"h6"}>往</Typography>
+                  <Typography variant={thin_mode ? "body2" : "h6"}>
+                    往
+                  </Typography>
                   <Typography
                     component="h3"
-                    sx={{ fontSize: { xs: "1.4rem", md: "1.5rem" } }}
+                    sx={{ fontSize: thin_mode ? "1.2rem" : "1.5rem" }}
                   >
                     {bus_cell_data[0].dest_tc}
                   </Typography>
@@ -63,7 +71,7 @@ export default function BusCell({ stop_eta_data, route }) {
                 <Typography
                   variant={"h6"}
                   color={"#7f8fa6"}
-                  sx={{ fontSize: { xs: "1rem", md: "1rem" } }}
+                  sx={{ fontSize: thin_mode ? "1rem" : "1.2rem" }}
                 >
                   {bus_cell_data[0].dest_en}
                 </Typography>
@@ -84,14 +92,14 @@ export default function BusCell({ stop_eta_data, route }) {
                       <Typography
                         variant={"h3"}
                         color="#1e3799"
-                        sx={{ fontSize: { xs: "1.5rem", md: "1.3rem" } }}
+                        sx={{ fontSize: thin_mode ? "0.8rem" : "1.3rem" }}
                       >
                         {moment(bus_cell_data[0].eta).format("HH:mm")}
                       </Typography>
                       <Typography
                         variant={"h3"}
                         color="#1e3799"
-                        sx={{ fontSize: { xs: "1.5rem", md: "1.3rem" } }}
+                        sx={{ fontSize: thin_mode ? "1.1rem" : "1.3rem" }}
                       >
                         {moment(bus_cell_data[0].eta).fromNow()}
                       </Typography>
@@ -101,7 +109,7 @@ export default function BusCell({ stop_eta_data, route }) {
                   <Typography
                     variant={"h3"}
                     color={"#f39c12"}
-                    sx={{ fontSize: { xs: "1.5rem", md: "1.3rem" } }}
+                    sx={{ fontSize: thin_mode ? "0.8rem" : "1.3rem" }}
                   >
                     未有班次資料
                   </Typography>
@@ -120,13 +128,13 @@ export default function BusCell({ stop_eta_data, route }) {
                         <Stack direction="row" spacing={1} key={i}>
                           <Typography
                             color={"#aaaaaa"}
-                            sx={{ fontSize: { xs: "1.3rem", md: "1.1rem" } }}
+                            sx={{ fontSize: thin_mode ? "0.8rem" : "1.3rem" }}
                           >
                             {moment(o.eta).format("HH:mm")}
                           </Typography>
                           <Typography
                             color={"#aaaaaa"}
-                            sx={{ fontSize: { xs: "1.3rem", md: "1.1rem" } }}
+                            sx={{ fontSize: thin_mode ? "1.1rem" : "1.3rem" }}
                           >
                             {moment(o.eta).fromNow()}
                           </Typography>
