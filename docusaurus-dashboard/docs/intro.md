@@ -6,6 +6,10 @@ port schedule: https://docs.google.com/spreadsheets/d/1nwIj4Jt-LvN-RLqtY2O9Jbe-X
 
 luigi dashboard: http://localhost:8082/
 
+rethinkdb: http://192.168.10.61:8093
+
+matomo: http://192.168.10.61:8091
+
 ```
 working directory:
 D:\_workspace\dashboard-tryout\docusaurus-dashboard
