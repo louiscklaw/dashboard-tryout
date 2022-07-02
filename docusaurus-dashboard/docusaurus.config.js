@@ -100,6 +100,13 @@ const config = {
           href: "/weather",
         },
         {
+          type: "doc",
+          docId: "intro",
+          position: "left",
+          label: "upptime",
+          href: "https://louiscklaw.github.io/upptime-playlist/",
+        },
+        {
           href: "https://github.com/louiscklaw/docusaurus-playlist",
           label: "GitHub",
           position: "right",
