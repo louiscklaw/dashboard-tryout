@@ -1,13 +1,15 @@
 import React from "react";
-import clsx from "clsx";
-import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import styles from "./index.module.css";
-import HomepageFeatures from "@site/src/components/HomepageFeatures";
+import { Grid, Stack, Typography } from "@mui/material";
+import Layout from "@theme/Layout";
+import clsx from "clsx";
 import { use100vh } from "react-div-100vh";
-import { Box, Stack, Button, Grid, Typography } from "@mui/material";
+import styles from "./index.module.css";
+
 import ButtonLink from "../components/ButtonLink";
+
+import DashboardGrid from "./Dashboard/Grids/DashboardGrid";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -70,8 +72,9 @@ export default function Home() {
             />
           </Stack>
         </Grid>
+        <DashboardGrid />
 
-        <Grid item xs={12} md={2}>
+        {/* <Grid item xs={12} md={2}>
           <Stack direction="column" spacing={1}>
             <Typography variant={"h6"} align="center">
               dashboards
@@ -106,7 +109,7 @@ export default function Home() {
 
             <ButtonLink to="http://localhost:8082/" text={"luigi dashboard"} />
           </Stack>
-        </Grid>
+        </Grid> */}
         <Grid item xs={12} md={2}>
           <Stack direction="column" spacing={1}>
             <Typography variant={"h6"} align="center">
