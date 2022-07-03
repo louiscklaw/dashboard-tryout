@@ -7,31 +7,10 @@ import clsx from "clsx";
 import { use100vh } from "react-div-100vh";
 import styles from "./index.module.css";
 
-import ButtonLink from "../components/ButtonLink";
-
 import DashboardGrid from "./Dashboard/Grids/DashboardGrid";
 import ContainerGrid from "./Dashboard/Grids/ContainerGrid";
 import SocialProfilesGrid from "./Dashboard/Grids/SocialProfilesGrid";
-
-function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
-  return (
-    <header className={clsx("hero hero--primary", styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro"
-          >
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
-}
+import ToolsGrid from "./Dashboard/Grids/ToolsGrid";
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
@@ -54,9 +33,9 @@ export default function Home() {
             <Typography variant={"h4"}>louis portfolio</Typography>
           </Link>
         </Grid>
+
         <SocialProfilesGrid />
         <DashboardGrid />
-
         <ContainerGrid />
         <ToolsGrid />
       </Grid>
