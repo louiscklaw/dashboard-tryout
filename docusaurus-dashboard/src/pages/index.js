@@ -11,6 +11,7 @@ import ButtonLink from "../components/ButtonLink";
 
 import DashboardGrid from "./Dashboard/Grids/DashboardGrid";
 import ContainerGrid from "./Dashboard/Grids/ContainerGrid";
+import SocialProfilesGrid from "./Dashboard/Grids/SocialProfilesGrid";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -53,94 +54,11 @@ export default function Home() {
             <Typography variant={"h4"}>louis portfolio</Typography>
           </Link>
         </Grid>
-        <Grid item xs={12} md={2}>
-          <Stack direction="column" spacing={1}>
-            <Typography variant={"h6"} align="center">
-              social Profiles
-            </Typography>
-            <ButtonLink
-              to="https://www.carousell.com.hk/u/louiscklaw/"
-              text={"carousel"}
-            />
-
-            <ButtonLink
-              to="http://192.168.10.61:5000"
-              text={"changedetection"}
-            />
-            <ButtonLink
-              to="https://console.firebase.google.com/project/dashboard-76c7d/overview"
-              text={"firebase console"}
-            />
-          </Stack>
-        </Grid>
+        <SocialProfilesGrid />
         <DashboardGrid />
 
-        {/* <Grid item xs={12} md={2}>
-          <Stack direction="column" spacing={1}>
-            <Typography variant={"h6"} align="center">
-              dashboards
-            </Typography>
-
-            <ButtonLink to="http://192.168.10.61:8089" text={"checkmk"} />
-            <ButtonLink to="http://192.168.10.61:8086" text={"influxdb"} />
-
-            <ButtonLink
-              to="http://192.168.10.61:50102/dashboard"
-              text={"uptime kuma"}
-            />
-
-            <ButtonLink
-              to="http://192.168.10.61:8080/dashboard/"
-              text={"traefik dashboard"}
-            />
-
-            <ButtonLink to="https://drone.iamon99.com/" text={"drone ci"} />
-
-            <ButtonLink to="http://192.168.10.61:8087" text={"jenkins"} />
-
-            <ButtonLink
-              to="https://docs.google.com/spreadsheets/d/1nwIj4Jt-LvN-RLqtY2O9Jbe-XsMyVs-04DWGLUPwzEM/edit#gid=0"
-              text={"port schedule"}
-            />
-
-            <ButtonLink
-              to="http://192.168.10.61:50080/"
-              text={"Homer dashboard"}
-            />
-
-            <ButtonLink to="http://localhost:8082/" text={"luigi dashboard"} />
-          </Stack>
-        </Grid> */}
         <ContainerGrid />
-
-        <Grid item xs={12} md={2}>
-          <Stack direction="column" spacing={1}>
-            <Typography variant={"h6"} align="center">
-              tools
-            </Typography>
-            <ButtonLink
-              to="https://colorhunt.co/palettes/retro"
-              text={"colorhunt"}
-            />
-            <ButtonLink to="https://flatuicolors.com/" text={"flatuicolors"} />
-            <ButtonLink
-              to="https://github.com/webkul/coolhue"
-              text={"coolhue"}
-            />
-            <ButtonLink to="https://colors.dopely.top/" text={"dopely"} />
-            <ButtonLink to="https://www.gradientos.app/" text={"gradientos"} />
-            <ButtonLink
-              to="https://brandpalettes.com/"
-              text={"brandpalettes"}
-            />
-            <ButtonLink to="http://brandcolors.net/" text={"brandcolors"} />
-            <ButtonLink to="https://material.colorion.co/" text={"colorion"} />
-            <ButtonLink
-              to="https://github.com/bradtraversy/design-resources-for-developers/"
-              text={"design-resources-for-developers"}
-            />
-          </Stack>
-        </Grid>
+        <ToolsGrid />
       </Grid>
     </Layout>
   );
