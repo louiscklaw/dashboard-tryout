@@ -7,10 +7,28 @@ import "moment/locale/zh-hk";
 
 import _ from "lodash";
 import { useEffect, useRef, useState } from "react";
+import PuffLoader from "react-spinners/PuffLoader";
 
 // https://flatuicolors.com/palette/fr
 
 moment().locale("zh-hk");
+
+function LoadingBusInfo() {
+  return (
+    <>
+      <Stack
+        direction="row"
+        justifyContent="center"
+        alignItems="center"
+        spacing={5}
+        sx={{ minHeight: "3rem" }}
+      >
+        <PuffLoader color={`rgb(31, 45, 84)`} loading={true} size={25} />
+        <Typography variant="body1">正在更新...</Typography>
+      </Stack>
+    </>
+  );
+}
 
 export default function BusCell({ stop_eta_data, route }) {
   let [bus_cell_data, setBusCellData] = useState();
@@ -40,7 +58,15 @@ export default function BusCell({ stop_eta_data, route }) {
     <>
       {bus_cell_data ? (
         <>
-          <Box ref={bus_cell_ref} sx={{ padding: thin_mode ? "1rem" : "2rem" }}>
+          <Box
+            ref={bus_cell_ref}
+            sx={{
+              padding: thin_mode ? "1rem" : "2rem",
+              backgroundColor: bus_cell_data[0].eta
+                ? "rgba(0,128,0,0.05)"
+                : "rgba(128,128,0,0.05)",
+            }}
+          >
             <Grid container spacing={1}>
               <Grid
                 item
@@ -150,7 +176,9 @@ export default function BusCell({ stop_eta_data, route }) {
           </Box>
         </>
       ) : (
-        <>loading</>
+        <>
+          <LoadingBusInfo />
+        </>
       )}
     </>
   );

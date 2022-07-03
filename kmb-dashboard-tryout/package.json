@@ -27,7 +27,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "clear": "rm -rf build",
+    "clear": "rimraf build",
     "deploy_firebase": "yarn clear && yarn build && firebase deploy",
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -58,6 +58,7 @@
   },
   "devDependencies": {
     "cypress": "^10.2.0",
-    "cypress-wait-until": "^1.7.2"
+    "cypress-wait-until": "^1.7.2",
+    "rimraf": "^3.0.2"
   }
 }
