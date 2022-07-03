@@ -13,6 +13,7 @@ export default function ContainerGrid() {
         <Typography variant={"h6"} align="center">
           tools
         </Typography>
+        <ButtonLink to="http://192.168.10.21:6080" text={"android emulator"} />
         <ButtonLink
           to="https://colorhunt.co/palettes/retro"
           text={"colorhunt"}
