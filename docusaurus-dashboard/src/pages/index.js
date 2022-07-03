@@ -10,6 +10,7 @@ import styles from "./index.module.css";
 import ButtonLink from "../components/ButtonLink";
 
 import DashboardGrid from "./Dashboard/Grids/DashboardGrid";
+import ContainerGrid from "./Dashboard/Grids/ContainerGrid";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -110,23 +111,7 @@ export default function Home() {
             <ButtonLink to="http://localhost:8082/" text={"luigi dashboard"} />
           </Stack>
         </Grid> */}
-        <Grid item xs={12} md={2}>
-          <Stack direction="column" spacing={1}>
-            <Typography variant={"h6"} align="center">
-              containers
-            </Typography>
-            <ButtonLink
-              to="http://192.168.10.21:9000/"
-              text={"nuc portainer"}
-            />
-            <ButtonLink
-              to="http://192.168.10.61:9000/"
-              text={"m73 portainer"}
-            />
-            <ButtonLink to="http://192.168.10.61:5050" text={"pgadmin"} />{" "}
-            <ButtonLink to="http://192.168.10.61:8081" text={"phpmyadmin"} />
-          </Stack>
-        </Grid>
+        <ContainerGrid />
 
         <Grid item xs={12} md={2}>
           <Stack direction="column" spacing={1}>
