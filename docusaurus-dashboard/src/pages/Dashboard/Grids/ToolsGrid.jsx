@@ -13,6 +13,7 @@ export default function ContainerGrid() {
         <Typography variant={"h6"} align="center">
           tools
         </Typography>
+        <ButtonLink to="http://192.168.10.61:5010" text={"proxy pool 5010"} />
         <ButtonLink to="http://192.168.10.61:8096" text={"mitm proxy 8096"} />
         <ButtonLink to="http://192.168.10.21:6080" text={"android emu 6080"} />
         <ButtonLink to="http://192.168.10.21:6081" text={"android emu 6081"} />
