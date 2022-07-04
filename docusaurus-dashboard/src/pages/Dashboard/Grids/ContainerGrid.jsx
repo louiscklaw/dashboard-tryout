@@ -17,6 +17,9 @@ export default function ContainerGrid() {
         <ButtonLink to="http://192.168.10.61:9000/" text={"m73 portainer"} />
         <ButtonLink to="http://192.168.10.61:5050" text={"pgadmin"} />{" "}
         <ButtonLink to="http://192.168.10.61:8081" text={"phpmyadmin"} />
+        <ButtonLink to="https://drone.iamon99.com/" text={"drone ci"} />
+        <ButtonLink to="http://192.168.10.61:8087" text={"jenkins"} />
+        <ButtonLink to="http://192.168.10.61:8086" text={"influxdb"} />
       </Stack>
     </Grid>
   );

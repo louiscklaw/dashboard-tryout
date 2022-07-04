@@ -11,6 +11,7 @@ import DashboardGrid from "./Dashboard/Grids/DashboardGrid";
 import ContainerGrid from "./Dashboard/Grids/ContainerGrid";
 import SocialProfilesGrid from "./Dashboard/Grids/SocialProfilesGrid";
 import ToolsGrid from "./Dashboard/Grids/ToolsGrid";
+import NotesGrid from "./Dashboard/Grids/NotesGrid";
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
@@ -38,6 +39,7 @@ export default function Home() {
         <DashboardGrid />
         <ContainerGrid />
         <ToolsGrid />
+        <NotesGrid />
       </Grid>
     </Layout>
   );
