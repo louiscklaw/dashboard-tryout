@@ -20,6 +20,7 @@ export default function ContainerGrid() {
         <ButtonLink to="https://drone.iamon99.com/" text={"drone ci"} />
         <ButtonLink to="http://192.168.10.61:8087" text={"jenkins"} />
         <ButtonLink to="http://192.168.10.61:8086" text={"influxdb"} />
+        <ButtonLink to="http://192.168.10.61:8086" text={"appwrite"} />
       </Stack>
     </Grid>
   );
