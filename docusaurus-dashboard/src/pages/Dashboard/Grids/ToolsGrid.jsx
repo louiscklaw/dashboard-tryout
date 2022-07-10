@@ -14,11 +14,11 @@ export default function ContainerGrid() {
           tools
         </Typography>
         <ButtonLink to="http://192.168.10.61:5010" text={"proxy pool 5010"} />
+        <pre>curl --proxy 127.0.0.1:5566 https://api.my-ip.io/ip</pre>
         <ButtonLink
           to="http://192.168.10.61:4445/haproxy?stats"
           text={"tor proxy 4445"}
         />
-
         <ButtonLink to="http://192.168.10.61:8096" text={"mitm proxy 8096"} />
         <ButtonLink to="http://192.168.10.21:6080" text={"android emu 6080"} />
         <ButtonLink to="http://192.168.10.21:6081" text={"android emu 6081"} />
