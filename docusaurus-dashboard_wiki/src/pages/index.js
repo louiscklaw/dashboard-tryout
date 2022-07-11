@@ -8,6 +8,8 @@ import HomepageFeatures from '../components/HomepageFeatures'
 import Head from '@docusaurus/Head'
 import HeroImg from '../../static/img/Hero.jpg'
 
+import { Button, createTheme, ThemeProvider } from '@mui/material'
+
 const svgList = [
   {
     title: 'github',
@@ -87,7 +89,44 @@ function MyHero() {
     </div>
   )
 }
-export default function Home() {
+
+function TestNewHome() {
+  return (
+    <div className={styles.myHeroContainer}>
+      <div className={styles.leftContainer}>
+        <button>helloworld</button>
+        <h1 className={styles.leftContainer_h1}>
+          Always <br /> For Freedom. helloworld 123
+        </h1>
+        <p className={styles.leftContainer_p}>
+          一个喜欢异想天开的家伙 💨
+          <br />
+          在这里记录知识，希望对你也有帮助。
+        </p>
+        <div className={styles.buttonContainer}>
+          {/* <button className={styles.button}>
+            <a className={styles.hero_a} href='/'>
+              Click
+            </a>
+          </button>
+          <span className={styles.buttonLeftText}>
+            Get Started. <br /> 开启学习之旅.
+          </span> */}
+          <div className={styles.svgContainer}>
+            {svgList.map((item, index) => {
+              return <Svg {...item} key={item.title} />
+            })}
+          </div>
+        </div>
+      </div>
+      <div className={styles.rightContainer}>
+        <img src={HeroImg} alt="HeroImg" />
+      </div>
+    </div>
+  )
+}
+
+function Home() {
   const { siteConfig } = useDocusaurusContext()
   return (
     <Layout
@@ -97,9 +136,30 @@ export default function Home() {
     >
       {/* <HomepageHeader /> */}
       <main>
-        <MyHero />
+        {/* <MyHero /> */}
+
         {/* <HomepageFeatures /> */}
       </main>
     </Layout>
+  )
+}
+
+export default function NewHome() {
+  const { siteConfig } = useDocusaurusContext()
+  const theme = createTheme({ palette: { primary: { main: '#ff0000' } } })
+
+  return (
+    <ThemeProvider theme={theme}>
+      <Layout
+        title={`Hello from ${siteConfig.title}`}
+        description="Description will go into a meta tag in <head />"
+      >
+        {/* <HomepageHeader /> */}
+        <main>
+          <TestNewHome />
+          {/* <HomepageFeatures /> */}
+        </main>
+      </Layout>
+    </ThemeProvider>
   )
 }
