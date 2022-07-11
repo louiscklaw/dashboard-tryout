@@ -1,12 +1,15 @@
 {
   "hosting": {
     "public": "build",
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
-    "rewrites": [{ "source": "**", "destination": "/index.html" }],
-    "headers": [
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
       {
-        "source": "index.html",
-        "headers": [{ "key": "Access-Control-Allow-Origin", "value": "*" }]
+        "source": "**",
+        "destination": "/index.html"
       }
     ]
   }
