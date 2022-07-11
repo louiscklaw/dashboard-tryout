@@ -127,7 +127,9 @@ function Home() {
 
 export default function NewHome() {
   const { siteConfig } = useDocusaurusContext()
-  const theme = createTheme({ palette: { primary: { main: '#ff0000' } } })
+  const theme = createTheme({
+    palette: { primary: { main: '#2c3e50' }, secondary: { main: '#7f8c8d' } },
+  })
 
   return (
     <ThemeProvider theme={theme}>

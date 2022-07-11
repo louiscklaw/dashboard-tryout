@@ -22,10 +22,7 @@ const config = {
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
-  i18n: {
-    defaultLocale: 'zh-Hans',
-    locales: ['zh-Hans'],
-  },
+  i18n: { defaultLocale: 'en', locales: ['en', 'zh-Hans'] },
 
   presets: [
     [
@@ -47,13 +44,8 @@ const config = {
           showReadingTime: true,
           editUrl: 'https://git.7wate.com/zhouzhongping/wiki/src/branch/master',
         },
-        theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },
-        sitemap: {
-          changefreq: 'weekly',
-          priority: 0.5,
-        },
+        theme: { customCss: require.resolve('./src/css/custom.css') },
+        sitemap: { changefreq: 'weekly', priority: 0.5 },
       }),
     ],
   ],
