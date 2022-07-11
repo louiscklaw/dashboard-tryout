@@ -10,7 +10,3 @@ luigi dashboard: http://localhost:8082/
 rethinkdb: http://192.168.10.61:8093
 
 matomo: http://192.168.10.61:8091
-
-```
-helloworld
-```
