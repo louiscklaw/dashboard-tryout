@@ -6,9 +6,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: '7Wate',
+  title: 'louislabs',
   tagline: 'For Freedom',
-  url: 'https://wiki.7wate.com',
+  url: 'https://wiki.iamon99.com',
   baseUrl: '/',
   onBrokenLinks: 'log',
   onBrokenMarkdownLinks: 'log',
@@ -37,7 +37,7 @@ const config = {
           breadcrumbs: false,
         },
         blog: {
-          blogTitle: '7Wate`s Blog',
+          blogTitle: 'loislabs Blog',
           blogDescription: '7Wate 的个人生活和工作记录',
           blogSidebarCount: 7,
           blogSidebarTitle: '文章',
@@ -213,11 +213,11 @@ const config = {
       metadata: [
         {
           name: 'keywords',
-          content: '7wate, wiki, blog, c, c++, java, python, linux',
+          content: 'louislabs, wiki, blog, c, c++, java, python, linux',
         },
       ],
       navbar: {
-        title: '📚 7Wate`s Wiki',
+        title: '📚 louislabs`s Wiki',
         hideOnScroll: true,
         // logo: {
         //   alt: 'Site Logo',
@@ -229,28 +229,30 @@ const config = {
         //   height: 32,
         // },
         items: [
-          { to: '/blog', label: '👨🏻‍🌾 博客', position: 'right' },
-          {
-            position: 'right',
-            label: '👨🏻‍🎓 维基',
-            items: [
-              { label: '开发', to: '/dev' },
-              { label: '算法', to: '/algo' },
-              { label: '运维', to: '/ops' },
-              { label: '安全', to: '/safe' },
-              { label: '其他', to: '/docs' },
-            ],
-          },
-          { to: '/org', label: '🤶 社区', position: 'right' },
-          { to: '/work', label: '👨‍💻 职业', position: 'right' },
-          { to: '/life', label: '🚴🏻‍♀️ 生活', position: 'right' },
-          { to: '/art', label: '👨‍🎨 艺术', position: 'right' },
+          // { to: '/blog', label: '👨🏻‍🌾 博客', position: 'right' },
+          // {
+          // position: 'right',
+          // label: '👨🏻‍🎓 维基',
+          // items: [
+          // { label: '开发', to: '/dev' },
+          // { label: '算法', to: '/algo' },
+          // { label: '运维', to: '/ops' },
+          // { label: '安全', to: '/safe' },
+          // { label: '其他', to: '/docs' },
+          // ],
+          // },
+          { to: '/build_mon', label: '👨‍🎨 build_mon', position: 'right' },
+          { to: '/hackmd', label: '👨‍🎨 hackmd', position: 'right' },
+          { to: '/up_time', label: '👨‍🎨 up_time', position: 'right' },
+          { to: '/MTR', label: '👨‍🎨 MTR', position: 'right' },
+          { to: '/BUS', label: '👨‍🎨 BUS', position: 'right' },
+          { to: '/weather', label: '👨‍🎨 weather', position: 'right' },
           { to: '/setup-record', label: '👨‍🎨 setup-record', position: 'right' },
         ],
       },
       footer: {
         style: 'dark',
-        copyright: `Copyright © ${new Date().getFullYear()} 7Wate, Inc. Built with <a href="https://www.docusaurus.cn/" target="_blank" rel="noopener noreferrer">Docusaurus</a>.<br>Powered by <a href="https://webify.cloudbase.net/" target="_blank" rel="noopener noreferrer">CloudBase Webify</a>`,
+        copyright: `Copyright © ${new Date().getFullYear()} louislabs, Inc. Built with <a href="https://www.docusaurus.cn/" target="_blank" rel="noopener noreferrer">Docusaurus</a>.`,
       },
       prism: {
         theme: lightCodeTheme,
