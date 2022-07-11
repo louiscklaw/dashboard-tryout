@@ -87,6 +87,19 @@ const config = {
     [
       '@docusaurus/plugin-content-docs',
       {
+        id: 'setup-record',
+        path: 'setup-record',
+        routeBasePath: 'setup-record',
+        sidebarPath: require.resolve('./sidebars.js'),
+        editUrl: 'https://git.7wate.com/zhouzhongping/wiki/src/branch/master',
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        breadcrumbs: false,
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
         id: 'dev',
         path: 'dev',
         routeBasePath: 'dev',
@@ -175,12 +188,7 @@ const config = {
         breadcrumbs: false,
       },
     ],
-    [
-      '@docusaurus/plugin-google-analytics',
-      {
-        trackingID: 'G-MHMEL0F832',
-      },
-    ],
+    ['@docusaurus/plugin-google-analytics', { trackingID: 'G-xx' }],
 
     // "plugin-image-zoom",
   ],
@@ -245,6 +253,7 @@ const config = {
           { to: '/work', label: '👨‍💻 职业', position: 'right' },
           { to: '/life', label: '🚴🏻‍♀️ 生活', position: 'right' },
           { to: '/art', label: '👨‍🎨 艺术', position: 'right' },
+          { to: '/setup-record', label: '👨‍🎨 setup-record', position: 'right' },
         ],
       },
       footer: {
