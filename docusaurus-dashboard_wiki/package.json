@@ -11,7 +11,7 @@
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "gitUpdate": "git add . && git commit -m\"update wiki,\" && git push",
-    "prettier_file": "prettier --write \"./src/**/*.{js,jsx}\"",
+    "lint:format": "prettier --write '**/*.{js,jsx,ts,tsx}'",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "deploy_firebase": "yarn clear && yarn rimraf .firebase && yarn build && firebase deploy",

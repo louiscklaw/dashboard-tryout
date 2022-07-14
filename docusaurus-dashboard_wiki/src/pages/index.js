@@ -12,6 +12,7 @@ import Dashboard from './Dashboard/Grids/DashboardGrid'
 import Container from './Dashboard/Grids/ContainerGrid.jsx'
 import Tools from './Dashboard/Grids/ToolsGrid.jsx'
 import Notes from './Dashboard/Grids/NotesGrid.jsx'
+import Printers from './Dashboard/Grids/PrinterGrid'
 
 import { Box, Button, createTheme, Grid, ThemeProvider } from '@mui/material'
 
@@ -103,6 +104,7 @@ function TestNewHome() {
       <Container />
       <Tools />
       <Notes />
+      <Printers />
     </Grid>
   )
 }
@@ -133,10 +135,7 @@ export default function NewHome() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Layout
-        title={`Hello from ${siteConfig.title}`}
-        description="Description will go into a meta tag in <head />"
-      >
+      <Layout title={`Hello from ${siteConfig.title}`} description="Description will go into a meta tag in <head />">
         {/* <HomepageHeader /> */}
         <main>
           <TestNewHome />
