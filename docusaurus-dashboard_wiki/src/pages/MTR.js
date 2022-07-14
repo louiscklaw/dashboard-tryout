@@ -17,20 +17,10 @@ export default function Home() {
       </Box>
       <Grid container sx={{ height: height_100vh, overflowY: 'hidden' }}>
         <Grid item xs={4} sx={{ width: '100%', height: height_100vh / 2 }}>
-          <iframe
-            src="https://hkbus.app/zh/route/1a-1-sau-mau-ping-(central)-star-ferry/4"
-            target="_parent"
-            height={height_100vh}
-            width="100%"
-          />
+          <iframe src="https://hkbus.app/zh/route/1a-1-sau-mau-ping-(central)-star-ferry/4" target="_parent" height={height_100vh} width="100%" />
         </Grid>
         <Grid item xs={4} sx={{ width: '100%', height: height_100vh / 2 }}>
-          <iframe
-            src="https://hktrain.dubdub.pro/mtr-status"
-            target="_parent"
-            height={height_100vh}
-            width="100%"
-          />
+          <iframe src="https://hktrain.dubdub.pro/mtr-status" target="_parent" height={height_100vh} width="100%" />
         </Grid>
         <Grid item xs={4} sx={{ width: '100%', height: height_100vh / 2 }}>
           <iframe src="https://hktrain.dubdub.pro/lrt" height={height_100vh} width="100%" />

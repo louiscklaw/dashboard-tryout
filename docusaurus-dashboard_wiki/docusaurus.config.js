@@ -31,8 +31,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl:
-            'https://github.com/louiscklaw/dashboard-tryout/tree/master/docusaurus-dashboard_wiki',
+          editUrl: 'https://github.com/louiscklaw/dashboard-tryout/tree/master/docusaurus-dashboard_wiki',
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
           breadcrumbs: false,
@@ -43,8 +42,7 @@ const config = {
           blogSidebarCount: 7,
           blogSidebarTitle: '文章',
           showReadingTime: true,
-          editUrl:
-            'https://github.com/louiscklaw/dashboard-tryout/tree/master/docusaurus-dashboard_wiki',
+          editUrl: 'https://github.com/louiscklaw/dashboard-tryout/tree/master/docusaurus-dashboard_wiki',
         },
         theme: { customCss: require.resolve('./src/css/custom.css') },
         sitemap: { changefreq: 'weekly', priority: 0.5 },
@@ -59,8 +57,7 @@ const config = {
         path: 'projects-note',
         routeBasePath: 'projects-note',
         sidebarPath: require.resolve('./sidebars.js'),
-        editUrl:
-          'https://github.com/louiscklaw/dashboard-tryout/tree/master/docusaurus-dashboard_wiki',
+        editUrl: 'https://github.com/louiscklaw/dashboard-tryout/tree/master/docusaurus-dashboard_wiki',
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
         breadcrumbs: false,
@@ -73,8 +70,7 @@ const config = {
         path: 'life',
         routeBasePath: 'life',
         sidebarPath: require.resolve('./sidebars.js'),
-        editUrl:
-          'https://github.com/louiscklaw/dashboard-tryout/tree/master/docusaurus-dashboard_wiki',
+        editUrl: 'https://github.com/louiscklaw/dashboard-tryout/tree/master/docusaurus-dashboard_wiki',
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
         breadcrumbs: false,
@@ -87,8 +83,7 @@ const config = {
         path: 'art',
         routeBasePath: 'art',
         sidebarPath: require.resolve('./sidebars.js'),
-        editUrl:
-          'https://github.com/louiscklaw/dashboard-tryout/tree/master/docusaurus-dashboard_wiki',
+        editUrl: 'https://github.com/louiscklaw/dashboard-tryout/tree/master/docusaurus-dashboard_wiki',
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
         breadcrumbs: false,
@@ -101,8 +96,7 @@ const config = {
         path: 'setup-record',
         routeBasePath: 'setup-record',
         sidebarPath: require.resolve('./sidebars.js'),
-        editUrl:
-          'https://github.com/louiscklaw/dashboard-tryout/tree/master/docusaurus-dashboard_wiki',
+        editUrl: 'https://github.com/louiscklaw/dashboard-tryout/tree/master/docusaurus-dashboard_wiki',
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
         breadcrumbs: false,
@@ -115,8 +109,7 @@ const config = {
         path: 'dev',
         routeBasePath: 'dev',
         sidebarPath: require.resolve('./sidebars.js'),
-        editUrl:
-          'https://github.com/louiscklaw/dashboard-tryout/tree/master/docusaurus-dashboard_wiki',
+        editUrl: 'https://github.com/louiscklaw/dashboard-tryout/tree/master/docusaurus-dashboard_wiki',
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
         breadcrumbs: false,
@@ -129,8 +122,7 @@ const config = {
         path: 'algo',
         routeBasePath: 'algo',
         sidebarPath: require.resolve('./sidebars.js'),
-        editUrl:
-          'https://github.com/louiscklaw/dashboard-tryout/tree/master/docusaurus-dashboard_wiki',
+        editUrl: 'https://github.com/louiscklaw/dashboard-tryout/tree/master/docusaurus-dashboard_wiki',
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
         breadcrumbs: false,
@@ -143,8 +135,7 @@ const config = {
         path: 'ops',
         routeBasePath: 'ops',
         sidebarPath: require.resolve('./sidebars.js'),
-        editUrl:
-          'https://github.com/louiscklaw/dashboard-tryout/tree/master/docusaurus-dashboard_wiki',
+        editUrl: 'https://github.com/louiscklaw/dashboard-tryout/tree/master/docusaurus-dashboard_wiki',
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
         breadcrumbs: false,
@@ -157,8 +148,7 @@ const config = {
         path: 'safe',
         routeBasePath: 'safe',
         sidebarPath: require.resolve('./sidebars.js'),
-        editUrl:
-          'https://github.com/louiscklaw/dashboard-tryout/tree/master/docusaurus-dashboard_wiki',
+        editUrl: 'https://github.com/louiscklaw/dashboard-tryout/tree/master/docusaurus-dashboard_wiki',
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
         breadcrumbs: false,
@@ -171,8 +161,7 @@ const config = {
         path: 'othe',
         routeBasePath: 'othe',
         sidebarPath: require.resolve('./sidebars.js'),
-        editUrl:
-          'https://github.com/louiscklaw/dashboard-tryout/tree/master/docusaurus-dashboard_wiki',
+        editUrl: 'https://github.com/louiscklaw/dashboard-tryout/tree/master/docusaurus-dashboard_wiki',
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
         breadcrumbs: false,
@@ -185,8 +174,7 @@ const config = {
         path: 'org',
         routeBasePath: 'org',
         sidebarPath: require.resolve('./sidebars.js'),
-        editUrl:
-          'https://github.com/louiscklaw/dashboard-tryout/tree/master/docusaurus-dashboard_wiki',
+        editUrl: 'https://github.com/louiscklaw/dashboard-tryout/tree/master/docusaurus-dashboard_wiki',
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
         breadcrumbs: false,
@@ -199,8 +187,7 @@ const config = {
         path: 'work',
         routeBasePath: 'work',
         sidebarPath: require.resolve('./sidebars.js'),
-        editUrl:
-          'https://github.com/louiscklaw/dashboard-tryout/tree/master/docusaurus-dashboard_wiki',
+        editUrl: 'https://github.com/louiscklaw/dashboard-tryout/tree/master/docusaurus-dashboard_wiki',
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
         breadcrumbs: false,

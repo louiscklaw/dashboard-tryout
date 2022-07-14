@@ -16,10 +16,7 @@ export default function ContainerGrid() {
         <Typography variant={'h6'} align="center">
           notes
         </Typography>
-        <ButtonLink
-          to="https://docs.google.com/spreadsheets/d/1nwIj4Jt-LvN-RLqtY2O9Jbe-XsMyVs-04DWGLUPwzEM/edit#gid=0"
-          text={'port schedule'}
-        />
+        <ButtonLink to="https://docs.google.com/spreadsheets/d/1nwIj4Jt-LvN-RLqtY2O9Jbe-XsMyVs-04DWGLUPwzEM/edit#gid=0" text={'port schedule'} />
       </Stack>
     </Grid>
   )
