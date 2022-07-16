@@ -10,7 +10,7 @@
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
-    "lint:format": "prettier --write **/*.{js,jsx,ts,tsx}",
+    "lint:format": "prettier --write **/*.{js,jsx}",
     "gitSync": "git fetch --all && git stash && git pull && git stash pop",
     "gitUpdate": "git add . && git commit -m\"update wiki,\" && yarn gitSync && git push",
     "write-translations": "docusaurus write-translations",
