@@ -13,11 +13,11 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "gitSync": "git fetch --all && git pull",
+    "gitSync": "git fetch --all && git pull --all",
     "gitUpdate": "yarn gitSync && git add . && git commit -m\"update docusaurus-dashboard,\" && git push",
     "dev": "yarn --dev && yarn start",
     "update_root_docs": "yarn --dev && yarn build && rm -rf ../docs &&  mkdir \"../docs\" && touch ../docs/.gitkeep && cp -R build/* ../docs",
-    "prettier_file": "prettier --write \"./src/**/*.{js,jsx}\"",
+    "format": "prettier --write \"./src/**/*.{js,jsx}\"",
     "push_docs": "yarn update_root_docs && git add ../docs && git commit -m\"update docs,\" && git push"
   },
   "dependencies": {
