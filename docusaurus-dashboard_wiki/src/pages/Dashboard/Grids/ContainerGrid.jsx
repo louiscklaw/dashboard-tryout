@@ -25,6 +25,7 @@ export default function ContainerGrid() {
         <ButtonLink to="http://192.168.10.61:8088" text={'crawlab 8088'} />
         <ButtonLink to="http://192.168.10.61:8093" text={'RethinkDb 8093'} />
         <ButtonLink to="http://192.168.10.61:5678" text={'n8n 5678'} />
+        <ButtonLink to="http://192.168.10.61:8095" text={'teedy file sharing'} />
       </Stack>
     </Grid>
   )
