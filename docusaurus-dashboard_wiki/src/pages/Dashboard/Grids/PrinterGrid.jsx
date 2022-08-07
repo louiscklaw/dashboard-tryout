@@ -13,7 +13,7 @@ export default function PrinterGrid() {
         <Typography variant={'h6'} align="center">
           notes
         </Typography>
-        <ButtonLink to="http://i3mega" text={'i3mega'} />
+        <ButtonLink to="http://i3mega.local" text={'i3mega'} />
       </Stack>
     </Grid>
   )
