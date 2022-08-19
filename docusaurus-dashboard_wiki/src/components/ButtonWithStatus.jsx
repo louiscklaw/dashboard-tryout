@@ -9,7 +9,7 @@ export default function ButtonWithStatus(props) {
   let { to, text, status_id } = props
 
   const handleOnClick = () => {
-    window.open(`http://192.168.10.61:50102/dashboard/${status_id}`, '_blank')
+    window.open(`https://status.iamon99.com/dashboard/${status_id}`, '_blank')
 
     // alert('helloworld')
   }
@@ -21,7 +21,7 @@ export default function ButtonWithStatus(props) {
           <ButtonLink to={to} text={text} />
 
           <Box onClick={handleOnClick}>
-            <img src={`http://192.168.10.61:50102/api/badge/${status_id}/status?upLabel=up&downLabel=down`} />
+            <img src={`https://status.iamon99.com/api/badge/${status_id}/status?upLabel=up&downLabel=down`} />
           </Box>
         </Stack>
       </>
