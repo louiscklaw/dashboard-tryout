@@ -16,7 +16,8 @@ export default function ContainerGrid() {
         </Typography>
         <ButtonWithStatus to="https://www.carousell.com.hk/u/louiscklaw/" text={'carousel'} />
 
-        <ButtonWithStatus to="http://192.168.10.61:5000" text={'changedetection'} status_id={17} />
+        <ButtonWithStatus to="http://192.168.10.61:5000" text={'change-detect'} status_id={17} />
+        <ButtonWithStatus to="http://192.168.10.61:5001" text={'private-change-detect'} status_id={71} />
         <ButtonWithStatus to="https://console.firebase.google.com/project/dashboard-76c7d/overview" text={'firebase console'} />
       </Stack>
     </Grid>
