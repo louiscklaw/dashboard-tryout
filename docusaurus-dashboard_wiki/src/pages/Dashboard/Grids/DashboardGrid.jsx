@@ -16,7 +16,7 @@ export default function DashboardGrid() {
 
         <ButtonLink to="http://192.168.10.61:8089" text={'checkmk'} />
         <ButtonLink to="http://192.168.10.61:8080/dashboard/" text={'traefik dashboard'} />
-        <ButtonLink to="http://192.168.10.61:50080/" text={'Homer dashboard'} />
+        {/* <ButtonLink to="http://192.168.10.61:50080/" text={'Homer dashboard'} /> */}
         <ButtonLink to="http://localhost:8082/" text={'luigi dashboard'} />
 
         <Typography variant={'h6'} align="center">
