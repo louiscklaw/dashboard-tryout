@@ -18,6 +18,7 @@ export default function DashboardGrid() {
         <ButtonWithStatus to="http://192.168.10.61:8089" text={'checkmk'} status_id={33} />
         <ButtonWithStatus to="http://192.168.10.61:8080/dashboard" text={'traefik dashboard'} status_id={24} />
         <ButtonWithStatus to="http://192.168.10.61:50080" text={'Homer'} />
+        <ButtonWithStatus to="http://192.168.10.61:9091" text={'torrent'} />
 
         <ButtonWithStatus to="http://localhost:8082" text={'luigi dashboard'} status_id={26} />
 
