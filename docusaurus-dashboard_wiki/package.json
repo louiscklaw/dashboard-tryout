@@ -20,9 +20,9 @@
     "husky_install": "husky install"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.0.1",
-    "@docusaurus/module-type-aliases": "^2.0.1",
-    "@docusaurus/preset-classic": "^2.0.1",
+    "@docusaurus/core": "^2.1.0",
+    "@docusaurus/module-type-aliases": "^2.1.0",
+    "@docusaurus/preset-classic": "^2.1.0",
     "@easyops-cn/docusaurus-search-local": "^0.23.2",
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",

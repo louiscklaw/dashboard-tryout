@@ -18,7 +18,7 @@ export default function DashboardGrid() {
         <ButtonWithStatus to="http://192.168.10.61:8089" text={'checkmk'} status_id={33} />
         <ButtonWithStatus to="http://192.168.10.61:8080/dashboard" text={'traefik dashboard'} status_id={24} />
         <ButtonWithStatus to="http://192.168.10.61:50080" text={'Homer'} />
-        <ButtonWithStatus to="http://192.168.10.61:9091" text={'torrent'} />
+        <ButtonWithStatus to="http://192.168.10.61:9091" text={'torrent'} status_id={75} />
 
         <ButtonWithStatus to="http://localhost:8082" text={'luigi dashboard'} status_id={26} />
 
@@ -28,7 +28,7 @@ export default function DashboardGrid() {
 
         <ButtonWithStatus to="http://192.168.10.61:50102/dashboard" text={'uptime kuma'} />
         <ButtonWithStatus to="https://github.com/louiscklaw/routine_check/actions" text={'routine_check/actions'} />
-        <ButtonWithStatus to="https://louiscklaw.github.io/upptime-playlist" text={'upptime-playlist'} status_id={69} />
+        <ButtonWithStatus to="https://louiscklaw.github.io/upptime-playlist" text={'upptime-playlist'} status_id={48} />
         <ButtonWithStatus to="https://healthcheck.iamon99.com" text={'healthcheck.iamon99.com'} status_id={47} />
       </Stack>
     </Grid>
