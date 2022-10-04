@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "start": "docusaurus start",
+    "start": "docusaurus start --host=0.0.0.0",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
@@ -17,6 +17,7 @@
     "write-heading-ids": "docusaurus write-heading-ids",
     "deploy_firebase": "npm run clear && npx rimraf .firebase && npm run build && firebase deploy",
     "deploy_gh_pages": "npm run clear && npm run build && gh-pages -d build",
+    "deploy_all": "yarn deploy_firebase && yarn deploy_gh_pages",
     "husky_install": "husky install"
   },
   "dependencies": {
@@ -51,5 +52,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }

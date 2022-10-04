@@ -8,21 +8,21 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 const config = {
   title: 'louislabs',
   tagline: 'louis dashboard',
-  url: 'https://dashboard-76c7d.web.app',
-  baseUrl: '/',
+  url: 'https://louiscklaw.github.io/dashboard-tryout/',
+  baseUrl: '/dashboard-tryout/',
   onBrokenLinks: 'log',
   onBrokenMarkdownLinks: 'log',
   favicon: 'img/favicon.ico',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  // organizationName: '7wate', // Usually your GitHub org/user name.
-  // projectName: 'wiki', // Usually your repo name.
+  organizationName: 'louiscklaw', // Usually your GitHub org/user name.
+  projectName: 'dashboard-tryout', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
-  i18n: { defaultLocale: 'en', locales: ['en', 'zh-Hans'] },
+  i18n: { defaultLocale: 'en', locales: ['en'] },
 
   presets: [
     [
@@ -38,7 +38,7 @@ const config = {
         },
         blog: {
           blogTitle: 'loislabs Blog',
-          blogDescription: '7Wate 的个人生活和工作记录',
+          blogDescription: 'loislabs 的个人生活和工作记录',
           blogSidebarCount: 7,
           blogSidebarTitle: '文章',
           showReadingTime: true,
