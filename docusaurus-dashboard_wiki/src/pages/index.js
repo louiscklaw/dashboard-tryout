@@ -15,6 +15,7 @@ import Notes from './Dashboard/Grids/NotesGrid.jsx'
 import Printers from './Dashboard/Grids/PrinterGrid'
 
 import { Box, Button, createTheme, Grid, ThemeProvider } from '@mui/material'
+import ColorsGrid from './Dashboard/Grids/ColorsGrid'
 
 const svgList = [
   {
@@ -105,6 +106,7 @@ function TestNewHome() {
       <Tools />
       <Notes />
       <Printers />
+      <ColorsGrid />
     </Grid>
   )
 }

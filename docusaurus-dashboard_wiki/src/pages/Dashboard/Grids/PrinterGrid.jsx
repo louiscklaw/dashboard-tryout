@@ -11,7 +11,7 @@ export default function PrinterGrid() {
     <Grid item xs={12} md={2}>
       <Stack direction="column" spacing={1}>
         <Typography variant={'h6'} align="center">
-          notes
+          Printer
         </Typography>
         <ButtonLink to="http://i3mega.local" text={'i3mega'} />
       </Stack>

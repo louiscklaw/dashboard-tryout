@@ -21,16 +21,6 @@ export default function ContainerGrid() {
         <ButtonWithStatus to="http://192.168.10.21:6080" text={'android emu 6080'} status_id={49} />
         <ButtonLink to="http://192.168.10.21:6081" text={'android emu 6081'} />
         <ButtonLink to="http://192.168.10.21:6082" text={'android emu 6082'} />
-        <ButtonLink to="https://colorhunt.co/palettes/retro" text={'colorhunt'} />
-        <ButtonLink to="https://flatuicolors.com/" text={'flatuicolors'} />
-        <ButtonLink to="https://github.com/webkul/coolhue" text={'coolhue'} />
-        <ButtonLink to="https://colors.dopely.top/" text={'dopely'} />
-        <ButtonLink to="https://www.gradientos.app/" text={'gradientos'} />
-        <ButtonLink to="https://brandpalettes.com/" text={'brandpalettes'} />
-        <ButtonLink to="http://brandcolors.net/" text={'brandcolors'} />
-        <ButtonLink to="https://material.colorion.co/" text={'colorion'} />
-        {/* 	docker-rotating-proxy */}
-        <ButtonLink to="https://github.com/bradtraversy/design-resources-for-developers/" text={'design-resources-for-developers'} />
       </Stack>
     </Grid>
   )
