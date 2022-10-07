@@ -14,29 +14,13 @@ export default function ButtonWithStatus(props) {
     // alert('helloworld')
   }
 
-  if (status_id) {
-    return (
-      <>
-        <Grid container>
-          <Grid item xs={9} container justifyContent="center" alignItems="center">
-            <ButtonLink to={to} text={text} />
-          </Grid>
-
-          <Grid item xs={3} container justifyContent="center" alignItems="center">
-            <Box onClick={handleOnClick}>
-              <img src={`https://status.iamon99.com/api/badge/${status_id}/status`} />
-            </Box>
-          </Grid>
-        </Grid>
-      </>
-    )
-  }
-
   return (
     <>
-      <Stack spacing={2} direction="row" justifyContent="center" alignItems="center">
-        <ButtonLink to={to} text={text} />
-      </Stack>
+      <ButtonLink to={to} text={text} />
+
+      {/* <Box onClick={handleOnClick}>
+            <img src={`https://status.iamon99.com/api/badge/${status_id}/status`} />
+          </Box> */}
     </>
   )
 }

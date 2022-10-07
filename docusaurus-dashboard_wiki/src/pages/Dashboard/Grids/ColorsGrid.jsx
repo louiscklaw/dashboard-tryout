@@ -4,7 +4,7 @@ import ButtonLink from '../../../components/ButtonLink'
 
 export default function ColorsGrid() {
   return (
-    <Grid item xs={12} md={2}>
+    <Grid item xs={12} md={1.5}>
       <Stack direction="column" spacing={1}>
         <Typography variant={'h6'} align="center">
           Colors

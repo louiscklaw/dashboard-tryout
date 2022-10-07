@@ -9,14 +9,14 @@ export default function DashboardGrid() {
   const { siteConfig } = useDocusaurusContext()
   const height_100vh = use100vh()
   return (
-    <Grid item xs={12} md={2}>
+    <Grid item xs={12} md={1.5}>
       <Stack direction="column" spacing={1}>
         <Typography variant={'h6'} align="center">
           Dashboards
         </Typography>
 
         <ButtonWithStatus to="http://192.168.10.61:8089" text={'checkmk'} status_id={33} />
-        <ButtonWithStatus to="http://192.168.10.61:8080/dashboard" text={'traefik dashboard'} status_id={24} />
+        <ButtonWithStatus to="http://192.168.10.61:8080/dashboard" text={'traefik'} status_id={24} />
         <ButtonWithStatus to="http://192.168.10.61:50080" text={'Homer'} />
         <ButtonWithStatus to="http://192.168.10.61:9091" text={'torrent'} status_id={75} />
 

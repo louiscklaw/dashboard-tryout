@@ -8,7 +8,7 @@ export default function PrinterGrid() {
   const { siteConfig } = useDocusaurusContext()
   const height_100vh = use100vh()
   return (
-    <Grid item xs={12} md={2}>
+    <Grid item xs={12} md={1.5}>
       <Stack direction="column" spacing={1}>
         <Typography variant={'h6'} align="center">
           Printer

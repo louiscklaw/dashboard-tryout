@@ -14,7 +14,7 @@ import Tools from './Dashboard/Grids/ToolsGrid.jsx'
 import Notes from './Dashboard/Grids/NotesGrid.jsx'
 import Printers from './Dashboard/Grids/PrinterGrid'
 
-import { Box, Button, createTheme, Grid, ThemeProvider } from '@mui/material'
+import { Typography, Box, Button, createTheme, Grid, ThemeProvider } from '@mui/material'
 import ColorsGrid from './Dashboard/Grids/ColorsGrid'
 
 const svgList = [
@@ -99,15 +99,32 @@ function MyHero() {
 
 function TestNewHome() {
   return (
-    <Grid container spacing={2} p={{ md: '5rem' }}>
-      <SocialProfiles />
-      <Dashboard />
-      <Container />
-      <Tools />
-      <Notes />
-      <Printers />
-      <ColorsGrid />
-    </Grid>
+    <>
+      <Grid container spacing={1}>
+        <Grid item xs={12} container m={2}>
+          <Grid item xs={12} container justifyContent="center">
+            <Typography variant="h5">Docker</Typography>
+          </Grid>
+          <Grid item xs={12} container>
+            <SocialProfiles />
+            <Dashboard />
+            <Container />
+            <Tools />
+            <Notes />
+            <Printers />
+          </Grid>
+        </Grid>
+
+        <Grid item xs={12} container m={2}>
+          <Grid item xs={12} container justifyContent="center">
+            <Typography variant="h5">Links:</Typography>
+          </Grid>
+          <Grid item xs={12} container>
+            <ColorsGrid />
+          </Grid>
+        </Grid>
+      </Grid>
+    </>
   )
 }
 
