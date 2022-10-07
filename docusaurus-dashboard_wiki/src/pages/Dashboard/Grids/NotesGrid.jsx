@@ -25,7 +25,10 @@ export default function ContainerGrid() {
         <ButtonLink to="https://docs.google.com/spreadsheets/d/1hNURy7NIED8XXQ99tB0bLfmKpdELkRzhXBoHIqjvp0s" text={'password worksheet'} />
 
         {/* https://louiscklaw.github.io/ */}
-        <ButtonLink to="https://louiscklaw.github.io/" text={'https://louiscklaw.github.io/'} />
+        <ButtonLink to="https://louiscklaw.github.io/" text={'louiscklaw.github.io'} />
+
+        {/* https://aboutme.louislabs.com/ */}
+        <ButtonLink to="https://aboutme.louislabs.com/" text={'aboutme.louislabs.com'} />
       </Stack>
     </Grid>
   )
