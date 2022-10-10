@@ -15,10 +15,6 @@ https://github.com/louiscklaw/dashboard-tryout
 
 docusaurus-dashboard_wiki
 
-### sentry
-
-to be filled
-
 ### google advertisement:
 
 to be filled
