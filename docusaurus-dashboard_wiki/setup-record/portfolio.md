@@ -3,8 +3,26 @@
 
 # portfolio
 
-Link: https://portfolio.iamon99.com/
+### Link:
 
-repository: git@github.com:louiscklaw/nextjs-playlist.git
+http://louiscklaw.github.io/
 
-[![Build Status](https://drone.iamon99.com/api/badges/louiscklaw/nextjs-playlist/status.svg)](https://drone.iamon99.com/louiscklaw/nextjs-playlist)
+### repository:
+
+https://github.com/louiscklaw/dashboard-tryout
+
+### working dir:
+
+docusaurus-dashboard_wiki
+
+### sentry
+
+to be filled
+
+### google advertisement:
+
+to be filled
+
+# status
+
+[![Build and Deploy](https://github.com/louiscklaw/dashboard-tryout/actions/workflows/deploy_gh_pages.yml/badge.svg)](https://github.com/louiscklaw/dashboard-tryout/actions/workflows/deploy_gh_pages.yml)

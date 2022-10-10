@@ -16,6 +16,7 @@ import Printers from './Dashboard/Grids/PrinterGrid'
 
 import { Typography, Box, Button, createTheme, Grid, ThemeProvider } from '@mui/material'
 import ColorsGrid from './Dashboard/Grids/ColorsGrid'
+import ButtonWithStatus from '../components/ButtonWithStatus'
 
 const svgList = [
   {
@@ -106,6 +107,7 @@ function TestNewHome() {
             <Typography variant="h5">Docker</Typography>
           </Grid>
           <Grid item xs={12} container>
+            <ButtonWithStatus to="https://google.com/" text={'123'} />
             <SocialProfiles />
             <Dashboard />
             <Container />
