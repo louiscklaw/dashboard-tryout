@@ -50,24 +50,24 @@ const config = {
     ],
   ],
   plugins: [
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'projects-note',
-        path: 'projects-note',
-        routeBasePath: 'projects-note',
-        sidebarPath: require.resolve('./sidebars.js'),
-        editUrl: 'https://github.com/louiscklaw/dashboard-tryout/tree/master/docusaurus-dashboard_wiki',
-        showLastUpdateAuthor: true,
-        showLastUpdateTime: true,
-        breadcrumbs: false,
-      },
-    ],
+    // [
+    //   '@docusaurus/plugin-content-docs',
+    //   {
+    //     id: 'projects-note',
+    //     path: 'projects-note',
+    //     routeBasePath: 'projects-note',
+    //     sidebarPath: require.resolve('./sidebars.js'),
+    //     editUrl: 'https://github.com/louiscklaw/dashboard-tryout/tree/master/docusaurus-dashboard_wiki',
+    //     showLastUpdateAuthor: true,
+    //     showLastUpdateTime: true,
+    //     breadcrumbs: false,
+    //   },
+    // ],
     [
       '@docusaurus/plugin-content-docs',
       {
         id: 'life',
-        path: 'life',
+        path: 'example/life',
         routeBasePath: 'life',
         sidebarPath: require.resolve('./sidebars.js'),
         editUrl: 'https://github.com/louiscklaw/dashboard-tryout/tree/master/docusaurus-dashboard_wiki',
@@ -80,7 +80,7 @@ const config = {
       '@docusaurus/plugin-content-docs',
       {
         id: 'art',
-        path: 'art',
+        path: 'example/art',
         routeBasePath: 'art',
         sidebarPath: require.resolve('./sidebars.js'),
         editUrl: 'https://github.com/louiscklaw/dashboard-tryout/tree/master/docusaurus-dashboard_wiki',
@@ -106,7 +106,7 @@ const config = {
       '@docusaurus/plugin-content-docs',
       {
         id: 'dev',
-        path: 'dev',
+        path: 'example/dev',
         routeBasePath: 'dev',
         sidebarPath: require.resolve('./sidebars.js'),
         editUrl: 'https://github.com/louiscklaw/dashboard-tryout/tree/master/docusaurus-dashboard_wiki',
@@ -119,7 +119,7 @@ const config = {
       '@docusaurus/plugin-content-docs',
       {
         id: 'algo',
-        path: 'algo',
+        path: 'example/algo',
         routeBasePath: 'algo',
         sidebarPath: require.resolve('./sidebars.js'),
         editUrl: 'https://github.com/louiscklaw/dashboard-tryout/tree/master/docusaurus-dashboard_wiki',
@@ -132,7 +132,7 @@ const config = {
       '@docusaurus/plugin-content-docs',
       {
         id: 'ops',
-        path: 'ops',
+        path: 'example/ops',
         routeBasePath: 'ops',
         sidebarPath: require.resolve('./sidebars.js'),
         editUrl: 'https://github.com/louiscklaw/dashboard-tryout/tree/master/docusaurus-dashboard_wiki',
@@ -145,7 +145,7 @@ const config = {
       '@docusaurus/plugin-content-docs',
       {
         id: 'safe',
-        path: 'safe',
+        path: 'example/safe',
         routeBasePath: 'safe',
         sidebarPath: require.resolve('./sidebars.js'),
         editUrl: 'https://github.com/louiscklaw/dashboard-tryout/tree/master/docusaurus-dashboard_wiki',
@@ -158,7 +158,7 @@ const config = {
       '@docusaurus/plugin-content-docs',
       {
         id: 'othe',
-        path: 'othe',
+        path: 'example/othe',
         routeBasePath: 'othe',
         sidebarPath: require.resolve('./sidebars.js'),
         editUrl: 'https://github.com/louiscklaw/dashboard-tryout/tree/master/docusaurus-dashboard_wiki',
@@ -171,7 +171,7 @@ const config = {
       '@docusaurus/plugin-content-docs',
       {
         id: 'org',
-        path: 'org',
+        path: 'example/org',
         routeBasePath: 'org',
         sidebarPath: require.resolve('./sidebars.js'),
         editUrl: 'https://github.com/louiscklaw/dashboard-tryout/tree/master/docusaurus-dashboard_wiki',
@@ -184,7 +184,7 @@ const config = {
       '@docusaurus/plugin-content-docs',
       {
         id: 'work',
-        path: 'work',
+        path: 'example/work',
         routeBasePath: 'work',
         sidebarPath: require.resolve('./sidebars.js'),
         editUrl: 'https://github.com/louiscklaw/dashboard-tryout/tree/master/docusaurus-dashboard_wiki',
@@ -254,13 +254,13 @@ const config = {
           // { label: '其他', to: '/docs' },
           // ],
           // },
-          { to: '/build_mon', label: '⚙️ build_mon', position: 'right' },
-          { to: '/hackmd', label: '⚙️ hackmd', position: 'right' },
-          { to: '/up_time', label: '⚙️ up_time', position: 'right' },
-          { to: '/MTR', label: '⚙️ MTR', position: 'right' },
-          { to: '/BUS', label: '⚙️ BUS', position: 'right' },
-          { to: '/weather', label: '⚙️ weather', position: 'right' },
-          { to: '/setup-record', label: '⚙️ setup-record', position: 'right' },
+          { to: '/build_mon', label: '📖 build_mon', position: 'right' },
+          { to: '/hackmd', label: '📖 hackmd', position: 'right' },
+          { to: '/up_time', label: '📖 up_time', position: 'right' },
+          { to: '/MTR', label: '📖 MTR', position: 'right' },
+          { to: '/BUS', label: '📖 BUS', position: 'right' },
+          { to: '/weather', label: '📖 weather', position: 'right' },
+          { to: '/setup-record', label: '📖 setup-record', position: 'right' },
         ],
       },
       footer: {
