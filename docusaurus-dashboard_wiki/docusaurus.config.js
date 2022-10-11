@@ -254,6 +254,7 @@ const config = {
           // { label: '其他', to: '/docs' },
           // ],
           // },
+          { to: '//louiscklaw.github.io/logseq-helloworld/', label: '📖 logseq', position: 'left' },
           { to: '/build_mon', label: '📖 build_mon', position: 'right' },
           { to: '/hackmd', label: '📖 hackmd', position: 'right' },
           { to: '/up_time', label: '📖 up_time', position: 'right' },
