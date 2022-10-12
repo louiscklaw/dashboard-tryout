@@ -1,17 +1,15 @@
-import React from 'react'
-import { Button, Grid, Typography, Box } from '@mui/material'
-import Link from '@docusaurus/Link'
-import WysiwygIcon from '@mui/icons-material/Wysiwyg'
+import { Button, Grid } from '@mui/material';
+import React from 'react';
 
-export default function ButtonLink({ to, text }) {
+export default function ButtonLink({ to, text, icon }) {
   const handleOnClick = () => {
-    window.open(to, '_blank')
-  }
+    window.open(to, '_blank');
+  };
   return (
     <Button fullWidth onClick={e => handleOnClick(e)} color="secondary" size="small" sx={{ padding: '1rem' }}>
       <Grid container alignItems="flex-start" justifyContent="center" spacing={1}>
         <Grid item xs={3}>
-          <WysiwygIcon fontSize="large" />
+          {icon}
         </Grid>
         <Grid item xs={9} container justifyContent="flex-start" alignItems="center">
           <Grid item xs={12} container justifyContent="flex-start">
@@ -23,5 +21,5 @@ export default function ButtonLink({ to, text }) {
         </Grid>
       </Grid>
     </Button>
-  )
+  );
 }

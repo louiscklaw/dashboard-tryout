@@ -1,13 +1,18 @@
-import Link from '@docusaurus/Link'
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
-import Layout from '@theme/Layout'
-import clsx from 'clsx'
-import React from 'react'
-import HeroImg from '../../static/img/Hero.jpg'
-import styles from './index.module.css'
+import Link from '@docusaurus/Link';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import Layout from '@theme/Layout';
+import clsx from 'clsx';
+import React from 'react';
+import HeroImg from '../../static/img/Hero.jpg';
+import styles from './index.module.css';
 
-import { createTheme, Grid, TextField, ThemeProvider } from '@mui/material'
-import ButtonWithStatus from '../components/ButtonWithStatus'
+import { createTheme, Grid, TextField, ThemeProvider } from '@mui/material';
+import ButtonWithStatus from '../components/ButtonWithStatus';
+
+import WysiwygIcon from '@mui/icons-material/Wysiwyg';
+import PrintIcon from '@mui/icons-material/Print';
+import AndroidIcon from '@mui/icons-material/Android';
+import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
 
 const svgList = [
   {
@@ -27,17 +32,17 @@ const svgList = [
     color: '#2979ff',
     link: 'https://static.7wate.com/img/2022/06/16/d6dfd36f35293.jpg',
   },
-]
+];
 const Svg = ({ Svg, color, title, link }) => {
   return (
     <a href={link} target="_blank">
       <Svg className={styles.svg} style={{ fill: color }} />
     </a>
-  )
-}
+  );
+};
 
 function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext()
+  const { siteConfig } = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
@@ -50,7 +55,7 @@ function HomepageHeader() {
         </div>
       </div>
     </header>
-  )
+  );
 }
 
 function MyHero() {
@@ -77,7 +82,7 @@ function MyHero() {
           </span> */}
           <div className={styles.svgContainer}>
             {svgList.map((item, index) => {
-              return <Svg {...item} key={item.title} />
+              return <Svg {...item} key={item.title} />;
             })}
           </div>
         </div>
@@ -86,16 +91,17 @@ function MyHero() {
         <img src={HeroImg} alt="HeroImg" />
       </div>
     </div>
-  )
+  );
 }
 
+// https://mui.com/material-ui/material-icons
 const button_configs = [
   {
     to: 'https://www.carousell.com.hk/u/louiscklaw/',
     text: 'changedetect',
     status_id: 17,
   },
-  { to: 'http://192.168.10.21:6080', text: 'android emu 6080', status_id: 49 },
+  { to: 'http://192.168.10.21:6080', text: 'android emu 6080', status_id: 49, icon: <PhoneAndroidIcon /> },
   { to: 'http://192.168.10.21:9000', text: 'nuc portainer', status_id: 60 },
   { to: 'http://192.168.10.61:50080', text: 'Homer' },
   { to: 'http://192.168.10.61:5010', text: 'proxy pool', status_id: 42 },
@@ -123,12 +129,12 @@ const button_configs = [
   { to: 'https://healthcheck.iamon99.com', text: 'healthcheck.iamon99.com', status_id: 47 },
   { to: 'https://louiscklaw.github.io/upptime-playlist', text: 'upptime-playlist', status_id: 48 },
 
-  { to: 'http://192.168.10.21:6081', text: 'android emu 6081' },
-  { to: 'http://192.168.10.21:6082', text: 'android emu 6082' },
+  { to: 'http://192.168.10.21:6081', text: 'android emu 6081', icon: <PhoneAndroidIcon /> },
+  { to: 'http://192.168.10.21:6082', text: 'android emu 6082', icon: <PhoneAndroidIcon /> },
   { to: 'http://192.168.10.61:4445/haproxy?stats', text: 'tor proxy 4445' },
   { to: 'http://192.168.10.61:8096', text: 'mitm proxy 8096' },
   { to: 'http://brandcolors.net/', text: 'brandcolors' },
-  { to: 'http://i3mega.local', text: 'i3mega' },
+  { to: 'http://i3mega.local', text: 'i3mega', icon: <PrintIcon /> },
   { to: 'https://aboutme.louislabs.com/', text: 'aboutme.louislabs.com' },
   { to: 'https://brandpalettes.com/', text: 'brandpalettes' },
   { to: 'https://colorhunt.co/palettes/retro', text: 'colorhunt' },
@@ -141,12 +147,12 @@ const button_configs = [
   { to: 'https://louiscklaw.github.io/', text: 'louiscklaw.github.io' },
   { to: 'https://material.colorion.co/', text: 'colorion' },
   { to: 'https://www.gradientos.app/', text: 'gradientos' },
-]
+];
 
 function TestNewHome() {
-  let [filter_value, setFilterValue] = React.useState('')
+  let [filter_value, setFilterValue] = React.useState('');
 
-  const handleFilterChange = e => setFilterValue(e.target.value)
+  const handleFilterChange = e => setFilterValue(e.target.value);
 
   return (
     <>
@@ -163,15 +169,20 @@ function TestNewHome() {
                 d =>
                   Object.keys(d)
                     .map(k => {
-                      if (k == 'status_id') return false
-                      return d.to.search(filter_value) > -1
+                      if (['status_id'].indexOf(k) > -1) return false;
+                      return d.to.search(filter_value) > -1;
                     })
                     .indexOf(true) > -1,
               )
               .map(button_config => (
                 <>
                   <Grid item xs={3} xl={1.5}>
-                    <ButtonWithStatus to={button_config.to} text={button_config.text} status_id={button_config.status_id} />
+                    <ButtonWithStatus
+                      to={button_config.to}
+                      text={button_config.text}
+                      status_id={button_config.status_id}
+                      icon={button_config.icon ? button_config.icon : <WysiwygIcon />}
+                    />
                   </Grid>
                 </>
               ))}
@@ -179,11 +190,11 @@ function TestNewHome() {
         </Grid>
       </Grid>
     </>
-  )
+  );
 }
 
 function Home() {
-  const { siteConfig } = useDocusaurusContext()
+  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
       // title={`${siteConfig.title}`}
@@ -197,14 +208,14 @@ function Home() {
         {/* <HomepageFeatures /> */}
       </main>
     </Layout>
-  )
+  );
 }
 
 export default function NewHome() {
-  const { siteConfig } = useDocusaurusContext()
+  const { siteConfig } = useDocusaurusContext();
   const theme = createTheme({
     palette: { primary: { main: '#2c3e50' }, secondary: { main: '#7f8c8d' } },
-  })
+  });
 
   return (
     <ThemeProvider theme={theme}>
@@ -216,5 +227,5 @@ export default function NewHome() {
         </main>
       </Layout>
     </ThemeProvider>
-  )
+  );
 }
