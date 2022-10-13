@@ -15,6 +15,7 @@ import AndroidIcon from '@mui/icons-material/Android';
 import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
 import LanguageIcon from '@mui/icons-material/Language';
 import DashboardIcon from '@mui/icons-material/Dashboard';
+import StorageIcon from '@mui/icons-material/Storage';
 
 const svgList = [
   {
@@ -103,23 +104,23 @@ const button_configs = [
     text: 'changedetect',
     status_id: 17,
   },
-  { to: 'http://192.168.10.21:6080', text: 'android emu 6080', status_id: 49, icon: <PhoneAndroidIcon /> },
-  { to: 'http://192.168.10.21:9000', text: 'nuc portainer', status_id: 60, icon: <DashboardIcon /> },
+  { to: 'http://192.168.10.21:6080', text: 'android emu 6080', status_id: 49, icon: <PhoneAndroidIcon />, tags: 'android' },
+  { to: 'http://192.168.10.21:9000', text: 'nuc portainer', status_id: 60, icon: <DashboardIcon />, tags: 'portainer' },
   { to: 'http://192.168.10.61:50080', text: 'Homer' },
   { to: 'http://192.168.10.61:5010', text: 'proxy pool', status_id: 42 },
   { to: 'http://192.168.10.61:50102/dashboard', text: 'uptime kuma' },
-  { to: 'http://192.168.10.61:5050', text: 'pgadmin', status_id: 10 },
+  { to: 'http://192.168.10.61:5050', text: 'pgadmin', status_id: 10, icon: <StorageIcon />, tags: 'db database' },
   { to: 'http://192.168.10.61:5678', text: 'n8n 5678', status_id: 66 },
-  { to: 'http://192.168.10.61:8081', text: 'phpmyadmin', status_id: 25 },
+  { to: 'http://192.168.10.61:8081', text: 'phpmyadmin', status_id: 25, icon: <StorageIcon />, tags: 'db database' },
   { to: 'http://192.168.10.61:8086', text: 'appwrite', status_id: 64 },
-  { to: 'http://192.168.10.61:8086', text: 'influxdb', status_id: 30 },
-  { to: 'http://192.168.10.61:8087', text: 'jenkins', status_id: 31 },
+  { to: 'http://192.168.10.61:8086', text: 'influxdb', status_id: 30, icon: <StorageIcon />, tags: 'db database' },
+  { to: 'http://192.168.10.61:8087', text: 'jenkins', status_id: 31, tags: 'ci' },
   { to: 'http://192.168.10.61:8088', text: 'appwrite', status_id: 65 },
-  { to: 'http://192.168.10.61:8089', text: 'checkmk', status_id: 33 },
-  { to: 'http://192.168.10.61:8093', text: 'RethinkDb 8093', status_id: 23 },
-  { to: 'http://192.168.10.61:8095', text: 'teedy file sharing', status_id: 57 },
+  { to: 'http://192.168.10.61:8089', text: 'checkmk', status_id: 33, tags: 'checkmk check' },
+  { to: 'http://192.168.10.61:8093', text: 'RethinkDb 8093', status_id: 23, tags: 'db database', icon: <StorageIcon /> },
+  { to: 'http://192.168.10.61:8095', text: 'teedy file sharing', status_id: 57, icon: <StorageIcon /> },
   { to: 'http://192.168.10.61:9000', text: 'm73 portainer', status_id: 61, icon: <DashboardIcon /> },
-  { to: 'http://192.168.10.61:9001', text: 'questdb', status_id: 62 },
+  { to: 'http://192.168.10.61:9001', text: 'questdb', status_id: 62, icon: <StorageIcon />, tags: 'db database' },
   { to: 'http://192.168.10.61:9091', text: 'torrent', status_id: 75 },
   { to: 'http://carousell-changedetect.iamon99.com', text: 'carousellchange', status_id: 71, tags: 'chagedetect', icon: <LanguageIcon /> },
   { to: 'http://localhost:8082', text: 'luigi dashboard', status_id: 26 },
@@ -127,7 +128,7 @@ const button_configs = [
   { to: 'http://taobao-changedetect.iamon99.com', text: 'taobaochange', status_id: 71, tags: 'chagedetect', icon: <LanguageIcon /> },
   { to: 'https://console.firebase.google.com/project/dashboard-76c7d/overview', text: 'firebase console' },
   { to: 'https://drone.iamon99.com', text: 'drone ci', status_id: 59 },
-  { to: 'https://github.com/louiscklaw/routine_check/actions', text: 'routine_check/actions' },
+  { to: 'https://github.com/louiscklaw/routine_check/actions', text: 'routine_check/actions', tags: 'check' },
   { to: 'https://healthcheck.iamon99.com', text: 'healthcheck.iamon99.com', status_id: 47 },
   { to: 'https://louiscklaw.github.io/upptime-playlist', text: 'upptime-playlist', status_id: 48 },
 
@@ -172,7 +173,8 @@ function TestNewHome() {
                   Object.keys(d)
                     .map(k => {
                       if (['status_id'].indexOf(k) > -1) return false;
-                      return d.to.search(filter_value) > -1;
+                      if (['icon'].indexOf(k) > -1) return false;
+                      return d[k].search(filter_value) > -1;
                     })
                     .indexOf(true) > -1,
               )
