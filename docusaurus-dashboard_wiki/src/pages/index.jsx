@@ -14,6 +14,7 @@ import PrintIcon from '@mui/icons-material/Print';
 import AndroidIcon from '@mui/icons-material/Android';
 import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
 import LanguageIcon from '@mui/icons-material/Language';
+import DashboardIcon from '@mui/icons-material/Dashboard';
 
 const svgList = [
   {
@@ -103,7 +104,7 @@ const button_configs = [
     status_id: 17,
   },
   { to: 'http://192.168.10.21:6080', text: 'android emu 6080', status_id: 49, icon: <PhoneAndroidIcon /> },
-  { to: 'http://192.168.10.21:9000', text: 'nuc portainer', status_id: 60 },
+  { to: 'http://192.168.10.21:9000', text: 'nuc portainer', status_id: 60, icon: <DashboardIcon /> },
   { to: 'http://192.168.10.61:50080', text: 'Homer' },
   { to: 'http://192.168.10.61:5010', text: 'proxy pool', status_id: 42 },
   { to: 'http://192.168.10.61:50102/dashboard', text: 'uptime kuma' },
@@ -117,7 +118,7 @@ const button_configs = [
   { to: 'http://192.168.10.61:8089', text: 'checkmk', status_id: 33 },
   { to: 'http://192.168.10.61:8093', text: 'RethinkDb 8093', status_id: 23 },
   { to: 'http://192.168.10.61:8095', text: 'teedy file sharing', status_id: 57 },
-  { to: 'http://192.168.10.61:9000', text: 'm73 portainer', status_id: 61 },
+  { to: 'http://192.168.10.61:9000', text: 'm73 portainer', status_id: 61, icon: <DashboardIcon /> },
   { to: 'http://192.168.10.61:9001', text: 'questdb', status_id: 62 },
   { to: 'http://192.168.10.61:9091', text: 'torrent', status_id: 75 },
   { to: 'http://carousell-changedetect.iamon99.com', text: 'carousellchange', status_id: 71, tags: 'chagedetect', icon: <LanguageIcon /> },
