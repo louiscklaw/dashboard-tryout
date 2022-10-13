@@ -13,6 +13,7 @@ import WysiwygIcon from '@mui/icons-material/Wysiwyg';
 import PrintIcon from '@mui/icons-material/Print';
 import AndroidIcon from '@mui/icons-material/Android';
 import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
+import LanguageIcon from '@mui/icons-material/Language';
 
 const svgList = [
   {
@@ -119,10 +120,10 @@ const button_configs = [
   { to: 'http://192.168.10.61:9000', text: 'm73 portainer', status_id: 61 },
   { to: 'http://192.168.10.61:9001', text: 'questdb', status_id: 62 },
   { to: 'http://192.168.10.61:9091', text: 'torrent', status_id: 75 },
-  { to: 'http://carousell-changedetect.iamon99.com', text: 'carousellchange', status_id: 71 },
+  { to: 'http://carousell-changedetect.iamon99.com', text: 'carousellchange', status_id: 71, tags: 'chagedetect', icon: <LanguageIcon /> },
   { to: 'http://localhost:8082', text: 'luigi dashboard', status_id: 26 },
-  { to: 'http://private-changedetect.iamon99.com', text: 'privatechange', status_id: 71 },
-  { to: 'http://taobao-changedetect.iamon99.com', text: 'taobaochange', status_id: 71 },
+  { to: 'http://private-changedetect.iamon99.com', text: 'privatechange', status_id: 71, tags: 'chagedetect', icon: <LanguageIcon /> },
+  { to: 'http://taobao-changedetect.iamon99.com', text: 'taobaochange', status_id: 71, tags: 'chagedetect', icon: <LanguageIcon /> },
   { to: 'https://console.firebase.google.com/project/dashboard-76c7d/overview', text: 'firebase console' },
   { to: 'https://drone.iamon99.com', text: 'drone ci', status_id: 59 },
   { to: 'https://github.com/louiscklaw/routine_check/actions', text: 'routine_check/actions' },
@@ -134,7 +135,7 @@ const button_configs = [
   { to: 'http://192.168.10.61:4445/haproxy?stats', text: 'tor proxy 4445' },
   { to: 'http://192.168.10.61:8096', text: 'mitm proxy 8096' },
   { to: 'http://brandcolors.net/', text: 'brandcolors' },
-  { to: 'http://i3mega.local', text: 'i3mega', icon: <PrintIcon /> },
+  { to: 'http://i3mega.local', text: 'i3mega', icon: <PrintIcon />, tags: 'printer' },
   { to: 'https://aboutme.louislabs.com/', text: 'aboutme.louislabs.com' },
   { to: 'https://brandpalettes.com/', text: 'brandpalettes' },
   { to: 'https://colorhunt.co/palettes/retro', text: 'colorhunt' },
