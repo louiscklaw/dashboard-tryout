@@ -16,6 +16,9 @@ import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
 import LanguageIcon from '@mui/icons-material/Language';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import StorageIcon from '@mui/icons-material/Storage';
+import HighlightOffIcon from '@mui/icons-material/HighlightOff';
+import OutlinedInput from '@mui/material/OutlinedInput';
+import { InputAdornment, IconButton } from '@mui/material';
 
 const svgList = [
   {
@@ -157,12 +160,33 @@ function TestNewHome() {
 
   const handleFilterChange = e => setFilterValue(e.target.value);
 
+  const handleClearSearchFilter = e => setFilterValue('');
+
   return (
     <>
       <Grid container spacing={2}>
         <Grid item xs={12} m={4} container justifyContent="center" alignItems="center">
-          <Grid item xs={6}>
-            <TextField fullWidth id="outlined-basic" label="search" variant="filled" color="primary" onChange={handleFilterChange} />
+          <Grid item xs={4}>
+            <TextField
+              fullWidth
+              id="outlined-basic"
+              label="search"
+              variant="filled"
+              color="primary"
+              onChange={handleFilterChange}
+              value={filter_value}
+              InputProps={{
+                endAdornment: (
+                  <>
+                    <InputAdornment position="end">
+                      <IconButton aria-label="toggle password visibility" edge="end" onMouseDown={handleClearSearchFilter}>
+                        <HighlightOffIcon />
+                      </IconButton>
+                    </InputAdornment>
+                  </>
+                ),
+              }}
+            />
           </Grid>
         </Grid>
         <Grid item xs={12} container m={2}>
