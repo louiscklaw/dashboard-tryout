@@ -148,7 +148,7 @@ const button_configs = [
   { to: 'https://docs.google.com/spreadsheets/d/1hNURy7NIED8XXQ99tB0bLfmKpdELkRzhXBoHIqjvp0s', text: 'password sheet' },
   { to: 'https://docs.google.com/spreadsheets/d/1jdimi5kt6ZOkYph96k6EpsICYtSJzco6G3WuXQVoF4o', text: 'taobao sheet' },
   { to: 'https://docs.google.com/spreadsheets/d/1nwIj4Jt-LvN-RLqtY2O9Jbe-XsMyVs-04DWGLUPwzEM/edit#gid=0', text: 'port schedule' },
-  { to: 'httpshttps://docs.google.com/spreadsheets/d/1n8q-aFic3PKHCBQ-VKpp2NakSmHFbgrHiVrabNTorNg', text: '支付寳出入數' },
+  { to: 'https://docs.google.com/spreadsheets/d/1n8q-aFic3PKHCBQ-VKpp2NakSmHFbgrHiVrabNTorNg', text: '支付寳出入數' },
   { to: 'https://flatuicolors.com/', text: 'flatuicolors' },
   { to: 'https://github.com/webkul/coolhue', text: 'coolhue' },
   { to: 'https://louiscklaw.github.io/', text: 'louiscklaw.github.io' },
