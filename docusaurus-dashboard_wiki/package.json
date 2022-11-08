@@ -34,6 +34,7 @@
     "@mui/material": "^5.8.7",
     "clsx": "^1.1.1",
     "husky": "^8.0.1",
+    "lodash": "^4.17.21",
     "plugin-image-zoom": "github:flexanalytics/plugin-image-zoom",
     "prettier": "latest",
     "prism-react-renderer": "^1.3.1",

@@ -202,6 +202,7 @@ function TestNewHome() {
                     })
                     .indexOf(true) > -1,
               )
+              .sort()
               .map(button_config => (
                 <>
                   <Grid item xs={3} xl={1.5}>
