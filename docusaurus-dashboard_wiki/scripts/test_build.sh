@@ -2,5 +2,6 @@
 
 set -ex
 
-yarn
-yarn start
+yarn -d
+
+yarn build

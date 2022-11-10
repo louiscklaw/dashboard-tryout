@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 const config = {
   title: 'louislabs',
   tagline: 'louis dashboard',
-  url: 'https://louiscklaw.github.io/dashboard-tryout/',
+  url: 'https://louiscklaw.github.io/',
   baseUrl: '/dashboard-tryout/',
   onBrokenLinks: 'log',
   onBrokenMarkdownLinks: 'log',
@@ -288,6 +288,6 @@ const config = {
       //   },
       // },
     }),
-}
+};
 
 module.exports = config

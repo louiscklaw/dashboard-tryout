@@ -5,6 +5,10 @@ WORKDIR /usr/src/app
 # co-op with docker-compose volume settings for user permission
 RUN mkdir /usr/src/app/node_modules
 RUN chown node:node /usr/src/app/node_modules
+
+RUN mkdir -p /app/node_modules
+RUN chown node:node /app/node_modules
+
 USER node
 
 # COPY package*.json ./
