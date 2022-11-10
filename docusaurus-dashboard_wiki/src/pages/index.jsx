@@ -102,7 +102,8 @@ function MyHero() {
 
 // https://mui.com/material-ui/material-icons
 const button_configs = [
-  { to: 'https://www.carousell.com.hk/u/louiscklaw/', text: 'changedetect', status_id: 17 },
+  { to: 'https://www.carousell.com.hk/u/louiscklaw/', text: 'changedetect', status_id: 17, icon_color: '#800000', text_color: '#800000' },
+
   { to: 'https://freehunter.hk/settings', text: 'freehunter', status_id: 17 },
   { to: 'https://www.hellotoby.com/dashboard/project', text: 'hellotoby', status_id: 17 },
 
@@ -211,6 +212,8 @@ function TestNewHome() {
                       text={button_config.text}
                       status_id={button_config.status_id}
                       icon={button_config.icon ? button_config.icon : <WysiwygIcon />}
+                      icon_color={button_config?.icon_color ? button_config.icon_color : '#050505'}
+                      text_color={button_config?.text_color ? button_config.text_color : '#050505'}
                     />
                   </Grid>
                 </>
