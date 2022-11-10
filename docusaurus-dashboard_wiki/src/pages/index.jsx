@@ -102,11 +102,10 @@ function MyHero() {
 
 // https://mui.com/material-ui/material-icons
 const button_configs = [
-  {
-    to: 'https://www.carousell.com.hk/u/louiscklaw/',
-    text: 'changedetect',
-    status_id: 17,
-  },
+  { to: 'https://www.carousell.com.hk/u/louiscklaw/', text: 'changedetect', status_id: 17 },
+  { to: 'https://freehunter.hk/settings', text: 'freehunter', status_id: 17 },
+  { to: 'https://www.hellotoby.com/dashboard/project', text: 'hellotoby', status_id: 17 },
+
   { to: 'http://192.168.10.21:6080', text: 'android emu 6080', status_id: 49, icon: <PhoneAndroidIcon />, tags: 'android' },
   { to: 'http://192.168.10.21:9000', text: 'nuc portainer', status_id: 60, icon: <DashboardIcon />, tags: 'portainer' },
   { to: 'http://192.168.10.61:50080', text: 'Homer' },
