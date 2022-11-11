@@ -112,14 +112,16 @@ const button_configs = [
 
   {
     to: 'https://trello.com/b/JNF4AVto/lynked-insight/',
-    text: 'lynked-kanban',
+    text: 'lynked - kanban',
     status_id: 17,
     icon_color: '#800000',
     text_color: '#800000',
   },
+
   {
     to: 'https://louiscklaw.atlassian.net/jira/software/projects/CSELL/boards/1',
-    text: 'louiscklaw.atlassian.net',
+    text: 'carousell - jira',
+    subtitle: 'jira',
     status_id: 17,
     icon_color: '#800000',
     text_color: '#800000',
@@ -272,6 +274,7 @@ function TestNewHome() {
                       icon={button_config.icon ? button_config.icon : <WysiwygIcon />}
                       icon_color={button_config?.icon_color ? button_config.icon_color : '#050505'}
                       text_color={button_config?.text_color ? button_config.text_color : '#050505'}
+                      subtitle={button_config?.subtitle ? button_config.subtitle : ''}
                     />
                   </Grid>
                 </>
