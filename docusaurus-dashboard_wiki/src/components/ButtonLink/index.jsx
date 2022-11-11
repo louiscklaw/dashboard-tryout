@@ -1,14 +1,13 @@
 import { Button, Grid } from '@mui/material';
 import React from 'react';
 
-export default function ButtonLink({ to, text, icon,  icon_color, text_color }) {
-  
+export default function ButtonLink({ to, text, icon, icon_color, text_color }) {
   const handleOnClick = () => {
     window.open(to, '_blank');
   };
 
   return (
-    <Button  fullWidth onClick={e => handleOnClick(e)} color={'primary'} size="small" sx={{ padding: '1rem' }}   >
+    <Button fullWidth onClick={e => handleOnClick(e)} color={'primary'} size="small" sx={{ padding: '1rem' }}>
       <Grid container alignItems="flex-start" justifyContent="center" spacing={1}>
         <Grid item xs={3} color={icon_color}>
           {icon}

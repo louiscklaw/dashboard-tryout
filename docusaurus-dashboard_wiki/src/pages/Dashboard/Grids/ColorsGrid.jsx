@@ -1,6 +1,6 @@
-import { Grid, Stack, Typography } from '@mui/material'
-import React from 'react'
-import ButtonLink from '../../../components/ButtonLink'
+import { Grid, Stack, Typography } from '@mui/material';
+import React from 'react';
+import ButtonLink from '../../../components/ButtonLink';
 
 export default function ColorsGrid() {
   return (
@@ -19,8 +19,11 @@ export default function ColorsGrid() {
         <ButtonLink to="http://brandcolors.net/" text={'brandcolors'} />
         <ButtonLink to="https://material.colorion.co/" text={'colorion'} />
         {/* 	docker-rotating-proxy */}
-        <ButtonLink to="https://github.com/bradtraversy/design-resources-for-developers/" text={'design-resources-for-developers'} />
+        <ButtonLink
+          to="https://github.com/bradtraversy/design-resources-for-developers/"
+          text={'design-resources-for-developers'}
+        />
       </Stack>
     </Grid>
-  )
+  );
 }

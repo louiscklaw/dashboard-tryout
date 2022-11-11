@@ -1,11 +1,11 @@
-import React from 'react'
-import { Redirect } from '@docusaurus/router'
-import { useEffect } from 'react'
+import React from 'react';
+import { Redirect } from '@docusaurus/router';
+import { useEffect } from 'react';
 
 export function Open({ go }) {
   useEffect(() => {
-    window.open(go, '_blank')
-  }, [])
+    window.open(go, '_blank');
+  }, []);
   return (
     <div>
       {redirectContent()}
@@ -14,7 +14,7 @@ export function Open({ go }) {
         {go}
       </a>
     </div>
-  )
+  );
 }
 
 function redirectContent() {
@@ -23,5 +23,5 @@ function redirectContent() {
       <h4>✨ 为了更好的浏览体验，浏览器将自动跳转至其他页面阅读。</h4>
       <h4>🖐 请允许浏览器自动跳转~</h4>
     </div>
-  )
+  );
 }

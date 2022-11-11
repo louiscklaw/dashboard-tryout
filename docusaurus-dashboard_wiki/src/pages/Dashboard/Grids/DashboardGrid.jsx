@@ -1,13 +1,13 @@
-import React from 'react'
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
-import { Grid, Stack, Typography } from '@mui/material'
-import { use100vh } from 'react-div-100vh'
-import ButtonLink from '../../../components/ButtonLink'
-import ButtonWithStatus from '../../../components/ButtonWithStatus'
+import React from 'react';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import { Grid, Stack, Typography } from '@mui/material';
+import { use100vh } from 'react-div-100vh';
+import ButtonLink from '../../../components/ButtonLink';
+import ButtonWithStatus from '../../../components/ButtonWithStatus';
 
 export default function DashboardGrid() {
-  const { siteConfig } = useDocusaurusContext()
-  const height_100vh = use100vh()
+  const { siteConfig } = useDocusaurusContext();
+  const height_100vh = use100vh();
   return (
     <Grid item xs={12} md={1.5}>
       <Stack direction="column" spacing={1}>
@@ -32,5 +32,5 @@ export default function DashboardGrid() {
         <ButtonWithStatus to="https://healthcheck.iamon99.com" text={'healthcheck.iamon99.com'} status_id={47} />
       </Stack>
     </Grid>
-  )
+  );
 }

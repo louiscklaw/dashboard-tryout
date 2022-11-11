@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 export function Highlight({ children, color }) {
   return (
     <span
@@ -11,5 +11,5 @@ export function Highlight({ children, color }) {
     >
       {children}
     </span>
-  )
+  );
 }
