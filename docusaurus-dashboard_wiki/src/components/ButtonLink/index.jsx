@@ -1,4 +1,4 @@
-import { Button, Grid } from '@mui/material';
+import { Button, Grid, Typography } from '@mui/material';
 import React from 'react';
 
 export default function ButtonLink({ to, text, icon, icon_color, text_color, subtitle }) {

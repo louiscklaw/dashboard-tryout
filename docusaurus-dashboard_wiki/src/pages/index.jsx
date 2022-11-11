@@ -6,7 +6,7 @@ import React from 'react';
 import HeroImg from '../../static/img/Hero.jpg';
 import styles from './index.module.css';
 
-import { createTheme, Grid, TextField, ThemeProvider } from '@mui/material';
+import { createTheme, Grid, TextField, ThemeProvider, Typography } from '@mui/material';
 import ButtonWithStatus from '../components/ButtonWithStatus';
 
 import WysiwygIcon from '@mui/icons-material/Wysiwyg';
@@ -100,6 +100,24 @@ function MyHero() {
   );
 }
 
+const category_configs = [
+  {
+    text: 'carousell?',
+    button_configs: [
+      {
+        to: 'https://www.carousell.com.hk/u/louiscklaw/',
+        text: 'changedetect',
+        status_id: 17,
+        icon_color: '#800000',
+        text_color: '#800000',
+      },
+    ],
+  },
+  {
+    text: 'category2',
+  },
+];
+
 // https://mui.com/material-ui/material-icons
 const button_configs = [
   {
@@ -129,6 +147,13 @@ const button_configs = [
 
   { to: 'https://freehunter.hk/settings', text: 'freehunter', status_id: 17 },
   { to: 'https://www.hellotoby.com/dashboard/project', text: 'hellotoby', status_id: 17 },
+
+  // carousell-playlist
+  {
+    to: 'https://louiscklaw.github.io/carousell-playlist/search-scan.html',
+    text: 'carousell test result',
+    status_id: 17,
+  },
 
   {
     to: 'http://192.168.10.21:6080',
@@ -250,35 +275,45 @@ function TestNewHome() {
             />
           </Grid>
         </Grid>
+
         <Grid item xs={12} container m={2}>
-          <Grid item xs={12} container>
-            {button_configs
-              .filter(
-                d =>
-                  Object.keys(d)
-                    .map(k => {
-                      if (['status_id'].indexOf(k) > -1) return false;
-                      if (['icon'].indexOf(k) > -1) return false;
-                      return d[k].search(filter_value) > -1;
-                    })
-                    .indexOf(true) > -1,
-              )
-              .sort()
-              .map(button_config => (
-                <>
-                  <Grid item xs={3} xl={1.5}>
-                    <ButtonWithStatus
-                      to={button_config.to}
-                      text={button_config.text}
-                      status_id={button_config.status_id}
-                      icon={button_config.icon ? button_config.icon : <WysiwygIcon />}
-                      icon_color={button_config?.icon_color ? button_config.icon_color : '#050505'}
-                      text_color={button_config?.text_color ? button_config.text_color : '#050505'}
-                      subtitle={button_config?.subtitle ? button_config.subtitle : ''}
-                    />
-                  </Grid>
-                </>
-              ))}
+          {button_configs
+            .filter(
+              d =>
+                Object.keys(d)
+                  .map(k => {
+                    if (['status_id'].indexOf(k) > -1) return false;
+                    if (['icon'].indexOf(k) > -1) return false;
+                    return d[k].search(filter_value) > -1;
+                  })
+                  .indexOf(true) > -1,
+            )
+            .sort()
+            .map(button_config => (
+              <>
+                <Grid item xs={3} xl={1.5}>
+                  <ButtonWithStatus
+                    to={button_config.to}
+                    text={button_config.text}
+                    status_id={button_config.status_id}
+                    icon={button_config.icon ? button_config.icon : <WysiwygIcon />}
+                    icon_color={button_config?.icon_color ? button_config.icon_color : '#050505'}
+                    text_color={button_config?.text_color ? button_config.text_color : '#050505'}
+                    subtitle={button_config?.subtitle ? button_config.subtitle : ''}
+                  />
+                </Grid>
+              </>
+            ))}
+        </Grid>
+
+        <Grid item xs={12} container m={2}>
+          <Grid item xs={12} m={2}>
+            <Typography variant={'h5'}>Carousell</Typography>
+          </Grid>
+          <Grid item container xs={12} m={2}>
+            <Grid item xs={3} xl={1.5}>
+              <ButtonWithStatus to={'button_config.to'} text={'testing'} icon={<WysiwygIcon />} subtitle={'subtitle'} />
+            </Grid>
           </Grid>
         </Grid>
       </Grid>
