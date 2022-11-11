@@ -21,7 +21,7 @@
     "husky_install": "husky install",
     "docker_rebuild": "docker compose up -d --build",
     "into_docker": "docker compose exec -it tests_host bash",
-    "format": "prettier --loglevel warn --write \"**/*.{js,css,html,jsx,tsx,ts,json}\""
+    "format": "prettier --loglevel warn --write \"**/*.{js,css,html,jsx,tsx,ts,json, yml}\""
   },
   "dependencies": {
     "@docusaurus/core": "^2.1.0",
