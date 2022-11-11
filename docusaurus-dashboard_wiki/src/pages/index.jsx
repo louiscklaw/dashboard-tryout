@@ -104,6 +104,15 @@ function MyHero() {
 const button_configs = [
   { to: 'https://www.carousell.com.hk/u/louiscklaw/', text: 'changedetect', status_id: 17, icon_color: '#800000', text_color: '#800000' },
 
+  { to: 'https://trello.com/b/JNF4AVto/lynked-insight/', text: 'lynked-kanban', status_id: 17, icon_color: '#800000', text_color: '#800000' },
+  {
+    to: 'https://louiscklaw.atlassian.net/jira/software/projects/CSELL/boards/1',
+    text: 'louiscklaw.atlassian.net',
+    status_id: 17,
+    icon_color: '#800000',
+    text_color: '#800000',
+  },
+
   { to: 'https://freehunter.hk/settings', text: 'freehunter', status_id: 17 },
   { to: 'https://www.hellotoby.com/dashboard/project', text: 'hellotoby', status_id: 17 },
 
