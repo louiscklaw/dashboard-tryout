@@ -224,7 +224,7 @@ const button_configs = [
   { to: 'https://colorhunt.co/palettes/retro', text: 'colorhunt' },
   { to: 'https://colors.dopely.top/', text: 'dopely' },
   { to: 'https://docs.google.com/spreadsheets/d/1hNURy7NIED8XXQ99tB0bLfmKpdELkRzhXBoHIqjvp0s', text: 'password sheet' },
-  { to: 'https://docs.google.com/spreadsheets/d/1jdimi5kt6ZOkYph96k6EpsICYtSJzco6G3WuXQVoF4o', text: 'taobao sheet' },
+  { to: 'https://docs.google.com/spreadsheets/d/1jdimi5kt6ZOkYph96k6EpsICYtSJzco6G3WuXQVoF4o', text: '淘宝工作紙' },
   {
     to: 'https://docs.google.com/spreadsheets/d/1nwIj4Jt-LvN-RLqtY2O9Jbe-XsMyVs-04DWGLUPwzEM/edit#gid=0',
     text: 'port schedule',
