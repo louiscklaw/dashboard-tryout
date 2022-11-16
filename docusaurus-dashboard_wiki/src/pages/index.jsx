@@ -347,24 +347,6 @@ function TestNewHome() {
   );
 }
 
-function Home() {
-  const { siteConfig } = useDocusaurusContext();
-  return (
-    <Layout
-      // title={`${siteConfig.title}`}
-      title="Home"
-      description="Wiki知识库/vscode/javascript/软件/工具"
-    >
-      {/* <HomepageHeader /> */}
-      <main>
-        {/* <MyHero /> */}
-
-        {/* <HomepageFeatures /> */}
-      </main>
-    </Layout>
-  );
-}
-
 export default function NewHome() {
   const { siteConfig } = useDocusaurusContext();
   const theme = createTheme({ palette: { primary: { main: '#2c3e50' }, secondary: { main: '#7f8c8d' } } });
