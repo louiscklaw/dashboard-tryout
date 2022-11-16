@@ -44,6 +44,8 @@ export default function ContainerGrid() {
 
         {/* https://aboutme.louislabs.com/ */}
         <ButtonLink to="https://aboutme.louislabs.com/" text={'aboutme.louislabs.com'} />
+
+        <ButtonLink to="https://github.com/louiscklaw/dashboard-tryout/" text={'louiscklaw/dashboard-tryout'} />
       </Stack>
     </Grid>
   );
