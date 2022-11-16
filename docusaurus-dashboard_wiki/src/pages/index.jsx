@@ -20,6 +20,11 @@ import HighlightOffIcon from '@mui/icons-material/HighlightOff';
 import OutlinedInput from '@mui/material/OutlinedInput';
 import { InputAdornment, IconButton } from '@mui/material';
 
+import GitHubIcon from '@mui/icons-material/GitHub';
+import AppsIcon from '@mui/icons-material/Apps';
+
+import { FaBeer, FaJenkins, FaFileExcel } from 'react-icons/fa';
+
 const svgList = [
   {
     title: 'github',
@@ -164,16 +169,16 @@ const button_configs = [
   },
   { to: 'http://192.168.10.21:9000', text: 'nuc portainer', status_id: 60, icon: <DashboardIcon />, tags: 'portainer' },
   { to: 'http://192.168.10.61:50080', text: 'Homer' },
-  { to: 'http://192.168.10.61:5010', text: 'proxy pool', status_id: 42 },
+  { to: 'http://192.168.10.61:5010', text: 'proxy pool', status_id: 42, icon: <AppsIcon /> },
   { to: 'http://192.168.10.61:50102/dashboard', text: 'uptime kuma' },
   { to: 'http://192.168.10.61:5050', text: 'pgadmin', status_id: 10, icon: <StorageIcon />, tags: 'db database' },
   { to: 'http://192.168.10.61:5678', text: 'n8n 5678', status_id: 66 },
   { to: 'http://192.168.10.61:8081', text: 'phpmyadmin', status_id: 25, icon: <StorageIcon />, tags: 'db database' },
-  { to: 'http://192.168.10.61:8086', text: 'appwrite', status_id: 64 },
+  { to: 'http://192.168.10.61:8086', text: 'appwrite', status_id: 64, icon: <AppsIcon /> },
   { to: 'http://192.168.10.61:8086', text: 'influxdb', status_id: 30, icon: <StorageIcon />, tags: 'db database' },
-  { to: 'http://192.168.10.61:8087', text: 'jenkins', status_id: 31, tags: 'ci' },
+  { to: 'http://192.168.10.61:8087', text: 'jenkins', status_id: 31, tags: 'ci', icon: <FaJenkins size="2em" /> },
   { to: 'http://192.168.10.61:8088', text: 'appwrite', status_id: 65 },
-  { to: 'http://192.168.10.61:8089', text: 'checkmk', status_id: 33, tags: 'checkmk check' },
+  { to: 'http://192.168.10.61:8089', text: 'checkmk', status_id: 33, tags: 'checkmk check', icon: <AppsIcon /> },
   {
     to: 'http://192.168.10.61:8093',
     text: 'RethinkDb 8093',
@@ -224,7 +229,11 @@ const button_configs = [
   { to: 'https://colorhunt.co/palettes/retro', text: 'colorhunt' },
   { to: 'https://colors.dopely.top/', text: 'dopely' },
   { to: 'https://docs.google.com/spreadsheets/d/1hNURy7NIED8XXQ99tB0bLfmKpdELkRzhXBoHIqjvp0s', text: 'password sheet' },
-  { to: 'https://docs.google.com/spreadsheets/d/1jdimi5kt6ZOkYph96k6EpsICYtSJzco6G3WuXQVoF4o', text: '淘宝工作紙' },
+  {
+    to: 'https://docs.google.com/spreadsheets/d/1jdimi5kt6ZOkYph96k6EpsICYtSJzco6G3WuXQVoF4o',
+    text: '淘宝工作紙',
+    icon: <FaFileExcel size="2em" />,
+  },
   {
     to: 'https://docs.google.com/spreadsheets/d/1nwIj4Jt-LvN-RLqtY2O9Jbe-XsMyVs-04DWGLUPwzEM/edit#gid=0',
     text: 'port schedule',
@@ -232,15 +241,20 @@ const button_configs = [
   {
     to: 'https://docs.google.com/spreadsheets/d/1TGaBTmKhGolKcalNePcAAhq6IHRlWGfbELQQoOMfCvU',
     text: 'carousell 工作紙',
+    icon: <FaFileExcel size="2em" />,
   },
 
-  { to: 'https://docs.google.com/spreadsheets/d/1n8q-aFic3PKHCBQ-VKpp2NakSmHFbgrHiVrabNTorNg', text: '支付寳出入數' },
+  {
+    to: 'https://docs.google.com/spreadsheets/d/1n8q-aFic3PKHCBQ-VKpp2NakSmHFbgrHiVrabNTorNg',
+    text: '支付寳出入數',
+    icon: <FaFileExcel size="2em" />,
+  },
   { to: 'https://flatuicolors.com/', text: 'flatuicolors' },
   { to: 'https://github.com/webkul/coolhue', text: 'coolhue' },
   { to: 'https://louiscklaw.github.io/', text: 'louiscklaw.github.io' },
   { to: 'https://material.colorion.co/', text: 'colorion' },
   { to: 'https://www.gradientos.app/', text: 'gradientos' },
-  { to: 'https://github.com/louiscklaw/dashboard-tryout/', text: 'louiscklaw/dashboard-tryout' },
+  { to: 'https://github.com/louiscklaw/dashboard-tryout/', text: 'louiscklaw/dashboard-tryout', icon: <GitHubIcon /> },
 ];
 
 function TestNewHome() {
@@ -317,6 +331,12 @@ function TestNewHome() {
             <Typography variant={'h5'}>Carousell</Typography>
           </Grid>
           <Grid item container xs={12} m={2}>
+            <Grid item xs={3} xl={1.5}>
+              <ButtonWithStatus to={'button_config.to'} text={'testing'} icon={<WysiwygIcon />} subtitle={'subtitle'} />
+            </Grid>
+            <Grid item xs={3} xl={1.5}>
+              <ButtonWithStatus to={'button_config.to'} text={'testing'} icon={<WysiwygIcon />} subtitle={'subtitle'} />
+            </Grid>
             <Grid item xs={3} xl={1.5}>
               <ButtonWithStatus to={'button_config.to'} text={'testing'} icon={<WysiwygIcon />} subtitle={'subtitle'} />
             </Grid>
