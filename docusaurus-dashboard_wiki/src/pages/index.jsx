@@ -9,15 +9,15 @@ import HighlightOffIcon from '@mui/icons-material/HighlightOff';
 import WysiwygIcon from '@mui/icons-material/Wysiwyg';
 import { IconButton, InputAdornment } from '@mui/material';
 
-import applications from './applications';
-import carousell from './carousell';
-import changedetect from './changedetect';
-import dashboard from './dashboard';
-import interest from './interest';
-import outside_links from './outside_links';
-import routine_check from './routine_check';
-import tools from './tools';
-import worksheets from './worksheets';
+import applications from '../components/links/applications';
+import carousell from '../components/links/carousell';
+import changedetect from '../components/links/changedetect';
+import dashboard from '../components/links/dashboard';
+import interest from '../components/links/interest';
+import outside_links from '../components/links/outside_links';
+import routine_check from '../components/links/routine_check';
+import tools from '../components/links/tools';
+import worksheets from '../components/links/worksheets';
 
 const carousell_configs = [
   interest,
