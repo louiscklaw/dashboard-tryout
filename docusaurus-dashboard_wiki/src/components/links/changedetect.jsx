@@ -14,7 +14,15 @@ export default {
       text_color: '#800000',
       icon: <WysiwygIcon />,
     },
-
+    {
+      to: 'http://changedetect.iamon99.com',
+      text: 'changedetect',
+      subtitle: 'my changedetect',
+      status_id: 17,
+      icon_color: '#800000',
+      text_color: '#800000',
+      icon: <WysiwygIcon />,
+    },
     {
       to: 'http://private-changedetect.iamon99.com',
       text: 'private',
