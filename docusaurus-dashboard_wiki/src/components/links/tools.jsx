@@ -6,7 +6,7 @@ import StorageIcon from '@mui/icons-material/Storage';
 
 import AppsIcon from '@mui/icons-material/Apps';
 
-import { FaJenkins } from 'react-icons/fa';
+import { FaJenkins, FaDatabase } from 'react-icons/fa';
 
 export default {
   title: 'tools',
@@ -202,6 +202,15 @@ export default {
       icon_color: '#800000',
       text_color: '#800000',
       icon: <PhoneAndroidIcon />,
+    },
+    {
+      to: 'http://192.168.10.61:9004/',
+      text: 'minio',
+      subtitle: 'tor proxy 4445',
+      status_id: 17,
+      icon_color: '#800000',
+      text_color: '#800000',
+      icon: <FaDatabase />,
     },
   ],
 };
