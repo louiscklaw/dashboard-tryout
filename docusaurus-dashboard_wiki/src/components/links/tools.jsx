@@ -143,7 +143,7 @@ export default {
     {
       to: 'https://console.firebase.google.com/project/dashboard-76c7d/overview',
       text: 'firebase console',
-      subtitle: '',
+      subtitle: 'console.firebase.google.com',
       status_id: 17,
       icon_color: '#800000',
       text_color: '#800000',
@@ -151,8 +151,8 @@ export default {
     },
     {
       to: 'http://192.168.10.21:6080',
-      text: 'android emu 6080',
-      subtitle: '',
+      text: 'android emu',
+      subtitle: '6080',
       status_id: 17,
       icon_color: '#800000',
       text_color: '#800000',
@@ -169,8 +169,8 @@ export default {
     },
     {
       to: 'https://healthcheck.iamon99.com',
-      text: 'healthcheck.iamon99.com',
-      subtitle: '',
+      text: 'healthcheck',
+      subtitle: 'healthcheck.iamon99.com',
       status_id: 17,
       icon_color: '#800000',
       text_color: '#800000',
@@ -178,8 +178,8 @@ export default {
     },
     {
       to: 'http://192.168.10.21:6081',
-      text: 'android emu 6081',
-      subtitle: '',
+      text: 'android emu',
+      subtitle: '6081',
       status_id: 17,
       icon_color: '#800000',
       text_color: '#800000',
@@ -187,8 +187,8 @@ export default {
     },
     {
       to: 'http://192.168.10.21:6082',
-      text: 'android emu 6082',
-      subtitle: '',
+      text: 'android emu',
+      subtitle: '6082',
       status_id: 17,
       icon_color: '#800000',
       text_color: '#800000',
