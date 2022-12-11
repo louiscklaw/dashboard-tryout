@@ -8,7 +8,7 @@ export default {
     {
       to: 'https://freehunter.hk/settings',
       text: 'freehunter',
-      subtitle: 'freehunter',
+      subtitle: 'freehunter.hk/settings',
       status_id: 17,
       icon_color: '#800000',
       text_color: '#800000',
@@ -18,7 +18,7 @@ export default {
     {
       to: 'https://trello.com/b/JNF4AVto/lynked-insight',
       text: 'lynked-insight',
-      subtitle: '',
+      subtitle: 'logickee',
       status_id: 17,
       icon_color: '#800000',
       text_color: '#800000',
@@ -27,6 +27,14 @@ export default {
       to: 'https://www.hellotoby.com/dashboard/project',
       text: 'hellotoby',
       subtitle: '',
+      status_id: 17,
+      icon_color: '#800000',
+      text_color: '#800000',
+    },
+    {
+      to: 'https://www.freelancer.com/u/louiscklaw',
+      text: 'freelancer',
+      subtitle: 'freelancer.com/u/louiscklaw',
       status_id: 17,
       icon_color: '#800000',
       text_color: '#800000',

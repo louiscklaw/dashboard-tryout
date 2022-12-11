@@ -7,20 +7,30 @@ export default function ButtonLink({ to, text, icon, icon_color, text_color, sub
   };
 
   return (
-    <Button fullWidth onClick={e => handleOnClick(e)} color={'primary'} size="small" sx={{ padding: '1rem' }}>
-      <Grid container alignItems="flex-start" justifyContent="center" spacing={1}>
-        <Grid item xs={3} color={icon_color}>
-          {icon}
+    <Button fullWidth onClick={e => handleOnClick(e)} color={'primary'} size="small" sx={{ padding: '0.5rem' }}>
+      <Grid container>
+        <Grid item xs={12} container>
+          <Grid item xs={3} color={icon_color} sx={{}}>
+            {icon}
+          </Grid>
+
+          <Grid item xs={9} container justifyContent="flex-start" alignItems="center" color={text_color} sx={{}}>
+            <Grid item xs={12} container justifyContent="flex-start">
+              <div style={{ fontSize: '1.1em', fontWeight: '500', textTransform: 'uppercase' }}>{text}</div>
+            </Grid>
+          </Grid>
         </Grid>
-        <Grid item xs={9} container justifyContent="flex-start" alignItems="center" color={text_color}>
-          <Grid item xs={12} container justifyContent="flex-start">
-            <div style={{ fontSize: '1em', fontWeight: '500', textTransform: 'uppercase' }}>{text}</div>
-          </Grid>
-          <Grid item xs={12} container justifyContent="flex-start">
-            <div style={{ fontSize: '0.8em', fontWeight: '400', textTransform: 'uppercase' }}>{subtitle}</div>
-          </Grid>
+
+        <Grid item xs={12}>
+          <div style={{ fontSize: '0.8em', fontWeight: '400', textTransform: 'uppercase' }}>{subtitle}</div>
         </Grid>
       </Grid>
+
+      {/* <Grid container>
+        <Grid item xs={12} container justifyContent="flex-start">
+          <div style={{ fontSize: '0.8em', fontWeight: '400', textTransform: 'uppercase' }}>{subtitle}</div>
+        </Grid>
+      </Grid> */}
     </Button>
   );
 }
