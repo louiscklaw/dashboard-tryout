@@ -70,5 +70,13 @@ export default {
       icon_color: '#800000',
       text_color: '#800000',
     },
+    {
+      to: 'https://www.carousell.com.hk/u/louiscklaw/',
+      text: 'carousell',
+      subtitle: 'carousell profile',
+      status_id: 17,
+      icon_color: '#800000',
+      text_color: '#800000',
+    },
   ],
 };
