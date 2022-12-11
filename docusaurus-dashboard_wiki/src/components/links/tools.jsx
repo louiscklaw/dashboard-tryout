@@ -141,6 +141,15 @@ export default {
       icon: <StorageIcon />,
     },
     {
+      to: 'https://www.figma.com/files/recent?fuid=765995386551996371',
+      text: 'figma',
+      subtitle: 'figma.com',
+      status_id: 17,
+      icon_color: '#800000',
+      text_color: '#800000',
+      icon: <StorageIcon />,
+    },
+    {
       to: 'https://console.firebase.google.com/project/dashboard-76c7d/overview',
       text: 'firebase console',
       subtitle: 'console.firebase.google.com',
