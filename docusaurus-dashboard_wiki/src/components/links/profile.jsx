@@ -31,6 +31,22 @@ export default {
       text_color: '#800000',
     },
     {
+      to: 'https://www.fiverr.com/louiscklaw',
+      text: 'fiverr',
+      subtitle: 'fiverr.com/louiscklaw',
+      status_id: 17,
+      icon_color: '#800000',
+      text_color: '#800000',
+    },
+    {
+      to: 'https://www.upwork.com/freelancers/settings/contactInfo',
+      text: 'upwork',
+      subtitle: 'upwork',
+      status_id: 17,
+      icon_color: '#800000',
+      text_color: '#800000',
+    },
+    {
       to: 'https://www.freelancer.com/u/louiscklaw',
       text: 'freelancer',
       subtitle: 'freelancer.com/u/louiscklaw',
