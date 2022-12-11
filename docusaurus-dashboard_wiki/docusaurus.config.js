@@ -255,6 +255,7 @@ const config = {
           // ],
           // },
           { to: '//louiscklaw.github.io/logseq-helloworld/', label: '📖 logseq', position: 'left' },
+          { to: '//github.com/louiscklaw/dashboard-tryout/', label: '📖 source', position: 'left' },
           { to: '/build_mon', label: '📖 build_mon', position: 'right' },
           { to: '/hackmd', label: '📖 hackmd', position: 'right' },
           { to: '/up_time', label: '📖 up_time', position: 'right' },
