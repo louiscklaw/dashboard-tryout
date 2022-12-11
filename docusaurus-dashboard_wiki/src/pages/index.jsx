@@ -13,14 +13,14 @@ import applications from '../components/links/applications';
 import carousell from '../components/links/carousell';
 import changedetect from '../components/links/changedetect';
 import dashboard from '../components/links/dashboard';
-import interest from '../components/links/interest';
+import profile from '../components/links/profile';
 import outside_links from '../components/links/outside_links';
 import routine_check from '../components/links/routine_check';
 import tools from '../components/links/tools';
 import worksheets from '../components/links/worksheets';
 
 const carousell_configs = [
-  interest,
+  profile,
   dashboard,
   applications,
   tools,

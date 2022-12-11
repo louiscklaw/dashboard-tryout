@@ -3,7 +3,7 @@ import React from 'react';
 import WysiwygIcon from '@mui/icons-material/Wysiwyg';
 
 export default {
-  title: 'interest',
+  title: 'profile',
   links: [
     {
       to: 'https://freehunter.hk/settings',
@@ -14,7 +14,6 @@ export default {
       text_color: '#800000',
       icon: <WysiwygIcon />,
     },
-
     {
       to: 'https://trello.com/b/JNF4AVto/lynked-insight',
       text: 'lynked-insight',
@@ -35,6 +34,22 @@ export default {
       to: 'https://www.freelancer.com/u/louiscklaw',
       text: 'freelancer',
       subtitle: 'freelancer.com/u/louiscklaw',
+      status_id: 17,
+      icon_color: '#800000',
+      text_color: '#800000',
+    },
+    {
+      to: 'https://www.twitch.tv/7goolook',
+      text: 'twitch',
+      subtitle: 'twitch.tv/7goolook',
+      status_id: 17,
+      icon_color: '#800000',
+      text_color: '#800000',
+    },
+    {
+      to: 'https://www.youtube.com/channel/UCoFP0jiw4HAe6J4iprjcqag',
+      text: 'youtube',
+      subtitle: 'youtube profile',
       status_id: 17,
       icon_color: '#800000',
       text_color: '#800000',
