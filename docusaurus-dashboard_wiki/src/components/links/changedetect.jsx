@@ -8,7 +8,7 @@ export default {
     {
       to: 'http://carousell-changedetect.iamon99.com',
       text: 'carousell',
-      subtitle: 'my carousell profile',
+      subtitle: 'carousell-changedetect.iamon99.com',
       status_id: 17,
       icon_color: '#800000',
       text_color: '#800000',
@@ -17,7 +17,7 @@ export default {
     {
       to: 'http://changedetect.iamon99.com',
       text: 'changedetect',
-      subtitle: 'my changedetect',
+      subtitle: 'changedetect.iamon99.com',
       status_id: 17,
       icon_color: '#800000',
       text_color: '#800000',
@@ -26,7 +26,7 @@ export default {
     {
       to: 'http://private-changedetect.iamon99.com',
       text: 'private',
-      subtitle: 'jira',
+      subtitle: 'private-changedetect.iamon99.com',
       status_id: 17,
       icon_color: '#800000',
       text_color: '#800000',
@@ -34,7 +34,7 @@ export default {
     {
       to: 'http://taobao-changedetect.iamon99.com',
       text: 'taobao',
-      subtitle: 'jira',
+      subtitle: 'taobao-changedetect.iamon99.com',
       status_id: 17,
       icon_color: '#800000',
       text_color: '#800000',
