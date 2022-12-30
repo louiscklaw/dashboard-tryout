@@ -12,7 +12,7 @@
     "serve": "docusaurus serve",
     "lint:format": "prettier --write **/*.{js,jsx}",
     "gitSync": "git fetch --all && git stash && git pull && git stash pop",
-    "gitUpdate": "git add . && git commit -m\"update wiki,\" && yarn gitSync && git push",
+    "gitUpdate": "git add . && git commit -m\"update wiki,\" && git push",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "deploy_firebase": "npm run clear && npx rimraf .firebase && npm run build && firebase deploy",
