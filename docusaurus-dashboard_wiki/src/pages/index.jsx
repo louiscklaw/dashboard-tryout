@@ -23,6 +23,7 @@ import { useColorMode, useThemeConfig } from '@docusaurus/theme-common';
 const carousell_configs = [
   profile,
   dashboard,
+  dashboard,
   applications,
   tools,
   changedetect,

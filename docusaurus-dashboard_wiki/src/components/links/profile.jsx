@@ -15,14 +15,6 @@ export default {
       icon: <WysiwygIcon />,
     },
     {
-      to: 'https://trello.com/b/JNF4AVto/lynked-insight',
-      text: 'lynked-insight',
-      subtitle: 'logickee',
-      status_id: 17,
-      icon_color: '#800000',
-      text_color: '#800000',
-    },
-    {
       to: 'https://www.hellotoby.com/dashboard/project',
       text: 'hellotoby',
       subtitle: '',
