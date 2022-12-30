@@ -14,7 +14,6 @@ export default {
       text_color: '#800000',
       icon: <DashboardIcon />,
     },
-
     {
       to: 'https://trello.com/b/JNF4AVto/lynked-insight',
       text: 'lynked-insight',
