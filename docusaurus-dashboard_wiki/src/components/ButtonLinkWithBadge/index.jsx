@@ -1,7 +1,7 @@
 import { Button, Grid, Typography, Stack } from '@mui/material';
 import React from 'react';
 
-export default function ButtonLink({ to, text, icon, icon_color, text_color, subtitle }) {
+export default function ButtonLinkWithBadge({ to, text, icon, icon_color, text_color, subtitle, badge }) {
   const handleOnClick = () => {
     window.open(to, '_blank');
   };
@@ -27,6 +27,9 @@ export default function ButtonLink({ to, text, icon, icon_color, text_color, sub
               <div style={{ fontSize: '0.8em', fontWeight: '400', textTransform: 'uppercase' }}>{subtitle}</div>
             </Grid>
           </Grid>
+        </Stack >
+        <Stack item >
+          <img src={`${badge}`}/>
         </Stack >
       </Stack>
       {/* <Grid container>

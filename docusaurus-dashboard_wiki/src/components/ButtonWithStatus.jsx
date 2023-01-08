@@ -3,7 +3,7 @@ import ButtonLink from './ButtonLink';
 // import ButtonLink from '../../../components/ButtonLink'
 
 export default function ButtonWithStatus(props) {
-  let { to, text, status_id, icon, icon_color, text_color, subtitle } = props;
+  let { to, text, status_id, icon, icon_color, text_color, subtitle,  } = props;
 
   return (
     <>
