@@ -2,6 +2,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import PrintIcon from '@mui/icons-material/Print';
 import React from 'react';
 import { FaFileExcel } from 'react-icons/fa';
+import LinkIcon from '@mui/icons-material/Link';
 
 export default {
   title: 'outside links ',
@@ -13,7 +14,7 @@ export default {
       status_id: 17,
       icon_color: '#800000',
       text_color: '#800000',
-      icon: <FaFileExcel size="2em" />,
+      icon: <LinkIcon size="2em" />,
     },
 
     {
@@ -23,7 +24,7 @@ export default {
       status_id: 17,
       icon_color: '#800000',
       text_color: '#800000',
-      icon: <FaFileExcel size="2em" />,
+      icon: <LinkIcon size="2em" />,
     },
 
     {
@@ -33,7 +34,7 @@ export default {
       status_id: 17,
       icon_color: '#800000',
       text_color: '#800000',
-      icon: <FaFileExcel size="2em" />,
+      icon: <LinkIcon size="2em" />,
     },
 
     {
@@ -43,7 +44,7 @@ export default {
       status_id: 17,
       icon_color: '#800000',
       text_color: '#800000',
-      icon: <FaFileExcel size="2em" />,
+      icon: <LinkIcon size="2em" />,
     },
 
     {
@@ -53,7 +54,7 @@ export default {
       status_id: 17,
       icon_color: '#800000',
       text_color: '#800000',
-      icon: <FaFileExcel size="2em" />,
+      icon: <LinkIcon size="2em" />,
     },
 
     {
@@ -84,7 +85,7 @@ export default {
       status_id: 17,
       icon_color: '#800000',
       text_color: '#800000',
-      icon: <FaFileExcel size="2em" />,
+      icon: <LinkIcon size="2em" />,
     },
     {
       to: 'https://github.com/webkul/coolhue',
@@ -93,7 +94,7 @@ export default {
       status_id: 17,
       icon_color: '#800000',
       text_color: '#800000',
-      icon: <FaFileExcel size="2em" />,
+      icon: <LinkIcon size="2em" />,
     },
 
     {
@@ -112,7 +113,7 @@ export default {
       status_id: 17,
       icon_color: '#800000',
       text_color: '#800000',
-      icon: <FaFileExcel size="2em" />,
+      icon: <LinkIcon size="2em" />,
     },
     {
       to: 'https://material.colorion.co/',
@@ -131,6 +132,14 @@ export default {
       icon_color: '#800000',
       text_color: '#800000',
       icon: <FaFileExcel size="2em" />,
+    },    {
+      to: 'https://mui.com/material-ui/material-icons/',
+      text: 'material icons',
+      subtitle: '',
+      status_id: 17,
+      icon_color: '#800000',
+      text_color: '#800000',
+      icon: <LinkIcon size="2em" />,
     },
   ],
 };
