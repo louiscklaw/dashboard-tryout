@@ -50,6 +50,14 @@ export default {
       icon_color: '#800000',
       text_color: '#800000',
       icon: <FaFileExcel size="2em" />,
+    },    {
+      to: 'https://docs.google.com/spreadsheets/d/1FSF0caQH2GbDivXbFNz2ZBiOUNbvyTAZvxptW6qXDHc',
+      text: 'HKBN sheet',
+      subtitle: '',
+      status_id: 17,
+      icon_color: '#800000',
+      text_color: '#800000',
+      icon: <FaFileExcel size="2em" />,
     },
   ],
 };
