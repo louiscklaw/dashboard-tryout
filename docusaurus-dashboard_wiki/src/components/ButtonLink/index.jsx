@@ -8,27 +8,51 @@ export default function ButtonLink({ to, text, icon, icon_color, text_color, sub
 
   return (
     <Button fullWidth onClick={e => handleOnClick(e)} color={'primary'} size="small" sx={{ padding: '0.5rem' }}>
-      <Stack>
-        <Stack item>
-          <Grid container>
-            <Grid item xs={12} container>
-              <Grid item xs={3} color={icon_color} sx={{}}>
-                {icon}
-              </Grid>
-
-              <Grid item xs={9} container justifyContent="flex-start" alignItems="center" color={text_color} sx={{}}>
-                <Grid item xs={12} container justifyContent="flex-start">
-                  <div style={{ fontSize: '1.1em', fontWeight: '500', textTransform: 'uppercase' }}>{text}</div>
-                </Grid>
-              </Grid>
-            </Grid>
-
-            <Grid item xs={12}>
-              <div style={{ fontSize: '0.8em', fontWeight: '400', textTransform: 'uppercase' }}>{subtitle}</div>
-            </Grid>
-          </Grid>
-        </Stack>
-      </Stack>
+      <div
+        style={{
+          width: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+        }}
+      >
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'flex-start',
+          }}
+        >
+          <div style={{}}>{icon}</div>
+          <div style={{ flexGrow: 1 }}>
+            <div
+              style={{
+                paddingLeft: '0.5rem',
+                paddingRight: '0.5rem',
+                textAlign: 'left',
+                fontSize: '1.1em',
+                fontWeight: '500',
+                textTransform: 'uppercase',
+              }}
+            >
+              {text}
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            style={{
+              paddingLeft: '0.5rem',
+              paddingRight: '0.5rem',
+              textAlign: 'left',
+              fontSize: '0.8em',
+              fontWeight: '400',
+              textTransform: 'uppercase',
+            }}
+          >
+            {subtitle}
+          </div>
+        </div>
+      </div>
 
       {/* 
       <Grid container>
