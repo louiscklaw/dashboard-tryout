@@ -29,11 +29,14 @@ export default function ButtonLink({ to, text, icon, icon_color, text_color, sub
           </Grid>
         </Stack>
       </Stack>
-      {/* <Grid container>
+
+      {/* 
+      <Grid container>
         <Grid item xs={12} container justifyContent="flex-start">
           <div style={{ fontSize: '0.8em', fontWeight: '400', textTransform: 'uppercase' }}>{subtitle}</div>
         </Grid>
-      </Grid> */}
+      </Grid> 
+      */}
     </Button>
   );
 }
