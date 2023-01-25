@@ -17,6 +17,5 @@ export default {
       text_color: '#800000',
       icon: <SpeedIcon size="2em" />,
     },
-
   ],
 };

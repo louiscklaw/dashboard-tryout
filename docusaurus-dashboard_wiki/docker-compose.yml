@@ -3,18 +3,19 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    user: 1000:1000
     volumes:
-      - .:/app
-      - node_modules:/app/node_modules
+      - $PWD:/app
+      - test_node_modules:/app/node_modules
       # - "./tests_host/integration-tests:/integration-tests"
       # - "./tests_host/screenshots:/screenshots"
     # command: "wait-for-it.sh react_host_client:3000 && \
     #   -- mocha --recursive /integration-tests"
     working_dir: /app
-    command: "sleep infinity"
+    command: ./entry.sh
+    # command: sleep infinity
     ports:
-      - 3000:3000
-
+      - 3000
 
 volumes:
-  node_modules:
+  test_node_modules:

@@ -23,6 +23,5 @@ export default {
       icon_color: '#800000',
       text_color: '#800000',
     },
-
   ],
 };

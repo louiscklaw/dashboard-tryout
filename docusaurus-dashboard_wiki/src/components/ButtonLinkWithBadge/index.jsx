@@ -27,16 +27,18 @@ export default function ButtonLinkWithBadge({ to, text, icon, icon_color, text_c
               <div style={{ fontSize: '0.8em', fontWeight: '400', textTransform: 'uppercase' }}>{subtitle}</div>
             </Grid>
           </Grid>
-        </Stack >
-        <Stack item >
-          <img src={`${badge}`}/>
-        </Stack >
+        </Stack>
+        <Stack item>
+          <img src={`${badge}`} />
+        </Stack>
       </Stack>
-      {/* <Grid container>
+      {/* 
+      <Grid container>
         <Grid item xs={12} container justifyContent="flex-start">
           <div style={{ fontSize: '0.8em', fontWeight: '400', textTransform: 'uppercase' }}>{subtitle}</div>
         </Grid>
-      </Grid> */}
+      </Grid> 
+      */}
     </Button>
   );
 }

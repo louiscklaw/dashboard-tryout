@@ -5,7 +5,7 @@ import { FaFileExcel } from 'react-icons/fa';
 import LinkIcon from '@mui/icons-material/Link';
 
 export default {
-  title: 'outside links ',
+  title: 'outside links',
   links: [
     {
       to: 'https://colors.dopely.top/',
@@ -132,7 +132,8 @@ export default {
       icon_color: '#800000',
       text_color: '#800000',
       icon: <FaFileExcel size="2em" />,
-    },    {
+    },
+    {
       to: 'https://mui.com/material-ui/material-icons/',
       text: 'material icons',
       subtitle: '',

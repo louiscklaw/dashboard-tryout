@@ -7,7 +7,7 @@ RUN mkdir /usr/src/app/node_modules
 RUN chown node:node /usr/src/app/node_modules
 
 RUN mkdir -p /app/node_modules
-RUN chown node:node /app/node_modules
+RUN chown node:node -R /app/node_modules
 
 USER node
 

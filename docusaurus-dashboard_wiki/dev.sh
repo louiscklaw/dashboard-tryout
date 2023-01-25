@@ -2,7 +2,6 @@
 
 set -ex
 
-yarn
+yarn -d
 
 yarn start
-

@@ -29,7 +29,8 @@ export default {
       status_id: 17,
       icon_color: '#800000',
       text_color: '#800000',
-    }, {
+    },
+    {
       to: 'https://sentry.io/organizations/helloworld-sg/projects/',
       text: 'sentry',
       subtitle: '',

@@ -19,7 +19,7 @@ import routine_check from '../components/links/routine_check';
 import tools from '../components/links/tools';
 import worksheets from '../components/links/worksheets';
 import { useColorMode, useThemeConfig } from '@docusaurus/theme-common';
-import ButtonWithBadge from '../components/ButtonWithBadge'
+import ButtonWithBadge from '../components/ButtonWithBadge';
 
 const carousell_configs = [
   profile,
@@ -88,36 +88,38 @@ function TestNewHome() {
                   <Typography variant={'h5'}>{link_group.title}</Typography>
                 </Grid>
 
-                {link_group.links.map(link => {
-                  if (link?.badge ){
-                    return (
-                      <>
-                        <Grid item xs={3} xl={1.5}>
-                          <ButtonWithBadge
-                            to={link.to}
-                            text={link.text || ''}
-                            icon={link.icon || <WysiwygIcon />}
-                            subtitle={link.subtitle}
-                            badge={link.badge}
-                          />
-                        </Grid>
-                      </>
-                    )
-                  }else{
-                    return (
-                      <>
-                        <Grid item xs={3} xl={1.5}>
-                          <ButtonWithStatus
-                            to={link.to}
-                            text={link.text || ''}
-                            icon={link.icon || <WysiwygIcon />}
-                            subtitle={link.subtitle}
-                          />
-                        </Grid>
-                      </>
-                    )
-                  }
-                })}
+                <Grid item xs={12} container>
+                  {link_group.links.map(link => {
+                    if (link?.badge) {
+                      return (
+                        <>
+                          <Grid item xs={12} sm={1.5}>
+                            <ButtonWithBadge
+                              to={link.to}
+                              text={link.text || ''}
+                              icon={link.icon || <WysiwygIcon />}
+                              subtitle={link.subtitle}
+                              badge={link.badge}
+                            />
+                          </Grid>
+                        </>
+                      );
+                    } else {
+                      return (
+                        <>
+                          <Grid item xs={12} sm={1.5}>
+                            <ButtonWithStatus
+                              to={link.to}
+                              text={link.text || ''}
+                              icon={link.icon || <WysiwygIcon />}
+                              subtitle={link.subtitle}
+                            />
+                          </Grid>
+                        </>
+                      );
+                    }
+                  })}
+                </Grid>
               </>
             ))}
           </Grid>
