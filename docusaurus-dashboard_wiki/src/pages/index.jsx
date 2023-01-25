@@ -93,7 +93,7 @@ function TestNewHome() {
                     if (link?.badge) {
                       return (
                         <>
-                          <Grid item xs={12} sm={1.5}>
+                          <Grid item xs={6} sm={4} md={3} xl={1.5}>
                             <ButtonWithBadge
                               to={link.to}
                               text={link.text || ''}
@@ -107,7 +107,7 @@ function TestNewHome() {
                     } else {
                       return (
                         <>
-                          <Grid item xs={12} sm={1.5}>
+                          <Grid item xs={6} sm={4} md={3} xl={1.5}>
                             <ButtonWithStatus
                               to={link.to}
                               text={link.text || ''}

@@ -3,7 +3,7 @@ import React from 'react';
 import WysiwygIcon from '@mui/icons-material/Wysiwyg';
 
 export default {
-  title: 'carousell 123321',
+  title: 'carousell',
   links: [
     {
       to: 'https://www.carousell.com.hk/u/louiscklaw/',
