@@ -1,4 +1,4 @@
-import { Button, Grid, Typography, Stack } from '@mui/material';
+import { Box, Button, Grid, Typography, Stack } from '@mui/material';
 import React from 'react';
 
 export default function ButtonLink({ to, text, icon, icon_color, text_color, subtitle }) {
@@ -39,18 +39,19 @@ export default function ButtonLink({ to, text, icon, icon_color, text_color, sub
           </div>
         </div>
         <div>
-          <div
-            style={{
+          <Box
+            sx={{
               paddingLeft: '0.5rem',
               paddingRight: '0.5rem',
               textAlign: 'left',
               fontSize: '0.8em',
               fontWeight: '400',
               textTransform: 'uppercase',
+              display:{xs:'none', md:"block"}
             }}
           >
             {subtitle}
-          </div>
+          </Box>
         </div>
       </div>
 
