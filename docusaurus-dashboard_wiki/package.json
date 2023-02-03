@@ -21,6 +21,7 @@
     "husky_install": "husky install",
     "docker_rebuild": "docker compose up -d --build",
     "into_docker": "docker compose exec -it tests_host bash",
+    "log_docker": "docker compose logs -f tests_host",
     "format": "prettier --loglevel warn --write \"**/*.{js,jsx,tsx,ts,json,yml}\"",
     "nodemon_format": "npx nodemon -w src --ext '*' --exec 'npm run format'"
   },
