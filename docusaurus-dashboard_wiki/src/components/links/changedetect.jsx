@@ -38,6 +38,13 @@ export default {
       status_id: 17,
       icon_color: '#800000',
       text_color: '#800000',
+    },    {
+      to: 'http://192.168.10.61:15999/metrics',
+      text: 'browserless-metrics',
+      subtitle: 'browserless metrics',
+      status_id: 17,
+      icon_color: '#800000',
+      text_color: '#800000',
     },
   ],
 };
