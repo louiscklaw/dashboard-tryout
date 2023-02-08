@@ -38,6 +38,13 @@ export default {
       status_id: 17,
       icon_color: '#800000',
       text_color: '#800000',
+    },{
+      to: 'http://debug-changedetect.iamon99.com',
+      text: 'debug-changedetect',
+      subtitle: 'for debug use',
+      status_id: 17,
+      icon_color: '#800000',
+      text_color: '#800000',
     },    {
       to: 'http://192.168.10.61:15999/metrics',
       text: 'browserless-metrics',
@@ -45,6 +52,6 @@ export default {
       status_id: 17,
       icon_color: '#800000',
       text_color: '#800000',
-    },
+    },    
   ],
 };
