@@ -48,39 +48,6 @@ function TestNewHome() {
     <>
       <ThemeProvider theme={theme}>
         <Grid container spacing={2}>
-          <Grid item xs={12} m={4} container justifyContent="center" alignItems="center">
-            <Grid item xs={4}>
-              <TextField
-                fullWidth
-                id="outlined-basic"
-                label="search"
-                variant="filled"
-                color="primary"
-                onChange={handleFilterChange}
-                value={filter_value}
-                sx={{
-                  backgroundColor: '#dddddd',
-                }}
-                InputProps={{
-                  endAdornment: (
-                    <>
-                      <InputAdornment position="end">
-                        <IconButton
-                          color="primary"
-                          aria-label="toggle password visibility"
-                          edge="end"
-                          onMouseDown={handleClearSearchFilter}
-                        >
-                          <HighlightOffIcon />
-                        </IconButton>
-                      </InputAdornment>
-                    </>
-                  ),
-                }}
-              />
-            </Grid>
-          </Grid>
-
           <Grid item xs={12} container m={2}>
             {carousell_configs.map(link_group => (
               <>
