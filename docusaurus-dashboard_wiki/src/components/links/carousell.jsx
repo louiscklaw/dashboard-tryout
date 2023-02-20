@@ -24,7 +24,7 @@ export default {
       text_color: '#800000',
     },
     {
-      to: 'https://louiscklaw.github.io/carousell-playlist/search-scan.html',
+      to: 'https://louiscklaw.github.io/carousell-playlist/',
       text: 'carousell test result',
       subtitle: '',
       status_id: 17,
