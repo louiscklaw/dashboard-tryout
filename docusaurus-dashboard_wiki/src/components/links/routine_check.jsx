@@ -23,14 +23,6 @@ export default {
       icon_color: '#800000',
       text_color: '#800000',
       icon: <WysiwygIcon />,
-    },
-    {
-      to: 'https://louiscklaw.github.io/upptime-playlist',
-      text: 'upptime-playlist',
-      subtitle: '',
-      status_id: 17,
-      icon_color: '#800000',
-      text_color: '#800000',
-    },
+    }
   ],
 };
