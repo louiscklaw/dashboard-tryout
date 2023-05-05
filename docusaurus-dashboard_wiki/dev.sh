@@ -2,6 +2,6 @@
 
 set -ex
 
-yarn -d
+npm i -D
 
-yarn start
+npm run start
