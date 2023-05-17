@@ -26,7 +26,7 @@ export default function DashboardGrid() {
           Status
         </Typography>
 
-        <ButtonWithStatus to="http://192.168.10.61:50102/dashboard" text={'uptime kuma'} />
+        <ButtonWithStatus to="https://status.iamon99.com/dashboard" text={'uptime kuma'} />
         <ButtonWithStatus to="https://github.com/louiscklaw/routine_check/actions" text={'routine_check/actions'} />
         <ButtonWithStatus to="https://louiscklaw.github.io/upptime-playlist" text={'upptime-playlist'} status_id={48} />
         <ButtonWithStatus to="https://healthcheck.iamon99.com" text={'healthcheck.iamon99.com'} status_id={47} />

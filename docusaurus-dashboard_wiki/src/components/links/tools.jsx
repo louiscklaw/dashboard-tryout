@@ -30,7 +30,7 @@ export default {
       icon: <AppsIcon />,
     },
     {
-      to: 'http://192.168.10.61:50102/dashboard',
+      to: 'https://status.iamon99.com/dashboard',
       text: 'uptime kuma',
       subtitle: 'uptime kuma',
       status_id: 17,
