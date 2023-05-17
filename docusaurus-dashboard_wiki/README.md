@@ -1,4 +1,4 @@
-# dev
+## dev
 
 
 ```bash
@@ -14,3 +14,7 @@ npm run into_docker
 npm run deploy_gh_pages
 
 ```
+
+## publish
+
+push to repo and it will deploy
