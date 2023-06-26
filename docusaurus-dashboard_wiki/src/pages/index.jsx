@@ -47,6 +47,42 @@ function TestNewHome() {
   return (
     <>
       <ThemeProvider theme={theme}>
+        <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+          <div style={{ margin: '0.5rem' }}>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="//status.iamon99.com/status/louiscklaw-github-io"
+              style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}
+            >
+              <div style={{ fontSize: '0.75rem' }}>louiscklaw.github.io</div>
+              <div>
+                <img src="//status.iamon99.com/api/badge/2/status?label=homepage" />
+              </div>
+
+              <div>
+                <img src="//status.iamon99.com/api/badge/13/status?label=upload" />
+              </div>
+
+              <div>
+                <img src="//status.iamon99.com/api/badge/9/status?label=meet" />
+              </div>
+            </a>
+          </div>
+          <div style={{ margin: '0.5rem' }}>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="//status.iamon99.com/status/changedetect"
+              style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}
+            >
+              <div style={{ fontSize: '0.75rem' }}>changedetect</div>
+              <div>
+                <img src="//status.iamon99.com/api/badge/5/status?label=homepage" />
+              </div>
+            </a>
+          </div>
+        </div>
         <Grid container spacing={2}>
           <Grid item xs={12} container m={2}>
             {carousell_configs.map(link_group => (

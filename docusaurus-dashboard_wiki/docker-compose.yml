@@ -15,7 +15,7 @@ services:
     command: ./dev.sh
     # command: sleep infinity
     ports:
-      - 3000
+      - 3000:3000
 
 volumes:
   test_node_modules:
