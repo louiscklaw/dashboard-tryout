@@ -39,7 +39,7 @@ export default {
       icon: <AppsIcon />,
     },
     {
-      to: 'http://http://192.168.10.61:2017/',
+      to: 'http://192.168.10.61:2017/',
       text: 'v2raya',
       subtitle: 'v2raya',
       status_id: 17,
