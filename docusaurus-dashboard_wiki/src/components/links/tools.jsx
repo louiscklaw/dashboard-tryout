@@ -39,6 +39,15 @@ export default {
       icon: <AppsIcon />,
     },
     {
+      to: 'http://http://192.168.10.61:2017/',
+      text: 'v2raya',
+      subtitle: 'v2raya',
+      status_id: 17,
+      icon_color: '#800000',
+      text_color: '#800000',
+      icon: <AppsIcon />,
+    },
+    {
       to: 'http://192.168.10.21:50080',
       text: 'Homer',
       subtitle: 'Homer',
