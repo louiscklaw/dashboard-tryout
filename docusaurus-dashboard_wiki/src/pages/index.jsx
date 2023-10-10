@@ -20,6 +20,7 @@ import tools from '../components/links/tools';
 import worksheets from '../components/links/worksheets';
 import { useColorMode, useThemeConfig } from '@docusaurus/theme-common';
 import ButtonWithBadge from '../components/ButtonWithBadge';
+import PostTestResult from './PostTestResult';
 
 const carousell_configs = [
   profile,
@@ -81,6 +82,9 @@ function TestNewHome() {
                 <img src="//status.iamon99.com/api/badge/5/status?label=homepage" />
               </div>
             </a>
+          </div>
+          <div>
+            <PostTestResult />
           </div>
         </div>
         <Grid container spacing={2}>

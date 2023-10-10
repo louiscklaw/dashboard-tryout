@@ -30,7 +30,6 @@ export default {
       status_id: 17,
       icon_color: '#800000',
       text_color: '#800000',
-      badge: 'https://github.com/louiscklaw/carousell-playlist/actions/workflows/product-exercise.yml/badge.svg',
     },
     {
       to: 'https://trends.google.com/trends/trendingsearches/daily?geo=HK',
