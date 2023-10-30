@@ -22,8 +22,8 @@ export default () => {
         setVbaPostCheckResult(result.vba_post_check);
         setCodingPostCheckResult(result.coding_post_check);
         setProgrammingingPostCheckResult(result.programming_post_check);
-        setJavascriptPostCheckResult(result.programming_post_check);
-        setPythonPostCheckResult(result.programming_post_check);
+        setJavascriptPostCheckResult(result.javascript_post_check);
+        setPythonPostCheckResult(result.python_post_check);
       })
 
       .catch(err => {
