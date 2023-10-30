@@ -46,10 +46,10 @@ export default () => {
           programming:{programming_post_check_result}
         </div>
         <div style={{ color: 'white', backgroundColor: javascript_post_check_result == 'OK' ? 'green' : 'red' }}>
-          programming:{javascript_post_check_result}
+          javascript:{javascript_post_check_result}
         </div>
         <div style={{ color: 'white', backgroundColor: python_post_check_result == 'OK' ? 'green' : 'red' }}>
-          programming:{python_post_check_result}
+          python:{python_post_check_result}
         </div>
       </div>
     </>
