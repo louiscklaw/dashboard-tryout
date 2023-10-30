@@ -39,7 +39,7 @@ export default () => {
         <div style={{ color: 'white', backgroundColor: coding_post_check_result == 'OK' ? 'green' : 'red' }}>
           coding:{coding_post_check_result}
         </div>
-        
+
         <div style={{ color: 'white', backgroundColor: vba_post_check_result == 'OK' ? 'green' : 'red' }}>
           vba:{vba_post_check_result}
         </div>
@@ -52,6 +52,12 @@ export default () => {
         </div>
         <div style={{ color: 'white', backgroundColor: python_post_check_result == 'OK' ? 'green' : 'red' }}>
           python:{python_post_check_result}
+        </div>
+
+        <div>
+          <a href="https://changedetect.iamon99.com/?tag=carousell%2Fsearch">
+            changedetect
+          </a>
         </div>
       </div>
     </>
