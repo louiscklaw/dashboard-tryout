@@ -55,7 +55,7 @@ export default () => {
         </div>
 
         <div>
-          <a href="https://changedetect.iamon99.com/?tag=carousell%2Fsearch">
+          <a href="https://changedetect.iamon99.com/?tag=carousell%2Fsearch" target="_blank">
             changedetect
           </a>
         </div>
