@@ -3,7 +3,7 @@ import React from 'react';
 export default () => {
   var [post_test_json, setPostTestJson] = React.useState({});
   var [last_update, setLastUpdate] = React.useState('');
-  
+
   var [vba_post_check_result, setVbaPostCheckResult] = React.useState('');
   var [coding_post_check_result, setCodingPostCheckResult] = React.useState('');
   var [programming_post_check_result, setProgrammingingPostCheckResult] = React.useState('');
@@ -43,7 +43,7 @@ export default () => {
         <div style={{ color: 'white', backgroundColor: vba_post_check_result == 'OK' ? 'green' : 'red' }}>
           vba:{vba_post_check_result}
         </div>
-    
+
         <div style={{ color: 'white', backgroundColor: programming_post_check_result == 'OK' ? 'green' : 'red' }}>
           programming:{programming_post_check_result}
         </div>
