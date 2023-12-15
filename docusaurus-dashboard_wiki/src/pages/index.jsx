@@ -20,7 +20,11 @@ import tools from '../components/links/tools';
 import worksheets from '../components/links/worksheets';
 import { useColorMode, useThemeConfig } from '@docusaurus/theme-common';
 import ButtonWithBadge from '../components/ButtonWithBadge';
+
 import PostTestResult from './PostTestResult';
+import DemoTestResult from './DemoTestResult';
+
+let n8n_stat_id = 22;
 
 const carousell_configs = [
   profile,
@@ -70,6 +74,7 @@ function TestNewHome() {
               </div>
             </a>
           </div>
+
           <div style={{ margin: '0.5rem' }}>
             <a
               target="_blank"
@@ -83,8 +88,33 @@ function TestNewHome() {
               </div>
             </a>
           </div>
+
+          <div style={{ margin: '0.5rem' }}>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="//status.iamon99.com/status/n8n"
+              style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}
+            >
+              <div style={{ fontSize: '0.75rem' }}>n8n</div>
+              <div>
+                <img src={`//status.iamon99.com/api/badge/${n8n_stat_id}/status?label=homepage`} />
+              </div>
+            </a>
+
+            <a href="//n8n.iamon99.com" target="_blank">
+              <div style={{fontSize: '0.8rem'}}>
+                n8n.iamon99.com
+                </div>
+            </a>
+          </div>
+
           <div>
             <PostTestResult />
+          </div>
+
+          <div>
+            <DemoTestResult />
           </div>
         </div>
         <Grid container spacing={2}>
