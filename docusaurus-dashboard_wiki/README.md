@@ -10,7 +10,12 @@ npm run into_docker
 # -> update content
 ./dev.sh
 
+# done, the site is up and navigate to http://localhost:3000/dashboard-tryout
+
 # -> deploy page
+# in the host
+sudo rm -rf ./node_modules
+npm i -D
 npm run deploy_gh_pages
 
 ```
