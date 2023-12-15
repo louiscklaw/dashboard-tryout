@@ -7,8 +7,9 @@ export default () => {
   var [vba_post_check_result, setVbaPostCheckResult] = React.useState('');
   var [coding_post_check_result, setCodingPostCheckResult] = React.useState('');
   var [programming_post_check_result, setProgrammingingPostCheckResult] = React.useState('');
-  var [javascript_post_check_result, setJavascriptPostCheckResult] = React.useState('')
-  var [python_post_check_result, setPythonPostCheckResult] = React.useState('')
+  var [javascript_post_check_result, setJavascriptPostCheckResult] = React.useState('');
+  var [python_post_check_result, setPythonPostCheckResult] = React.useState('');
+  var [tableau_post_check_result, setTableauPostCheckResult] = React.useState('');
 
   React.useEffect(() => {
     fetch('https://raw.githubusercontent.com/louiscklaw/carousell-monitor-playlist/gh-pages/post_test_result.json')
@@ -18,12 +19,14 @@ export default () => {
         setPostTestJson(res_json);
 
         var { result } = res_json;
+
         setLastUpdate(result.last_update);
         setVbaPostCheckResult(result.vba_post_check);
         setCodingPostCheckResult(result.coding_post_check);
         setProgrammingingPostCheckResult(result.programming_post_check);
         setJavascriptPostCheckResult(result.javascript_post_check);
         setPythonPostCheckResult(result.python_post_check);
+        setTableauPostCheckResult(result.tableau_post_check|| "NOT_FOUND");
       })
 
       .catch(err => {
@@ -35,6 +38,7 @@ export default () => {
     <>
       <div style={{ fontSize: '0.75rem' }}>
         <div>post test result:</div>
+
         <div>{last_update}</div>
         <div style={{ color: 'white', backgroundColor: coding_post_check_result == 'OK' ? 'green' : 'red' }}>
           coding:{coding_post_check_result}
@@ -47,11 +51,17 @@ export default () => {
         <div style={{ color: 'white', backgroundColor: programming_post_check_result == 'OK' ? 'green' : 'red' }}>
           programming:{programming_post_check_result}
         </div>
+
         <div style={{ color: 'white', backgroundColor: javascript_post_check_result == 'OK' ? 'green' : 'red' }}>
           javascript:{javascript_post_check_result}
         </div>
+
         <div style={{ color: 'white', backgroundColor: python_post_check_result == 'OK' ? 'green' : 'red' }}>
           python:{python_post_check_result}
+        </div>
+
+        <div style={{ color: 'white', backgroundColor: tableau_post_check_result == 'OK' ? 'green' : 'red' }}>
+          tableau:{tableau_post_check_result}
         </div>
 
         <div>
