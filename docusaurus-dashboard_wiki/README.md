@@ -3,7 +3,6 @@
 
 ```bash
 npm run docker_rebuild
-
 npm run into_docker
 
 # inside docker
