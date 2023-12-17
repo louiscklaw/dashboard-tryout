@@ -11,7 +11,7 @@ npm run into_docker
 
 # done, the site is up and navigate to http://localhost:3000/dashboard-tryout
 
-# -> deploy page
+# -> deploy page, ./scripts/deploy.sh
 # in the host
 sudo rm -rf ./node_modules
 npm i -D
