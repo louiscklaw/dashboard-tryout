@@ -26,7 +26,7 @@ export default () => {
         setProgrammingingPostCheckResult(result.programming_post_check);
         setJavascriptPostCheckResult(result.javascript_post_check);
         setPythonPostCheckResult(result.python_post_check);
-        setTableauPostCheckResult(result.tableau_post_check|| "NOT_FOUND");
+        setTableauPostCheckResult(result.tableau_post_check || 'NOT_FOUND');
       })
 
       .catch(err => {
@@ -67,6 +67,12 @@ export default () => {
         <div>
           <a href="https://changedetect.iamon99.com/?tag=carousell%2Fsearch" target="_blank">
             changedetect
+          </a>
+        </div>
+
+        <div>
+          <a href="https://github.com/louiscklaw/carousell-monitor-playlist" target="_blank">
+            source
           </a>
         </div>
       </div>
