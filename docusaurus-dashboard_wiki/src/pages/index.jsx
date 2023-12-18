@@ -79,12 +79,32 @@ function TestNewHome() {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="//status.iamon99.com/status/changedetect"
+              href="http://private-changedetect.iamon99.com/"
               style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}
             >
               <div style={{ fontSize: '0.75rem' }}>changedetect</div>
               <div>
-                <img src="//status.iamon99.com/api/badge/5/status?label=homepage" />
+                <img src="//status.iamon99.com/api/badge/5/status?label=private" />
+              </div>
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="http://carousell-changedetect.iamon99.com/"
+              style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}
+            >
+              <div>
+                <img src="//status.iamon99.com/api/badge/25/status?label=carousell" />
+              </div>
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="http://job-changedetect.iamon99.com/"
+              style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}
+            >
+              <div>
+                <img src="//status.iamon99.com/api/badge/24/status?label=job" />
               </div>
             </a>
           </div>
@@ -103,9 +123,7 @@ function TestNewHome() {
             </a>
 
             <a href="//n8n.iamon99.com" target="_blank">
-              <div style={{fontSize: '0.8rem'}}>
-                n8n.iamon99.com
-                </div>
+              <div style={{ fontSize: '0.8rem' }}>n8n.iamon99.com</div>
             </a>
           </div>
 
