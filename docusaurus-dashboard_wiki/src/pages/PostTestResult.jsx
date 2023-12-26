@@ -10,6 +10,7 @@ export default () => {
   var [javascript_post_check_result, setJavascriptPostCheckResult] = React.useState('');
   var [python_post_check_result, setPythonPostCheckResult] = React.useState('');
   var [tableau_post_check_result, setTableauPostCheckResult] = React.useState('');
+  var [wordpress_post_check_result, setWordpressPostCheckResult] = React.useState('');
 
   React.useEffect(() => {
     fetch('https://raw.githubusercontent.com/louiscklaw/carousell-monitor-playlist/gh-pages/post_test_result.json')
@@ -27,6 +28,7 @@ export default () => {
         setJavascriptPostCheckResult(result.javascript_post_check);
         setPythonPostCheckResult(result.python_post_check);
         setTableauPostCheckResult(result.tableau_post_check || 'NOT_FOUND');
+        setWordpressPostCheckResult(result.wordpress_post_check || 'NOT_FOUND');
       })
 
       .catch(err => {
@@ -62,6 +64,10 @@ export default () => {
 
         <div style={{ color: 'white', backgroundColor: tableau_post_check_result == 'OK' ? 'green' : 'red' }}>
           tableau:{tableau_post_check_result}
+        </div>
+
+        <div style={{ color: 'white', backgroundColor: wordpress_post_check_result == 'OK' ? 'green' : 'red' }}>
+          wordpress:{wordpress_post_check_result}
         </div>
 
         <div>
