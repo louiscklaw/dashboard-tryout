@@ -1,11 +1,17 @@
 {
-  "folders": [
-	{
-		"path": "../docusaurus-playlist"
-	},
-	{
-		"path": "."
-	}
-],
-  "settings": {}
+	"folders": [
+		{
+			"path": "/workspace/docusaurus-playlist"
+		},
+		{
+			"path": "/workspace/dashboard-tryout"
+		},
+		{
+			"path": "/workspace/carousell-monitor-playlist"
+		},
+		{
+			"path": "/workspace/carousell-playlist"
+		}
+	],
+	"settings": {}
 }
