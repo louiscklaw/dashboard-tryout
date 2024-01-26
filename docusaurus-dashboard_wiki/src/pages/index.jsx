@@ -88,25 +88,25 @@ function TestNewHome() {
               </div>
 
               <div>
-                <img src="//status.iamon99.com/api/badge/9/status?label=公司網站 demo" />
+                <img src="//status.iamon99.com/api/badge/35/status?label=company_web_demo" />
               </div>
               <div>
-                <img src="//status.iamon99.com/api/badge/9/status?label=自由工作者 demo" />
+                <img src="//status.iamon99.com/api/badge/34/status?label=freelancer_demo" />
               </div>
               <div>
-                <img src="//status.iamon99.com/api/badge/9/status?label=攝影師 demo" />
+                <img src="//status.iamon99.com/api/badge/32/status?label=fotop_demo" />
               </div>
               <div>
-                <img src="//status.iamon99.com/api/badge/9/status?label=補習老師/補習班 demo" />
+                <img src="//status.iamon99.com/api/badge/31/status?label=private_tutor_demo" />
               </div>
               <div>
-                <img src="//status.iamon99.com/api/badge/9/status?label=裝修公司 demo" />
+                <img src="//status.iamon99.com/api/badge/33/status?label=interior_design_demo" />
               </div>
               <div>
-                <img src="//status.iamon99.com/api/badge/9/status?label=樓盤中介 demo" />
+                <img src="//status.iamon99.com/api/badge/30/status?label=property_agency_demo" />
               </div>
               <div>
-                <img src="//status.iamon99.com/api/badge/9/status?label=保險經紀 demo" />
+                <img src="//status.iamon99.com/api/badge/29/status?label=insurence_agent_demo" />
               </div>
 
             </div>
