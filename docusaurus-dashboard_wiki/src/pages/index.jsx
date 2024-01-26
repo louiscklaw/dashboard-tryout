@@ -60,7 +60,9 @@ function TestNewHome() {
               href="//status.iamon99.com/status/louiscklaw-github-io"
               style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}
             >
-              <div style={{ fontSize: '0.75rem' }}>louiscklaw.github.io</div>
+              <div style={{ fontSize: '0.75rem' }}>
+                louiscklaw.github.io
+              </div>
               <div>
                 <img src="//status.iamon99.com/api/badge/2/status?label=homepage" />
               </div>
@@ -73,6 +75,41 @@ function TestNewHome() {
                 <img src="//status.iamon99.com/api/badge/9/status?label=meet" />
               </div>
             </a>
+
+            <div style={{ margin: '0.5rem' }}>
+              <div style={{ fontSize: '0.75rem' }}>
+                wordpress demos
+              </div>
+              <div>
+                <img src="//status.iamon99.com/api/badge/36/status?label=mobile_apps_demo" />
+              </div>
+              <div>
+                <img src="//status.iamon99.com/api/badge/26/status?label=relocation_demo" />
+              </div>
+
+              <div>
+                <img src="//status.iamon99.com/api/badge/9/status?label=公司網站 demo" />
+              </div>
+              <div>
+                <img src="//status.iamon99.com/api/badge/9/status?label=自由工作者 demo" />
+              </div>
+              <div>
+                <img src="//status.iamon99.com/api/badge/9/status?label=攝影師 demo" />
+              </div>
+              <div>
+                <img src="//status.iamon99.com/api/badge/9/status?label=補習老師/補習班 demo" />
+              </div>
+              <div>
+                <img src="//status.iamon99.com/api/badge/9/status?label=裝修公司 demo" />
+              </div>
+              <div>
+                <img src="//status.iamon99.com/api/badge/9/status?label=樓盤中介 demo" />
+              </div>
+              <div>
+                <img src="//status.iamon99.com/api/badge/9/status?label=保險經紀 demo" />
+              </div>
+
+            </div>
           </div>
 
           <div style={{ margin: '0.5rem' }}>
