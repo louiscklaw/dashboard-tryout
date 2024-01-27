@@ -108,7 +108,7 @@ function TestNewHome() {
             </a>
 
             <div style={{ margin: '0.5rem' }}>
-              <div style={{ fontSize: '0.75rem', fontWeight: 'bold' }}>wordpress demos</div>
+              <div style={{ fontSize: '0.75rem', fontWeight: 'bold' }}>wordpress demos 111</div>
               <div style={{ paddingTop: '0.1rem' }}>
                 <a
                   target="_blank"
