@@ -35,7 +35,7 @@ export default () => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="//mobile_apps_demo.louislabs.com/"
+              href="//relocation_demo.louislabs.com/"
               style={{
                 display: 'flex',
                 flexDirection: 'column',
@@ -51,7 +51,7 @@ export default () => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="//mobile_apps_demo.louislabs.com/"
+              href="//company_web_demo.louislabs.com/"
               style={{
                 display: 'flex',
                 flexDirection: 'column',
@@ -67,7 +67,7 @@ export default () => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="//mobile_apps_demo.louislabs.com/"
+              href="//freelancer_demo.louislabs.com/"
               style={{
                 display: 'flex',
                 flexDirection: 'column',
@@ -82,7 +82,7 @@ export default () => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="//mobile_apps_demo.louislabs.com/"
+              href="//fotop_demo.louislabs.com/"
               style={{
                 display: 'flex',
                 flexDirection: 'column',
@@ -97,7 +97,7 @@ export default () => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="//mobile_apps_demo.louislabs.com/"
+              href="//private_tutor_demo.louislabs.com/"
               style={{
                 display: 'flex',
                 flexDirection: 'column',
@@ -112,7 +112,7 @@ export default () => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="//mobile_apps_demo.louislabs.com/"
+              href="//interior_design_demo.louislabs.com/"
               style={{
                 display: 'flex',
                 flexDirection: 'column',
@@ -127,7 +127,7 @@ export default () => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="//mobile_apps_demo.louislabs.com/"
+              href="//property_agency_demo.louislabs.com/"
               style={{
                 display: 'flex',
                 flexDirection: 'column',
@@ -142,7 +142,7 @@ export default () => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="//mobile_apps_demo.louislabs.com/"
+              href="//insurence_agent_demo.louislabs.com/"
               style={{
                 display: 'flex',
                 flexDirection: 'column',
