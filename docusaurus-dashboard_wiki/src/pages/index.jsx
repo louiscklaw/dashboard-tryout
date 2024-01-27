@@ -60,55 +60,189 @@ function TestNewHome() {
               href="//status.iamon99.com/status/louiscklaw-github-io"
               style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}
             >
-              <div style={{ fontSize: '0.75rem' }}>
-                louiscklaw.github.io
-              </div>
-              <div>
-                <img src="//status.iamon99.com/api/badge/2/status?label=homepage" />
+              <div style={{ fontSize: '0.75rem', width: '100%', fontWeight: 'bold' }}>louiscklaw.github.io</div>
+              <div style={{ paddingTop: '0.1rem', width: '100%', display: 'flex', justifyContent: 'flex-end' }}>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="//mobile_apps_demo.louislabs.com/"
+                  style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'flex-end',
+                  }}
+                >
+                  <img src="//status.iamon99.com/api/badge/2/status?label=homepage" />
+                </a>
               </div>
 
-              <div>
-                <img src="//status.iamon99.com/api/badge/13/status?label=upload" />
+              <div style={{ paddingTop: '0.1rem', width: '100%', display: 'flex', justifyContent: 'flex-end' }}>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="//mobile_apps_demo.louislabs.com/"
+                  style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'flex-end',
+                  }}
+                >
+                  <img src="//status.iamon99.com/api/badge/13/status?label=upload" />
+                </a>
               </div>
 
-              <div>
-                <img src="//status.iamon99.com/api/badge/9/status?label=meet" />
+              <div style={{ paddingTop: '0.1rem', width: '100%', display: 'flex', justifyContent: 'flex-end' }}>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="//mobile_apps_demo.louislabs.com/"
+                  style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'flex-end',
+                  }}
+                >
+                  <img src="//status.iamon99.com/api/badge/9/status?label=meet" />
+                </a>
               </div>
             </a>
 
             <div style={{ margin: '0.5rem' }}>
-              <div style={{ fontSize: '0.75rem' }}>
-                wordpress demos
+              <div style={{ fontSize: '0.75rem', fontWeight: 'bold' }}>wordpress demos</div>
+              <div style={{ paddingTop: '0.1rem' }}>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="//mobile_apps_demo.louislabs.com/"
+                  style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'flex-end',
+                  }}
+                >
+                  <img src="//status.iamon99.com/api/badge/36/status?label=mobile_apps_demo" />
+                </a>
               </div>
-              <div>
-                <img src="//status.iamon99.com/api/badge/36/status?label=mobile_apps_demo" />
+              <div style={{ paddingTop: '0.1rem' }}>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="//mobile_apps_demo.louislabs.com/"
+                  style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'center',
+                    alignItems: 'flex-end',
+                  }}
+                >
+                  <img src="//status.iamon99.com/api/badge/26/status?label=relocation_demo" />
+                </a>
               </div>
-              <div>
-                <img src="//status.iamon99.com/api/badge/26/status?label=relocation_demo" />
+              <div style={{ paddingTop: '0.1rem' }}>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="//mobile_apps_demo.louislabs.com/"
+                  style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'center',
+                    alignItems: 'flex-end',
+                  }}
+                >
+                  <img src="//status.iamon99.com/api/badge/35/status?label=company_web_demo" />
+                </a>
               </div>
-
-              <div>
-                <img src="//status.iamon99.com/api/badge/35/status?label=company_web_demo" />
+              <div style={{ paddingTop: '0.1rem' }}>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="//mobile_apps_demo.louislabs.com/"
+                  style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'center',
+                    alignItems: 'flex-end',
+                  }}
+                >
+                  <img src="//status.iamon99.com/api/badge/34/status?label=freelancer_demo" />
+                </a>
               </div>
-              <div>
-                <img src="//status.iamon99.com/api/badge/34/status?label=freelancer_demo" />
+              <div style={{ paddingTop: '0.1rem' }}>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="//mobile_apps_demo.louislabs.com/"
+                  style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'center',
+                    alignItems: 'flex-end',
+                  }}
+                >
+                  <img src="//status.iamon99.com/api/badge/32/status?label=fotop_demo" />
+                </a>
               </div>
-              <div>
-                <img src="//status.iamon99.com/api/badge/32/status?label=fotop_demo" />
+              <div style={{ paddingTop: '0.1rem' }}>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="//mobile_apps_demo.louislabs.com/"
+                  style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'center',
+                    alignItems: 'flex-end',
+                  }}
+                >
+                  <img src="//status.iamon99.com/api/badge/31/status?label=private_tutor_demo" />
+                </a>
               </div>
-              <div>
-                <img src="//status.iamon99.com/api/badge/31/status?label=private_tutor_demo" />
+              <div style={{ paddingTop: '0.1rem' }}>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="//mobile_apps_demo.louislabs.com/"
+                  style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'center',
+                    alignItems: 'flex-end',
+                  }}
+                >
+                  <img src="//status.iamon99.com/api/badge/33/status?label=interior_design_demo" />
+                </a>
               </div>
-              <div>
-                <img src="//status.iamon99.com/api/badge/33/status?label=interior_design_demo" />
+              <div style={{ paddingTop: '0.1rem' }}>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="//mobile_apps_demo.louislabs.com/"
+                  style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'center',
+                    alignItems: 'flex-end',
+                  }}
+                >
+                  <img src="//status.iamon99.com/api/badge/30/status?label=property_agency_demo" />
+                </a>
               </div>
-              <div>
-                <img src="//status.iamon99.com/api/badge/30/status?label=property_agency_demo" />
+              <div style={{ paddingTop: '0.1rem' }}>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="//mobile_apps_demo.louislabs.com/"
+                  style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'center',
+                    alignItems: 'flex-end',
+                  }}
+                >
+                  <img src="//status.iamon99.com/api/badge/29/status?label=insurence_agent_demo" />
+                </a>
               </div>
-              <div>
-                <img src="//status.iamon99.com/api/badge/29/status?label=insurence_agent_demo" />
-              </div>
-
             </div>
           </div>
 
@@ -117,7 +251,7 @@ function TestNewHome() {
               target="_blank"
               rel="noopener noreferrer"
               href="http://private-changedetect.iamon99.com/"
-              style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}
+              style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-end' }}
             >
               <div style={{ fontSize: '0.75rem' }}>changedetect</div>
               <div>
@@ -128,7 +262,7 @@ function TestNewHome() {
               target="_blank"
               rel="noopener noreferrer"
               href="http://carousell-changedetect.iamon99.com/"
-              style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}
+              style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-end' }}
             >
               <div>
                 <img src="//status.iamon99.com/api/badge/25/status?label=carousell" />
@@ -138,7 +272,7 @@ function TestNewHome() {
               target="_blank"
               rel="noopener noreferrer"
               href="http://job-changedetect.iamon99.com/"
-              style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}
+              style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-end' }}
             >
               <div>
                 <img src="//status.iamon99.com/api/badge/24/status?label=job" />
@@ -151,7 +285,7 @@ function TestNewHome() {
               target="_blank"
               rel="noopener noreferrer"
               href="//status.iamon99.com/status/n8n"
-              style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}
+              style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-end' }}
             >
               <div style={{ fontSize: '0.75rem' }}>n8n</div>
               <div>
