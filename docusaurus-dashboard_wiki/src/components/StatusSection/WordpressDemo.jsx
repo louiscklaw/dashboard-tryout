@@ -15,7 +15,7 @@ export default () => {
               alignItems: 'flex-end',
             }}
           >
-            wordpress demo
+            <a href="//status.iamon99.com/status/wordpress">wordpress Status</a>
           </div>
           <div style={{ paddingTop: '0.1rem', width: '100%', display: 'flex', justifyContent: 'flex-end' }}>
             <a
