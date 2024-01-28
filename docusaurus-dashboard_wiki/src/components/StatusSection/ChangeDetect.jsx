@@ -25,7 +25,7 @@ export default () => {
               style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-end' }}
             >
               <div>
-                <img src="//status.iamon99.com/api/badge/25/status?label=carousell" />
+                <img src="//status.iamon99.com/api/badge/25/status?label=carousell-changedetect" />
               </div>
             </a>
           </div>
@@ -37,7 +37,7 @@ export default () => {
               style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-end' }}
             >
               <div>
-                <img src="//status.iamon99.com/api/badge/24/status?label=job" />
+                <img src="//status.iamon99.com/api/badge/24/status?label=job-changedetect" />
               </div>
             </a>
           </div>
@@ -50,7 +50,7 @@ export default () => {
               style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-end' }}
             >
               <div>
-                <img src="//status.iamon99.com/api/badge/5/status?label=private" />
+                <img src="//status.iamon99.com/api/badge/5/status?label=private-changedetect" />
               </div>
             </a>
           </div>
