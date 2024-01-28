@@ -25,7 +25,7 @@ export default () => {
               style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-end' }}
             >
               <div>
-                <img src={`//status.iamon99.com/api/badge/1/status?label=homepage`} />
+                <img src={`//status.iamon99.com/api/badge/22/status?label=n8n.iamon99.com`} />
               </div>
             </a>
           </div>
