@@ -28,7 +28,7 @@ export default () => {
                 alignItems: 'flex-end',
               }}
             >
-              <img src="//status.iamon99.com/api/badge/2/status?label=homepage" />
+              <img src="//status.iamon99.com/api/badge/2/status?label=louiscklaw.github.io" />
             </a>
           </div>
           <div style={{ paddingTop: '0.1rem', width: '100%', display: 'flex', justifyContent: 'flex-end' }}>
@@ -42,7 +42,7 @@ export default () => {
                 alignItems: 'flex-end',
               }}
             >
-              <img src="//status.iamon99.com/api/badge/13/status?label=upload" />
+              <img src="//status.iamon99.com/api/badge/13/status?label=share-staging.louislabs.com" />
             </a>
           </div>
 
