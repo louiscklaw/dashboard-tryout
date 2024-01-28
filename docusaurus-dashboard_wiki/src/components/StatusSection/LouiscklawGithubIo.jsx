@@ -21,7 +21,7 @@ export default () => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="//mobile_apps_demo.louislabs.com/"
+              href="//louiscklaw.github.io/"
               style={{
                 display: 'flex',
                 flexDirection: 'column',
@@ -35,7 +35,7 @@ export default () => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="//mobile_apps_demo.louislabs.com/"
+              href="//share-staging.louislabs.com/"
               style={{
                 display: 'flex',
                 flexDirection: 'column',
@@ -50,7 +50,7 @@ export default () => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="//mobile_apps_demo.louislabs.com/"
+              href="//meet.louislabs.com/"
               style={{
                 display: 'flex',
                 flexDirection: 'column',
