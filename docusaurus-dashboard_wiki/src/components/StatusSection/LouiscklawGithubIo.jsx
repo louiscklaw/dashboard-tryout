@@ -35,14 +35,14 @@ export default () => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="//share-staging.louislabs.com/"
+              href="//share-staging.louislabs.com/upload"
               style={{
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'flex-end',
               }}
             >
-              <img src="//status.iamon99.com/api/badge/13/status?label=share-staging.louislabs.com" />
+              <img src="//status.iamon99.com/api/badge/38/status?label=share-staging.louislabs.com" />
             </a>
           </div>
 
