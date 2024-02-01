@@ -1,6 +1,5 @@
 ## dev
 
-
 ```bash
 # ./dc_up.sh
 npm run docker_rebuild
@@ -16,7 +15,6 @@ npm run into_docker
 ## publish
 
 push to repo and it will deploy
-
 
 ```plaintext
 # abonded
