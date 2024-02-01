@@ -15,6 +15,7 @@ services:
 
     working_dir: /app
     command: ./dev.sh
+
     # command: sleep infinity
     ports:
       - 3000:3000
