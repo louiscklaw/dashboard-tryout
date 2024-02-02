@@ -15,7 +15,9 @@ export default () => {
               alignItems: 'flex-end',
             }}
           >
-            <a href="//status.iamon99.com/status/wordpress">wordpress Status</a>
+            <a href="//status.iamon99.com/status/portfolio-demo-sites" target="_blank">
+              portfolio-demo-sites
+            </a>
           </div>
           <div style={{ paddingTop: '0.1rem', width: '100%', display: 'flex', justifyContent: 'flex-end' }}>
             <a
@@ -46,7 +48,6 @@ export default () => {
               <img src="//status.iamon99.com/api/badge/26/status?label=relocation_demo" />
             </a>
           </div>
-
           <div style={{ paddingTop: '0.1rem', width: '100%', display: 'flex', justifyContent: 'flex-end' }}>
             <a
               target="_blank"
@@ -62,7 +63,6 @@ export default () => {
               <img src="//status.iamon99.com/api/badge/35/status?label=company_web_demo" />
             </a>
           </div>
-
           <div style={{ paddingTop: '0.1rem', width: '100%', display: 'flex', justifyContent: 'flex-end' }}>
             <a
               target="_blank"
@@ -151,6 +151,21 @@ export default () => {
               }}
             >
               <img src="//status.iamon99.com/api/badge/29/status?label=insurence_agent_demo" />
+            </a>
+          </div>
+          <div style={{ paddingTop: '0.1rem', width: '100%', display: 'flex', justifyContent: 'flex-end' }}>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="//rest_cms.louislabs.com/dashboard/"
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'flex-end',
+              }}
+            >
+              <img src="//status.iamon99.com/api/badge/39/status?label=rest_cms.louislabs.com" />
             </a>
           </div>
         </div>
