@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwiki=self.webpackChunkwiki||[]).push([[2304],{7290:e=>{e.exports=JSON.parse('[{"label":"Demo","permalink":"/dashboard-tryout/setup-record/tags/demo","count":1},{"label":"Getting started","permalink":"/dashboard-tryout/setup-record/tags/getting-started","count":1}]')}}]);
