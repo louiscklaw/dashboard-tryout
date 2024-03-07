@@ -3,7 +3,7 @@ import React from 'react';
 export default () => {
   return (
     <>
-      <div style={{ width: '10vw' }}>
+      <div style={{ minWidth: '8rem', maxWidth: '10vw', padding: '0 0.1rem' }}>
         <div style={{}}>
           <div
             style={{

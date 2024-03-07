@@ -2,9 +2,9 @@ import React from 'react';
 import LouiscklawGithubIo from './LouiscklawGithubIo';
 import WordpressDemo from './WordpressDemo';
 import ChangeDetect from './ChangeDetect';
-import N8n from './N8n';
-import PostTestResult from '../../pages/PostTestResult';
-import DemoTestResult from '../../pages/DemoTestResult';
+import PostTestResult from './PostTestResult';
+import DemoTestResult from './DemoTestResult';
+import InternalTools from './InternalTools';
 
 export default () => {
   return (
@@ -14,7 +14,7 @@ export default () => {
         <LouiscklawGithubIo />
         <WordpressDemo />
         <ChangeDetect />
-        <N8n />
+        <InternalTools />
         <PostTestResult />
         <DemoTestResult />
       </div>

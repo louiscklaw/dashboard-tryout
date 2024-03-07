@@ -15,29 +15,18 @@ export default () => {
               alignItems: 'flex-end',
             }}
           >
-            change detect
+            InternalTools.jsx
           </div>
+
           <div style={{ width: '100%', display: 'flex', justifyContent: 'flex-end' }}>
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="http://carousell-changedetect.iamon99.com/"
+              href="//status.iamon99.com/status/n8n"
               style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-end' }}
             >
               <div>
-                <img src="//status.iamon99.com/api/badge/25/status?label=carousell" />
-              </div>
-            </a>
-          </div>
-          <div style={{ width: '100%', display: 'flex', justifyContent: 'flex-end' }}>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="http://job-changedetect.iamon99.com/"
-              style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-end' }}
-            >
-              <div>
-                <img src="//status.iamon99.com/api/badge/24/status?label=job" />
+                <img src={`//status.iamon99.com/api/badge/22/status?label=n8n`} />
               </div>
             </a>
           </div>
@@ -46,11 +35,24 @@ export default () => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="http://private-changedetect.iamon99.com/"
+              href="//budibase.iamon99.com/"
               style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-end' }}
             >
               <div>
-                <img src="//status.iamon99.com/api/badge/5/status?label=private" />
+                <img src={`//status.iamon99.com/api/badge/45/status?label=budibase`} />
+              </div>
+            </a>
+          </div>
+
+          <div style={{ width: '100%', display: 'flex', justifyContent: 'flex-end' }}>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="//healthcheck.iamon99.com/"
+              style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-end' }}
+            >
+              <div>
+                <img src={`//status.iamon99.com/api/badge/10/status?label=healthcheck`} />
               </div>
             </a>
           </div>
