@@ -5,17 +5,17 @@ services:
       dockerfile: Dockerfile
     user: 1000:1000
     volumes:
-      - $PWD:/app
-      - test_node_modules:/app/node_modules
+      - .:/app
+      # - test_node_modules:/app/node_modules
       # - "./tests_host/integration-tests:/integration-tests"
       # - "./tests_host/screenshots:/screenshots"
+
     # command: "wait-for-it.sh react_host_client:3000 && \
     #   -- mocha --recursive /integration-tests"
+
     working_dir: /app
     command: ./dev.sh
+
     # command: sleep infinity
     ports:
       - 3000:3000
-
-volumes:
-  test_node_modules:

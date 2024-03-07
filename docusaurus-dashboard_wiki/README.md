@@ -1,7 +1,7 @@
 ## dev
 
-
 ```bash
+# ./dc_up.sh
 npm run docker_rebuild
 
 npm run into_docker
@@ -10,11 +10,19 @@ npm run into_docker
 # -> update content
 ./dev.sh
 
-# -> deploy page
-npm run deploy_gh_pages
-
+# done, the site is up and navigate to http://localhost:3000/dashboard-tryout
 ```
 
 ## publish
 
 push to repo and it will deploy
+
+```plaintext
+# abonded
+# -> deploy page, ./scripts/deploy.sh
+# in the host
+sudo rm -rf ./node_modules
+npm i -D
+npm run deploy_gh_pages
+
+```

@@ -23,7 +23,7 @@ export default {
       text_color: '#800000',
     },
     {
-      to: 'http://192.168.10.61:8080/dashboard/',
+      to: 'http://192.168.10.61:28080/',
       text: 'traefik dashboard',
       subtitle: '',
       status_id: 17,
