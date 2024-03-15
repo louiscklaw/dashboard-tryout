@@ -8,7 +8,12 @@ npm run into_docker
 
 # inside docker
 # -> update content
+# npm i -D
+# npm run start
 ./dev.sh
+
+
+
 
 # done, the site is up and navigate to http://localhost:3000/dashboard-tryout
 ```
