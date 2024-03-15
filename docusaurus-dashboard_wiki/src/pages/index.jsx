@@ -21,8 +21,6 @@ import worksheets from '../components/links/worksheets';
 import { useColorMode, useThemeConfig } from '@docusaurus/theme-common';
 import ButtonWithBadge from '../components/ButtonWithBadge';
 
-import PostTestResult from './PostTestResult';
-import DemoTestResult from './DemoTestResult';
 import Status from '../components/StatusSection';
 import StatusSection from '../components/StatusSection';
 
