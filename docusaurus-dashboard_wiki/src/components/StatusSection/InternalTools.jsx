@@ -56,6 +56,19 @@ export default () => {
               </div>
             </a>
           </div>
+
+          <div style={{ width: '100%', display: 'flex', justifyContent: 'flex-end' }}>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="//pocketbase.iamon99.com/_/"
+              style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-end' }}
+            >
+              <div>
+                <img src={`//status.iamon99.com/api/badge/47/status?label=pocketbase`} />
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </>
