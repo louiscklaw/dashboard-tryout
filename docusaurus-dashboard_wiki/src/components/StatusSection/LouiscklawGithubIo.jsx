@@ -15,7 +15,7 @@ export default () => {
               alignItems: 'flex-end',
             }}
           >
-            louiscklaw.github.io
+            LouiscklawGithubIo.jsx
           </div>
           <div style={{ paddingTop: '0.1rem', width: '100%', display: 'flex', justifyContent: 'flex-end' }}>
             <a
@@ -29,6 +29,20 @@ export default () => {
               }}
             >
               <img src="//status.iamon99.com/api/badge/2/status?label=louiscklaw.github.io" />
+            </a>
+          </div>
+          <div style={{ paddingTop: '0.1rem', width: '100%', display: 'flex', justifyContent: 'flex-end' }}>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="//aboutme.louislabs.com/"
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'flex-end',
+              }}
+            >
+              <img src="//status.iamon99.com/api/badge/41/status?label=aboutme.louislabs.com" />
             </a>
           </div>
 
