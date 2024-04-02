@@ -82,6 +82,19 @@ export default () => {
               </div>
             </a>
           </div>
+
+          <div style={{ width: '100%', display: 'flex', justifyContent: 'flex-end' }}>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://kestra.iamon99.com/"
+              style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-end' }}
+            >
+              <div>
+                <img src={`//status.iamon99.com/api/badge/49/status?label=kestra`} />
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </>
