@@ -1,6 +1,11 @@
 ## dev
 
 ```bash
+# if you are using windows
+> npm i
+> npm run start
+
+
 # ./dc_up.sh
 npm run docker_rebuild
 
@@ -11,9 +16,6 @@ npm run into_docker
 # npm i -D
 # npm run start
 ./dev.sh
-
-
-
 
 # done, the site is up and navigate to http://localhost:3000/dashboard-tryout
 ```
