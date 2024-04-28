@@ -12,6 +12,8 @@ export default () => {
           <div>{last_update}</div>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem' }}>
+            <div>iamon99.com</div>
+
             <div>
               <a
                 target="_blank"
@@ -23,9 +25,11 @@ export default () => {
                   alignItems: 'flex-end',
                 }}
               >
-                <img src="//status.iamon99.com/api/badge/21/status?label=demo-nextjs.iamon99.com" />
+                <img src="//status.iamon99.com/api/badge/21/status?label=demo-nextjs" />
               </a>
             </div>
+
+            <div>louislabs.com</div>
 
             <div>
               <a
@@ -38,7 +42,22 @@ export default () => {
                   alignItems: 'flex-end',
                 }}
               >
-                <img src="//status.iamon99.com/api/badge/53/status?label=demo-nextjs-dashboard.louislabs.com" />
+                <img src="//status.iamon99.com/api/badge/53/status?label=demo-nextjs-dashboard" />
+              </a>
+            </div>
+
+            <div>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="//ionic-demo.louislabs.com/"
+                style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'flex-end',
+                }}
+              >
+                <img src="//status.iamon99.com/api/badge/54/status?label=ionic-demo" />
               </a>
             </div>
           </div>
