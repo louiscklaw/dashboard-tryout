@@ -258,9 +258,8 @@ function TestNewHome() {
               <Link href="http://192.168.10.61:81/" target="_blank" sx={cellLinkStyle}>
                 <img src={`//status.iamon99.com/api/badge/83/status?label=nginx_reverse_proxy`} />
               </Link>
-              <Link href="http://www.example.com" target="_blank" sx={cellLinkStyle}>
-                <FaLink />
-                (吉link 出租)
+              <Link href="http://192.168.10.61:8096" target="_blank" sx={cellLinkStyle}>
+                <img src={`//status.iamon99.com/api/badge/83/status?label=mitm_proxy`} />
               </Link>
               <Link href="http://www.example.com" target="_blank" sx={cellLinkStyle}>
                 <FaLink />
@@ -536,10 +535,7 @@ function TestNewHome() {
                 <FaLink />
                 brandcolors
               </Link>
-              <Link href="http://192.168.10.61:8096" target="_blank" sx={cellLinkStyle}>
-                <FaLink />
-                mitm proxy
-              </Link>
+
               <Link href="http://i3mega.local" target="_blank" sx={cellLinkStyle}>
                 <FaLink />
                 i3mega
