@@ -350,7 +350,7 @@ function TestNewHome() {
             <Box style={{ display: 'flex', flexDirection: 'column' }}>
               <Box sx={cellTitleStyle}>2.6 - automation</Box>
               <Box sx={{ display: 'flex', flexDirection: 'column', gap: '0.1rem' }}>
-                <Link href="http://192.168.10.61:5678" target="_blank" sx={cellLinkStyle}>
+                <Link href="https://n8n.iamon99.com/" target="_blank" sx={cellLinkStyle}>
                   <img src={`//status.iamon99.com/api/badge/75/status?label=n8n`} />
                 </Link>
 
