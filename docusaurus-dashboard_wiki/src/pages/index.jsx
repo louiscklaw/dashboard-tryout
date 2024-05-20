@@ -57,7 +57,7 @@ function CellPainting() {
         alignItems: 'center',
       }}
     >
-      <FaPaintBrush fontSize={'3rem'} color={'grey'} />
+      <FaPaintBrush fontSize={'3rem'} color={'rgba(0,0,0,0.1)'} />
     </Box>
   );
 }
@@ -75,7 +75,12 @@ function TestNewHome() {
 
   let [cellStyle, setCellStyle] = useState({
     padding: '2px',
-    width: ['calc((100vw - 20px) / 3)', 'calc((100vw - 20px) / 8)'],
+    width: [
+      'calc((100vw - 20px) / 3)',
+      'calc((100vw - 20px) / 4)',
+      'calc((100vw - 20px) / 6)',
+      'calc((100vw - 20px) / 8)',
+    ],
     height: 'calc(100vh / 4)',
   });
 
@@ -102,6 +107,10 @@ function TestNewHome() {
     gap: '0.25rem',
   });
 
+  let [emptyCell, setEmptyCell] = useState({
+    display: ['none', 'none', 'none', 'block'],
+  });
+
   return (
     <>
       <ThemeProvider theme={theme}>
@@ -119,15 +128,38 @@ function TestNewHome() {
                 WordpressDemo.jsx
               </a>
             </Box>
+
             <WordpressDemo />
           </Box>
           <Box sx={cellStyle}>
             <Box sx={cellTitleStyle}>1.3 - change detect</Box>
-            <ChangeDetect />
+            <Box sx={{ display: 'flex', flexDirection: 'column', gap: '0.1rem' }}>
+              <Link href="https://carousell-changedetect.iamon99.com" target="_blank" sx={cellLinkStyle}>
+                <img src={`//status.iamon99.com/api/badge/25/status?label=carousell`} />
+              </Link>
+              <Link href="http://job-changedetect.iamon99.com/" target="_blank" sx={cellLinkStyle}>
+                <img src={`//status.iamon99.com/api/badge/24/status?label=job`} />
+              </Link>
+              <Link href="http://private-changedetect.iamon99.com/" target="_blank" sx={cellLinkStyle}>
+                <img src={`//status.iamon99.com/api/badge/5/status?label=private`} />
+              </Link>
+            </Box>
           </Box>
           <Box sx={cellStyle}>
-            <Box sx={cellTitleStyle}>1.4 - InternalTools.jsx</Box>
-            <InternalTools />
+            <Box sx={{ ...cellTitleStyle }}>
+              <Box sx={cellTitleStyle}>1.4 - InternalTools.jsx</Box>
+              <Box sx={{ display: 'flex', flexDirection: 'column', gap: '0.1rem' }}>
+                <Link href="https://status.iamon99.com/status/n8n" target="_blank" sx={cellLinkStyle}>
+                  <img src={`//status.iamon99.com/api/badge/22/status?label=n8n`} />
+                </Link>
+                <Link href="http://budibase.iamon99.com/" target="_blank" sx={cellLinkStyle}>
+                  <img src={`//status.iamon99.com/api/badge/45/status?label=budibase`} />
+                </Link>
+                <Link href="http://healthcheck.iamon99.com/" target="_blank" sx={cellLinkStyle}>
+                  <img src={`//status.iamon99.com/api/badge/10/status?label=healthcheck`} />
+                </Link>
+              </Box>
+            </Box>
           </Box>
           <Box sx={cellStyle}>
             <Box sx={cellTitleStyle}>1.5 - PostTestResult.jsx</Box>
@@ -137,13 +169,32 @@ function TestNewHome() {
             <Box sx={cellTitleStyle}>1.6 - DemoTestResult.jsx</Box>
             <DemoTestResult />
           </Box>
-          <Box sx={cellStyle}>
-            <Box sx={cellTitleStyle}>
-              1.7(吉格出租)
-              <CellPainting />
+          <Box sx={{ ...cellStyle }}>
+            <Box sx={{ ...cellTitleStyle }}>
+              <Box sx={cellTitleStyle}>1.7 - VNC</Box>
+              <Box sx={{ display: 'flex', flexDirection: 'column', gap: '0.1rem' }}>
+                <Link href="http://192.168.10.21:6080/" target="_blank" sx={cellLinkStyle}>
+                  <img src={`//status.iamon99.com/api/badge/77/status?label=vnc_carousell_burn`} />
+                </Link>
+                <Link href="http://192.168.10.21:6082/" target="_blank" sx={cellLinkStyle}>
+                  <img src={`//status.iamon99.com/api/badge/78/status?label=vnc_coze_poe_seat`} />
+                </Link>
+                <Link href="http://192.168.10.21:6090/" target="_blank" sx={cellLinkStyle}>
+                  <img src={`//status.iamon99.com/api/badge/79/status?label=vnc_youtube_monitor`} />
+                </Link>
+                <Link href="http://192.168.10.21:6081/" target="_blank" sx={cellLinkStyle}>
+                  <img src={`//status.iamon99.com/api/badge/80/status?label=vnc_jobsdb`} />
+                </Link>
+                <Link href="http://192.168.10.21:6091/" target="_blank" sx={cellLinkStyle}>
+                  <img src={`//status.iamon99.com/api/badge/81/status?label=vnc_youtube_upload`} />
+                </Link>
+                <Link href="http://192.168.10.21:6083/" target="_blank" sx={cellLinkStyle}>
+                  <img src={`//status.iamon99.com/api/badge/82/status?label=vnc_j_m3u8_downloader`} />
+                </Link>
+              </Box>
             </Box>
           </Box>
-          <Box sx={cellStyle}>
+          <Box sx={{ ...cellStyle, ...emptyCell }}>
             <Box sx={cellTitleStyle}>
               1.8(吉格出租)
               <CellPainting />
@@ -152,7 +203,7 @@ function TestNewHome() {
 
           <Box sx={cellStyle}>
             <Box style={{ display: 'flex', flexDirection: 'column' }}>
-              <Box sx={cellTitleStyle}>2.1</Box>
+              <Box sx={cellTitleStyle}>2.1 - Social</Box>
               <Link href="https://freehunter.hk/settings" target="_blank" sx={cellLinkStyle}>
                 <FaLink />
                 freehunter
@@ -189,7 +240,7 @@ function TestNewHome() {
           </Box>
           <Box sx={cellStyle}>
             <Box style={{ display: 'flex', flexDirection: 'column' }}>
-              <Box sx={cellTitleStyle}>2.1</Box>
+              <Box sx={cellTitleStyle}>2.2 - Links/Network</Box>
               <Link href="http://192.168.10.61:9000" target="_blank" sx={cellLinkStyle}>
                 <FaLink />
                 m73 portainer
@@ -206,9 +257,8 @@ function TestNewHome() {
                 <FaLink />
                 sentry
               </Link>
-              <Link href="http://www.example.com" target="_blank" sx={cellLinkStyle}>
-                <FaLink />
-                (吉link 出租)
+              <Link href="http://192.168.10.61:81/" target="_blank" sx={cellLinkStyle}>
+                <img src={`//status.iamon99.com/api/badge/83/status?label=nginx_reverse_proxy`} />
               </Link>
               <Link href="http://www.example.com" target="_blank" sx={cellLinkStyle}>
                 <FaLink />
@@ -226,195 +276,157 @@ function TestNewHome() {
           </Box>
           <Box sx={cellStyle}>
             <Box style={{ display: 'flex', flexDirection: 'column' }}>
-              <Box sx={cellTitleStyle}>2.1</Box>
-              <Link href="http://192.168.10.61:8095" target="_blank" sx={cellLinkStyle}>
-                <FaLink />
-                teedy
-              </Link>
-              <Link href="http://192.168.10.61:9091" target="_blank" sx={cellLinkStyle}>
-                <FaLink />
-                torrent
-              </Link>
-              <Link href="http://www.example.com" target="_blank" sx={cellLinkStyle}>
-                <FaLink />
-                (吉link 出租)
-              </Link>
-              <Link href="http://www.example.com" target="_blank" sx={cellLinkStyle}>
-                <FaLink />
-                (吉link 出租)
-              </Link>
-              <Link href="http://www.example.com" target="_blank" sx={cellLinkStyle}>
-                <FaLink />
-                (吉link 出租)
-              </Link>
-              <Link href="http://www.example.com" target="_blank" sx={cellLinkStyle}>
-                <FaLink />
-                (吉link 出租)
-              </Link>
-              <Link href="http://www.example.com" target="_blank" sx={cellLinkStyle}>
-                <FaLink />
-                (吉link 出租)
-              </Link>
-              <Link href="http://www.example.com" target="_blank" sx={cellLinkStyle}>
-                <FaLink />
-                (吉link 出租)
-              </Link>
+              <Box sx={cellTitleStyle}>2.3 - file share</Box>
+              <Box sx={{ display: 'flex', flexDirection: 'column', gap: '0.1rem' }}>
+                <Link href="http://192.168.10.61:8095" target="_blank" sx={cellLinkStyle}>
+                  <img src={`//status.iamon99.com/api/badge/60/status?label=teedy`} />
+                </Link>
+
+                <Link href="http://192.168.10.61:9091" target="_blank" sx={cellLinkStyle}>
+                  <img src={`//status.iamon99.com/api/badge/61/status?label=torrent`} />
+                </Link>
+              </Box>
             </Box>
           </Box>
           <Box sx={cellStyle}>
             <Box style={{ display: 'flex', flexDirection: 'column' }}>
-              <Box sx={cellTitleStyle}>2.1</Box>
-              <Link href="http://192.168.10.21:9000" target="_blank" sx={cellLinkStyle}>
-                <FaLink />
-                nuc portainer
-              </Link>
-              <Link href="http://192.168.10.61:5010" target="_blank" sx={cellLinkStyle}>
-                <FaLink />
-                proxy pool
-              </Link>
-              <Link href="https://status.iamon99.com/dashboard" target="_blank" sx={cellLinkStyle}>
-                <FaLink />
-                uptime kuma
-              </Link>
-              <Link href="http://192.168.10.61:2017" target="_blank" sx={cellLinkStyle}>
-                <FaLink />
-                v2raya
-              </Link>
-              <Link href="http://192.168.10.21:50080" target="_blank" sx={cellLinkStyle}>
-                <FaLink />
-                Homer
-              </Link>
-              <Link href="http://192.168.10.61:8087" target="_blank" sx={cellLinkStyle}>
-                <FaLink />
-                jenkins
-              </Link>
-              <Link href="http://192.168.10.61:8089" target="_blank" sx={cellLinkStyle}>
-                <FaLink />
-                checkmk
-              </Link>
-              <Link href="http://192.168.10.61:8093" target="_blank" sx={cellLinkStyle}>
-                <FaLink />
-                RethinkDb
-              </Link>
+              <Box sx={cellTitleStyle}>
+                <Link href="https://status.iamon99.com/dashboard" target="_blank" sx={cellLinkStyle}>
+                  <FaLink />
+                  2.4 - uptime kuma
+                </Link>
+              </Box>
+              <Box sx={{ display: 'flex', flexDirection: 'column', gap: '0.1rem' }}>
+                <Link href="http://192.168.10.21:9000" target="_blank" sx={cellLinkStyle}>
+                  <img src={`//status.iamon99.com/api/badge/62/status?label=nuc_portainer`} />
+                </Link>
+                <Link href="http://192.168.10.21:5010/all/" target="_blank" sx={cellLinkStyle}>
+                  <img src={`//status.iamon99.com/api/badge/63/status?label=proxy_pool`} />
+                </Link>
+                <Link href="http://192.168.10.61:2017" target="_blank" sx={cellLinkStyle}>
+                  <img src={`//status.iamon99.com/api/badge/67/status?label=v2raya`} />
+                </Link>
+                <Link href="http://192.168.10.21:50080" target="_blank" sx={cellLinkStyle}>
+                  <img src={`//status.iamon99.com/api/badge/67/status?label=Homer`} />
+                </Link>
+                <Link href="http://192.168.10.61:8087" target="_blank" sx={cellLinkStyle}>
+                  <img src={`//status.iamon99.com/api/badge/64/status?label=jenkins`} />
+                </Link>
+                <Link href="http://192.168.10.61:8089" target="_blank" sx={cellLinkStyle}>
+                  <img src={`//status.iamon99.com/api/badge/65/status?label=checkmk`} />
+                </Link>
+                <Link href="http://192.168.10.61:8093" target="_blank" sx={cellLinkStyle}>
+                  <img src={`//status.iamon99.com/api/badge/66/status?label=RethinkDB`} />
+                </Link>
+              </Box>
             </Box>
           </Box>
           <Box sx={cellStyle}>
             <Box style={{ display: 'flex', flexDirection: 'column' }}>
-              <Box sx={cellTitleStyle}>2.1</Box>
-              <Link href="http://192.168.10.61:8086" target="_blank" sx={cellLinkStyle}>
-                <FaLink />
-                influxdb
-              </Link>
-              <Link href="http://192.168.10.61:8086" target="_blank" sx={cellLinkStyle}>
-                <FaLink />
-                appwrite
-              </Link>
-              <Link href="http://192.168.10.61:8081" target="_blank" sx={cellLinkStyle}>
-                <FaLink />
-                phpmyadmin
-              </Link>
-              <Link href="http://192.168.10.61:5050" target="_blank" sx={cellLinkStyle}>
-                <FaLink />
-                pgadmin
-              </Link>
-              <Link href="http://192.168.10.61:5678" target="_blank" sx={cellLinkStyle}>
-                <FaLink />
-                n8n
-              </Link>
-              <Link href="http://192.168.10.61:8088" target="_blank" sx={cellLinkStyle}>
-                <FaLink />
-                appwrite
-              </Link>
-              <Link href="http://192.168.10.61:9001" target="_blank" sx={cellLinkStyle}>
-                <FaLink />
-                questdb
-              </Link>
+              <Box sx={cellTitleStyle}>2.5 - DB</Box>
+              <Box sx={{ display: 'flex', flexDirection: 'column', gap: '0.1rem' }}>
+                <Link href="http://192.168.10.61:8086" target="_blank" sx={cellLinkStyle}>
+                  <img src={`//status.iamon99.com/api/badge/69/status?label=influxdb`} />
+                </Link>
+                <Link href="http://192.168.10.61:8086" target="_blank" sx={cellLinkStyle}>
+                  <img src={`//status.iamon99.com/api/badge/73/status?label=appwrite`} />
+                </Link>
+                <Link href="http://192.168.10.61:8081" target="_blank" sx={cellLinkStyle}>
+                  <img src={`//status.iamon99.com/api/badge/71/status?label=phpmyadmin`} />
+                </Link>
+                <Link href="http://192.168.10.61:5050" target="_blank" sx={cellLinkStyle}>
+                  <img src={`//status.iamon99.com/api/badge/72/status?label=pgadmin`} />
+                </Link>
+                <Link href="http://192.168.10.61:9001" target="_blank" sx={cellLinkStyle}>
+                  <img src={`//status.iamon99.com/api/badge/74/status?label=questdb`} />
+                </Link>
+                <Link href="https://pocketbase.iamon99.com/" target="_blank" sx={cellLinkStyle}>
+                  <img src={`//status.iamon99.com/api/badge/47/status?label=pocketbase`} />
+                </Link>
+              </Box>
             </Box>
           </Box>
           <Box sx={cellStyle}>
             <Box style={{ display: 'flex', flexDirection: 'column' }}>
-              <Box sx={cellTitleStyle}>2.1</Box>
-              <Link
-                href="https://www.figma.com/files/recent?fuid=765995386551996371"
-                target="_blank"
-                sx={cellLinkStyle}
-              >
-                <FaLink />
-                figma
-              </Link>
-              <Link
-                href="https://console.firebase.google.com/project/dashboard-76c7d/overview"
-                target="_blank"
-                sx={cellLinkStyle}
-              >
-                <FaLink />
-                firebase console
-              </Link>
-              <Link href="http://192.168.10.21:6080" target="_blank" sx={cellLinkStyle}>
-                <FaLink />
-                android emu
-              </Link>
-              <Link href="https://drone.iamon99.com" target="_blank" sx={cellLinkStyle}>
-                <FaLink />
-                drone ci
-              </Link>
-              <Link href="https://healthcheck.iamon99.com" target="_blank" sx={cellLinkStyle}>
-                <FaLink />
-                healthcheck
-              </Link>
-              <Link href="http://192.168.10.21:6081" target="_blank" sx={cellLinkStyle}>
-                <FaLink />
-                android emu
-              </Link>
-              <Link href="http://192.168.10.21:6082" target="_blank" sx={cellLinkStyle}>
-                <FaLink />
-                android emu
-              </Link>
-              <Link href="http://192.168.10.61:4445/haproxy?stats" target="_blank" sx={cellLinkStyle}>
-                <FaLink />
-                haproxy
-              </Link>
+              <Box sx={cellTitleStyle}>2.6 - automation</Box>
+              <Box sx={{ display: 'flex', flexDirection: 'column', gap: '0.1rem' }}>
+                <Link href="http://192.168.10.61:5678" target="_blank" sx={cellLinkStyle}>
+                  <img src={`//status.iamon99.com/api/badge/75/status?label=n8n`} />
+                </Link>
+
+                <Link href="https://kestra.iamon99.com" target="_blank" sx={cellLinkStyle}>
+                  <img src={`//status.iamon99.com/api/badge/49/status?label=kestra`} />
+                </Link>
+                <Link
+                  href="https://www.figma.com/files/recent?fuid=765995386551996371"
+                  target="_blank"
+                  sx={cellLinkStyle}
+                >
+                  <FaLink />
+                  figma
+                </Link>
+                <Link
+                  href="https://console.firebase.google.com/project/dashboard-76c7d/overview"
+                  target="_blank"
+                  sx={cellLinkStyle}
+                >
+                  <FaLink />
+                  firebase console
+                </Link>
+
+                <Link href="https://drone.iamon99.com" target="_blank" sx={cellLinkStyle}>
+                  <FaLink />
+                  drone ci
+                </Link>
+                <Link href="https://healthcheck.iamon99.com" target="_blank" sx={cellLinkStyle}>
+                  <FaLink />
+                  healthcheck
+                </Link>
+                <Link href="http://192.168.10.61:4445/haproxy?stats" target="_blank" sx={cellLinkStyle}>
+                  <FaLink />
+                  haproxy
+                </Link>
+              </Box>
             </Box>
           </Box>
           <Box sx={cellStyle}>
             <Box style={{ display: 'flex', flexDirection: 'column' }}>
-              <Box sx={cellTitleStyle}>2.1</Box>
-              <Link href="http://192.168.10.61:9004" target="_blank" sx={cellLinkStyle}>
-                <FaLink />
-                minio
-              </Link>
-              <Link
-                href="https://console.firebase.google.com/project/dashboard-76c7d/overview"
-                target="_blank"
-                sx={cellLinkStyle}
-              >
-                <FaLink />
-                firebase console
-              </Link>
-              <Link href="http://192.168.10.21:6080" target="_blank" sx={cellLinkStyle}>
-                <FaLink />
-                android emu
-              </Link>
-              <Link href="https://drone.iamon99.com" target="_blank" sx={cellLinkStyle}>
-                <FaLink />
-                drone ci
-              </Link>
-              <Link href="https://healthcheck.iamon99.com" target="_blank" sx={cellLinkStyle}>
-                <FaLink />
-                healthcheck
-              </Link>
-              <Link href="http://192.168.10.21:6081" target="_blank" sx={cellLinkStyle}>
-                <FaLink />
-                android emu
-              </Link>
-              <Link href="http://192.168.10.21:6082" target="_blank" sx={cellLinkStyle}>
-                <FaLink />
-                android emu
-              </Link>
-              <Link href="http://192.168.10.61:4445/haproxy?stats" target="_blank" sx={cellLinkStyle}>
-                <FaLink />
-                haproxy
-              </Link>
+              <Box sx={cellTitleStyle}>2.7 - object store</Box>
+              <Box sx={{ display: 'flex', flexDirection: 'column', gap: '0.1rem' }}>
+                <Link href="http://192.168.10.61:9004" target="_blank" sx={cellLinkStyle}>
+                  <img src={`//status.iamon99.com/api/badge/85/status?label=minio`} />
+                </Link>
+                <Link
+                  href="https://console.firebase.google.com/project/dashboard-76c7d/overview"
+                  target="_blank"
+                  sx={cellLinkStyle}
+                >
+                  <FaLink />
+                  firebase console
+                </Link>
+
+                <Link href="https://drone.iamon99.com" target="_blank" sx={cellLinkStyle}>
+                  <FaLink />
+                  drone ci
+                </Link>
+                <Link href="https://healthcheck.iamon99.com" target="_blank" sx={cellLinkStyle}>
+                  <FaLink />
+                  healthcheck
+                </Link>
+                <Link href="http://192.168.10.21:6080" target="_blank" sx={cellLinkStyle}>
+                  <img src={`//status.iamon99.com/api/badge/85/status?label=android_emu_1`} />
+                </Link>
+                <Link href="http://192.168.10.21:6081" target="_blank" sx={cellLinkStyle}>
+                  <img src={`//status.iamon99.com/api/badge/85/status?label=android_emu_2`} />
+                </Link>
+                <Link href="http://192.168.10.21:6082" target="_blank" sx={cellLinkStyle}>
+                  <img src={`//status.iamon99.com/api/badge/85/status?label=android_emu_3`} />
+                </Link>
+                <Link href="http://192.168.10.61:4445/haproxy?stats" target="_blank" sx={cellLinkStyle}>
+                  <FaLink />
+                  haproxy
+                </Link>
+              </Box>
             </Box>
           </Box>
           <Box sx={cellStyle}>
@@ -510,7 +522,7 @@ function TestNewHome() {
           </Box>
           <Box sx={cellStyle}>
             <Box style={{ display: 'flex', flexDirection: 'column' }}>
-              <Box sx={cellTitleStyle}>3.2 color </Box>
+              <Box sx={cellTitleStyle}>3.2 color - 1</Box>
               <Link href="https://colors.dopely.top" target="_blank" sx={cellLinkStyle}>
                 <FaLink />
                 dopely
@@ -543,7 +555,7 @@ function TestNewHome() {
           </Box>
           <Box sx={cellStyle}>
             <Box style={{ display: 'flex', flexDirection: 'column' }}>
-              <Box sx={cellTitleStyle}>3.3 color</Box>
+              <Box sx={cellTitleStyle}>3.3 color - 2</Box>
               <Link href="https://github.com/webkul/coolhue" target="_blank" sx={cellLinkStyle}>
                 <FaLink />
                 coolhue
@@ -562,80 +574,80 @@ function TestNewHome() {
               </Link>
             </Box>
           </Box>
-          <Box sx={cellStyle}>
+          <Box sx={{ ...cellStyle, ...emptyCell }}>
             <Box sx={cellTitleStyle}>
               3.4(吉格出租)
               <CellPainting />
             </Box>
           </Box>
-          <Box sx={cellStyle}>
+          <Box sx={{ ...cellStyle, ...emptyCell }}>
             <Box sx={cellTitleStyle}>
               3.5(吉格出租)
               <CellPainting />
             </Box>
           </Box>
-          <Box sx={cellStyle}>
+          <Box sx={{ ...cellStyle, ...emptyCell }}>
             <Box sx={cellTitleStyle}>
               3.6(吉格出租)
               <CellPainting />
             </Box>
           </Box>
-          <Box sx={cellStyle}>
+          <Box sx={{ ...cellStyle, ...emptyCell }}>
             <Box sx={cellTitleStyle}>
               3.7(吉格出租)
               <CellPainting />
             </Box>
           </Box>
-          <Box sx={cellStyle}>
+          <Box sx={{ ...cellStyle, ...emptyCell }}>
             <Box sx={cellTitleStyle}>
               3.8(吉格出租)
               <CellPainting />
             </Box>
           </Box>
 
-          <Box sx={cellStyle}>
+          <Box sx={{ ...cellStyle, ...emptyCell }}>
             <Box sx={cellTitleStyle}>
               4.1(吉格出租)
               <CellPainting />
             </Box>
           </Box>
-          <Box sx={cellStyle}>
+          <Box sx={{ ...cellStyle, ...emptyCell }}>
             <Box sx={cellTitleStyle}>
               4.2(吉格出租)
               <CellPainting />
             </Box>
           </Box>
-          <Box sx={cellStyle}>
+          <Box sx={{ ...cellStyle, ...emptyCell }}>
             <Box sx={cellTitleStyle}>
               4.3(吉格出租)
               <CellPainting />
             </Box>
           </Box>
-          <Box sx={cellStyle}>
+          <Box sx={{ ...cellStyle, ...emptyCell }}>
             <Box sx={cellTitleStyle}>
               4.4(吉格出租)
               <CellPainting />
             </Box>
           </Box>
-          <Box sx={cellStyle}>
+          <Box sx={{ ...cellStyle, ...emptyCell }}>
             <Box sx={cellTitleStyle}>
               4.5(吉格出租)
               <CellPainting />
             </Box>
           </Box>
-          <Box sx={cellStyle}>
+          <Box sx={{ ...cellStyle, ...emptyCell }}>
             <Box sx={cellTitleStyle}>
               4.6(吉格出租)
               <CellPainting />
             </Box>
           </Box>
-          <Box sx={cellStyle}>
+          <Box sx={{ ...cellStyle, ...emptyCell }}>
             <Box sx={cellTitleStyle}>
               4.7(吉格出租)
               <CellPainting />
             </Box>
           </Box>
-          <Box sx={cellStyle}>
+          <Box sx={{ ...cellStyle, ...emptyCell }}>
             <Box sx={cellTitleStyle}>
               4.8(吉格出租)
               <CellPainting />

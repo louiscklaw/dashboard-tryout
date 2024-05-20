@@ -1,22 +1,12 @@
+import { Box, Link } from '@mui/material';
 import React from 'react';
 
 export default () => {
   return (
     <>
-      <div style={{ minWidth: '8rem', maxWidth: '10vw', padding: '0 0.1rem' }}>
+      <div style={{ minWidth: '8rem', maxWidth: '10vw' }}>
         <div style={{}}>
-          <div style={{ width: '100%', display: 'flex', justifyContent: 'flex-start' }}>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="//status.iamon99.com/status/n8n"
-              style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-end' }}
-            >
-              <div>
-                <img src={`//status.iamon99.com/api/badge/22/status?label=n8n`} />
-              </div>
-            </a>
-          </div>
+          <div style={{ width: '100%', display: 'flex', justifyContent: 'flex-start' }}></div>
 
           <div style={{ width: '100%', display: 'flex', justifyContent: 'flex-start' }}>
             <a
