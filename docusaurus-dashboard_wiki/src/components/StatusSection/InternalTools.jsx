@@ -5,20 +5,7 @@ export default () => {
     <>
       <div style={{ minWidth: '8rem', maxWidth: '10vw', padding: '0 0.1rem' }}>
         <div style={{}}>
-          <div
-            style={{
-              fontSize: '0.75rem',
-              width: '100%',
-              fontWeight: 'bold',
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'flex-end',
-            }}
-          >
-            InternalTools.jsx
-          </div>
-
-          <div style={{ width: '100%', display: 'flex', justifyContent: 'flex-end' }}>
+          <div style={{ width: '100%', display: 'flex', justifyContent: 'flex-start' }}>
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -31,7 +18,7 @@ export default () => {
             </a>
           </div>
 
-          <div style={{ width: '100%', display: 'flex', justifyContent: 'flex-end' }}>
+          <div style={{ width: '100%', display: 'flex', justifyContent: 'flex-start' }}>
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -44,7 +31,7 @@ export default () => {
             </a>
           </div>
 
-          <div style={{ width: '100%', display: 'flex', justifyContent: 'flex-end' }}>
+          <div style={{ width: '100%', display: 'flex', justifyContent: 'flex-start' }}>
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -57,7 +44,7 @@ export default () => {
             </a>
           </div>
 
-          <div style={{ width: '100%', display: 'flex', justifyContent: 'flex-end' }}>
+          <div style={{ width: '100%', display: 'flex', justifyContent: 'flex-start' }}>
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -70,7 +57,7 @@ export default () => {
             </a>
           </div>
 
-          <div style={{ width: '100%', display: 'flex', justifyContent: 'flex-end' }}>
+          <div style={{ width: '100%', display: 'flex', justifyContent: 'flex-start' }}>
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -83,7 +70,7 @@ export default () => {
             </a>
           </div>
 
-          <div style={{ width: '100%', display: 'flex', justifyContent: 'flex-end' }}>
+          <div style={{ width: '100%', display: 'flex', justifyContent: 'flex-start' }}>
             <a
               target="_blank"
               rel="noopener noreferrer"

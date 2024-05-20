@@ -267,10 +267,10 @@ const config = {
           { to: '/setup-record', label: '📖 setup-record', position: 'right' },
         ],
       },
-      footer: {
-        style: 'dark',
-        copyright: `Copyright © ${new Date().getFullYear()} louislabs, Inc. Built with <a href="https://www.docusaurus.cn/" target="_blank" rel="noopener noreferrer">Docusaurus</a>.`,
-      },
+      // footer: {
+      // style: 'dark',
+      // copyright: `Copyright © ${new Date().getFullYear()} louislabs, Inc. Built with <a href="https://www.docusaurus.cn/" target="_blank" rel="noopener noreferrer">Docusaurus</a>.`,
+      // },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,

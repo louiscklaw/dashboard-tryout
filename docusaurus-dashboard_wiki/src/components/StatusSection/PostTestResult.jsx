@@ -40,7 +40,6 @@ export default () => {
     <>
       <div style={{ minWidth: '8rem', maxWidth: '10vw', padding: '0 0.1rem' }}>
         <div style={{ fontSize: '0.75rem' }}>
-          <div>post test result:</div>
           <div>{last_update}</div>
 
           <a

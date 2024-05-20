@@ -8,7 +8,6 @@ export default () => {
     <>
       <div style={{ minWidth: '8rem', maxWidth: '10vw', padding: '0 0.1rem' }}>
         <div style={{ fontSize: '0.75rem' }}>
-          <div>DemoTestResult.jsx</div>
           <div>{last_update}</div>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem' }}>
@@ -22,7 +21,7 @@ export default () => {
                 style={{
                   display: 'flex',
                   flexDirection: 'column',
-                  alignItems: 'flex-end',
+                  alignItems: 'flex-start',
                 }}
               >
                 <img src="//status.iamon99.com/api/badge/21/status?label=demo-nextjs" />
@@ -39,7 +38,7 @@ export default () => {
                 style={{
                   display: 'flex',
                   flexDirection: 'column',
-                  alignItems: 'flex-end',
+                  alignItems: 'flex-start',
                 }}
               >
                 <img src="//status.iamon99.com/api/badge/53/status?label=demo-nextjs-dashboard" />
@@ -54,7 +53,7 @@ export default () => {
                 style={{
                   display: 'flex',
                   flexDirection: 'column',
-                  alignItems: 'flex-end',
+                  alignItems: 'flex-start',
                 }}
               >
                 <img src="//status.iamon99.com/api/badge/54/status?label=ionic-demo" />

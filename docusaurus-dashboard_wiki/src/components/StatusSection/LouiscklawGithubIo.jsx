@@ -5,19 +5,7 @@ export default () => {
     <>
       <div style={{ minWidth: '8rem', maxWidth: '10vw', padding: '0 0.1rem' }}>
         <div>
-          <div
-            style={{
-              fontSize: '0.75rem',
-              width: '100%',
-              fontWeight: 'bold',
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'flex-end',
-            }}
-          >
-            LouiscklawGithubIo.jsx
-          </div>
-          <div style={{ paddingTop: '0.1rem', width: '100%', display: 'flex', justifyContent: 'flex-end' }}>
+          <div style={{ paddingTop: '0.1rem', width: '100%', display: 'flex', justifyContent: 'flex-start' }}>
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -31,7 +19,7 @@ export default () => {
               <img src="//status.iamon99.com/api/badge/2/status?label=louiscklaw.github.io" />
             </a>
           </div>
-          <div style={{ paddingTop: '0.1rem', width: '100%', display: 'flex', justifyContent: 'flex-end' }}>
+          <div style={{ paddingTop: '0.1rem', width: '100%', display: 'flex', justifyContent: 'flex-start' }}>
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -46,7 +34,7 @@ export default () => {
             </a>
           </div>
 
-          <div style={{ paddingTop: '0.1rem', width: '100%', display: 'flex', justifyContent: 'flex-end' }}>
+          <div style={{ paddingTop: '0.1rem', width: '100%', display: 'flex', justifyContent: 'flex-start' }}>
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -61,7 +49,7 @@ export default () => {
             </a>
           </div>
 
-          <div style={{ paddingTop: '0.1rem', width: '100%', display: 'flex', justifyContent: 'flex-end' }}>
+          <div style={{ paddingTop: '0.1rem', width: '100%', display: 'flex', justifyContent: 'flex-start' }}>
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -76,7 +64,7 @@ export default () => {
             </a>
           </div>
 
-          <div style={{ paddingTop: '0.1rem', width: '100%', display: 'flex', justifyContent: 'flex-end' }}>
+          <div style={{ paddingTop: '0.1rem', width: '100%', display: 'flex', justifyContent: 'flex-start' }}>
             <a
               target="_blank"
               rel="noopener noreferrer"
