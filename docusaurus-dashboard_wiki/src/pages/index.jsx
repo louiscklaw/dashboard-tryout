@@ -147,14 +147,12 @@ function TestNewHome() {
           </Box>
           <Box sx={cellStyle}>
             <Box sx={{ ...cellTitleStyle }}>
-              <Box sx={cellTitleStyle}>1.4 - InternalTools.jsx</Box>
+              <Box sx={cellTitleStyle}>1.4 - monitor</Box>
               <Box sx={{ display: 'flex', flexDirection: 'column', gap: '0.1rem' }}>
                 <Link href="https://status.iamon99.com/status/n8n" target="_blank" sx={cellLinkStyle}>
                   <img src={`//status.iamon99.com/api/badge/22/status?label=n8n`} />
                 </Link>
-                <Link href="http://budibase.iamon99.com/" target="_blank" sx={cellLinkStyle}>
-                  <img src={`//status.iamon99.com/api/badge/45/status?label=budibase`} />
-                </Link>
+
                 <Link href="http://healthcheck.iamon99.com/" target="_blank" sx={cellLinkStyle}>
                   <img src={`//status.iamon99.com/api/badge/10/status?label=healthcheck`} />
                 </Link>
@@ -343,6 +341,9 @@ function TestNewHome() {
                 <Link href="https://pocketbase.iamon99.com/" target="_blank" sx={cellLinkStyle}>
                   <img src={`//status.iamon99.com/api/badge/47/status?label=pocketbase`} />
                 </Link>
+                <Link href="http://budibase.iamon99.com/" target="_blank" sx={cellLinkStyle}>
+                  <img src={`//status.iamon99.com/api/badge/45/status?label=budibase`} />
+                </Link>
               </Box>
             </Box>
           </Box>
@@ -350,10 +351,6 @@ function TestNewHome() {
             <Box style={{ display: 'flex', flexDirection: 'column' }}>
               <Box sx={cellTitleStyle}>2.6 - automation</Box>
               <Box sx={{ display: 'flex', flexDirection: 'column', gap: '0.1rem' }}>
-                <Link href="https://n8n.iamon99.com/" target="_blank" sx={cellLinkStyle}>
-                  <img src={`//status.iamon99.com/api/badge/75/status?label=n8n`} />
-                </Link>
-
                 <Link href="https://kestra.iamon99.com" target="_blank" sx={cellLinkStyle}>
                   <img src={`//status.iamon99.com/api/badge/49/status?label=kestra`} />
                 </Link>
