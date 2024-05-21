@@ -568,9 +568,17 @@ function TestNewHome() {
             </Box>
           </Box>
           <Box sx={{ ...cellStyle, ...emptyCell }}>
-            <Box sx={cellTitleStyle}>
-              3.4(吉格出租)
-              <CellPainting />
+            <Box sx={cellTitleStyle}>3.4 - github action status</Box>
+            <Box>
+              <Link
+                href="https://github.com/louiscklaw/carousell-monitor-playlist/actions/workflows/carousell-post-test.yml"
+                target="_blank"
+                sx={cellLinkStyle}
+              >
+                <img
+                  src={`https://github.com/louiscklaw/carousell-monitor-playlist/actions/workflows/carousell-post-test.yml/badge.svg`}
+                />
+              </Link>
             </Box>
           </Box>
           <Box sx={{ ...cellStyle, ...emptyCell }}>
