@@ -42,13 +42,6 @@ export default () => {
         <div style={{ fontSize: '0.75rem' }}>
           <div>{last_update}</div>
 
-          <a
-            href="https://github.com/louiscklaw/carousell-monitor-playlist/actions/workflows/carousell-post-test.yml"
-            target="_blank"
-          >
-            <img src="https://github.com/louiscklaw/carousell-monitor-playlist/actions/workflows/carousell-post-test.yml/badge.svg" />
-          </a>
-
           <div style={{ color: 'white', backgroundColor: coding_post_check_result == 'OK' ? 'green' : 'red' }}>
             coding:{coding_post_check_result}
           </div>
