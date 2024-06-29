@@ -150,11 +150,11 @@ function TestNewHome() {
               <Box sx={cellTitleStyle}>1.4 - monitor</Box>
               <Box sx={{ display: 'flex', flexDirection: 'column', gap: '0.1rem' }}>
                 <Link href="https://status.iamon99.com/status/n8n" target="_blank" sx={cellLinkStyle}>
-                  <img src={`//status.iamon99.com/api/badge/22/status?label=n8n`} />
+                  <img src={`//status.iamon99.com/api/badge/22/status?label=n8n.iamon99.com`} />
                 </Link>
 
                 <Link href="http://healthcheck.iamon99.com/" target="_blank" sx={cellLinkStyle}>
-                  <img src={`//status.iamon99.com/api/badge/10/status?label=healthcheck`} />
+                  <img src={`//status.iamon99.com/api/badge/10/status?label=healthcheck.iamon99.com`} />
                 </Link>
               </Box>
             </Box>
