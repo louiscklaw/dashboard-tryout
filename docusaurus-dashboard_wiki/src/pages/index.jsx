@@ -326,7 +326,7 @@ function TestNewHome() {
                   <img src={`//status.iamon99.com/api/badge/69/status?label=influxdb`} />
                 </Link>
                 <Link href="http://192.168.10.61:8086" target="_blank" sx={cellLinkStyle}>
-                  <img src={`//status.iamon99.com/api/badge/73/status?label=appwrite`} />
+                  <img src={`//status.iamon99.com/api/badge/73/status?label=appwrite.iamon99.com`} />
                 </Link>
                 <Link href="http://192.168.10.61:8081" target="_blank" sx={cellLinkStyle}>
                   <img src={`//status.iamon99.com/api/badge/71/status?label=phpmyadmin`} />
@@ -338,10 +338,10 @@ function TestNewHome() {
                   <img src={`//status.iamon99.com/api/badge/74/status?label=questdb`} />
                 </Link>
                 <Link href="https://pocketbase.iamon99.com/" target="_blank" sx={cellLinkStyle}>
-                  <img src={`//status.iamon99.com/api/badge/47/status?label=pocketbase`} />
+                  <img src={`//status.iamon99.com/api/badge/47/status?label=pocketbase.iamon99.com`} />
                 </Link>
                 <Link href="http://budibase.iamon99.com/" target="_blank" sx={cellLinkStyle}>
-                  <img src={`//status.iamon99.com/api/badge/45/status?label=budibase`} />
+                  <img src={`//status.iamon99.com/api/badge/45/status?label=budibase.iamon99.com`} />
                 </Link>
               </Box>
             </Box>

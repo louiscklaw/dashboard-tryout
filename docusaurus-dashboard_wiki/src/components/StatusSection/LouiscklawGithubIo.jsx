@@ -54,21 +54,6 @@ export default () => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="//share-staging.louislabs.com/upload"
-              style={{
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'flex-end',
-              }}
-            >
-              <img src="//status.iamon99.com/api/badge/38/status?label=share-staging" />
-            </a>
-          </div>
-
-          <div style={{ paddingTop: '0.1rem', width: '100%', display: 'flex', justifyContent: 'flex-start' }}>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
               href="//share.louislabs.com/upload"
               style={{
                 display: 'flex',
