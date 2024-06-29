@@ -19,6 +19,7 @@ export default () => {
               <img src="//status.iamon99.com/api/badge/2/status?label=louiscklaw.github.io" />
             </a>
           </div>
+
           <div style={{ paddingTop: '0.1rem', width: '100%', display: 'flex', justifyContent: 'flex-start' }}>
             <a
               target="_blank"
@@ -31,6 +32,21 @@ export default () => {
               }}
             >
               <img src="//status.iamon99.com/api/badge/41/status?label=aboutme.louislabs.com" />
+            </a>
+          </div>
+
+          <div style={{ paddingTop: '0.1rem', width: '100%', display: 'flex', justifyContent: 'flex-start' }}>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="//aboutme.louislabs.com/pay/"
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'flex-end',
+              }}
+            >
+              <img src="//status.iamon99.com/api/badge/89/status?label=aboutme.louislabs.com/pay" />
             </a>
           </div>
 
@@ -68,14 +84,14 @@ export default () => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="//meet.louislabs.com/"
+              href="//louiscklaw.github.io/work"
               style={{
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'flex-end',
               }}
             >
-              <img src="//status.iamon99.com/api/badge/9/status?label=meet" />
+              <img src="//status.iamon99.com/api/badge/88/status?label=louiscklaw.github.io/work" />
             </a>
           </div>
         </div>
