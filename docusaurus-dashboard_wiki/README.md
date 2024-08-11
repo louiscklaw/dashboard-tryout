@@ -1,5 +1,14 @@
 ## dev
 
+### WSL
+
+```bash
+$ nvm use 18
+$ npm run dev
+
+
+```
+
 ```bash
 # if you are using windows
 > npm i

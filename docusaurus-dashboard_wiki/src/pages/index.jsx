@@ -152,7 +152,7 @@ function TestNewHome() {
                 sx={cellLinkStyle}
               >
                 <img
-                  src={`https://healthcheck.iamon99.com/badge/b393156a-55f4-4ca4-a6e4-dfab30/ofcKpB8z-2/new-changedetect.svg`}
+                  src={`https://healthcheck.iamon99.com/badge/b393156a-55f4-4ca4-a6e4-dfab30/2XwGio7N-2/new-changedetect%252Fmonitor.svg`}
                 />
               </Link>
             </Box>
