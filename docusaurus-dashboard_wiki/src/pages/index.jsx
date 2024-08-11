@@ -143,6 +143,18 @@ function TestNewHome() {
               <Link href="http://private-changedetect.iamon99.com/" target="_blank" sx={cellLinkStyle}>
                 <img src={`//status.iamon99.com/api/badge/5/status?label=private`} />
               </Link>
+              <Link href="http://new-changedetect.iamon99.com/" target="_blank" sx={cellLinkStyle}>
+                <img src={`//status.iamon99.com/api/badge/90/status?label=new-changedetect`} />
+              </Link>
+              <Link
+                href="https://healthcheck.iamon99.com/checks/fb732e07-8e5b-4704-8360-9b84986eaf70/details/"
+                target="_blank"
+                sx={cellLinkStyle}
+              >
+                <img
+                  src={`https://healthcheck.iamon99.com/badge/b393156a-55f4-4ca4-a6e4-dfab30/ofcKpB8z-2/new-changedetect.svg`}
+                />
+              </Link>
             </Box>
           </Box>
           <Box sx={cellStyle}>
