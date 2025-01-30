@@ -204,10 +204,12 @@ function TestNewHome() {
               </Box>
             </Box>
           </Box>
-          <Box sx={{ ...cellStyle, ...emptyCell }}>
-            <Box sx={cellTitleStyle}>
-              1.8(吉格出租)
-              <CellPainting />
+          <Box sx={{ ...cellStyle }}>
+            <Box style={{ display: 'flex', flexDirection: 'column' }}>
+              <Box sx={cellTitleStyle}>1.8(develop)</Box>
+              <Link href="https://git.louislabs.com/" target="_blank" sx={cellLinkStyle}>
+                <img src={`//status.iamon99.com/api/badge/95/status?label=git.louislabs.com`} />
+              </Link>
             </Box>
           </Box>
 
