@@ -19,920 +19,750 @@
 -->
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <base href="dashboard-tryout/" />
-    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="./assets/img/apple-icon.png"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="./assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"
-    />
-    <link rel="stylesheet" href="./assets/styles/tailwind.css" />
-    <title>Dashboard | Notus Tailwind JS by Creative Tim</title>
-  </head>
-  <body class="text-blueGray-700 antialiased">
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root">
-      <div class="relative bg-blueGray-50 min-h-screen">
-        <!-- Header -->
-        <div class="relative pt-2"> helloworld </div>
-        <div class="relative pt-2">
-          <div class="px-4 md:px-10 mx-auto w-full">
-            <div>
-              <!-- Card stats -->
-              <div class="flex flex-wrap gap-y-4">
-                <div class="w-full lg:w-6/12 xl:w-1/6 px-2">
-                  <div
-                    class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg"
-                  >
-                    <div class="flex-auto p-4">
-                      <div class="flex flex-wrap">
-                        <div
-                          class="relative w-full pr-4 max-w-full flex-grow flex-1"
-                        >
-                          <h5
-                            class="text-blueGray-400 uppercase font-bold text-xs"
-                          >
-                            1.1-aboutme.louislabs.com
-                          </h5>
-                        </div>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <base href="dashboard-tryout/" />
+  <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" />
+  <link rel="stylesheet" href="./assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/styles/tailwind.css" />
+  <title>Dashboard | Notus Tailwind JS by Creative Tim</title>
+</head>
+
+<body class="text-blueGray-700 antialiased">
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root">
+    <div class="relative bg-blueGray-50 min-h-screen">
+      <!-- Header -->
+      <div class="relative pt-2">
+        <div class="px-4 md:px-10 mx-auto w-full">
+          <div>
+            <!-- Card stats -->
+            <div class="flex flex-wrap gap-y-4">
+              <div class="w-full lg:w-6/12 xl:w-1/6 px-2">
+                <div class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
+                  <div class="flex-auto p-4">
+                    <div class="flex flex-wrap">
+                      <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
+                        <h5 class="text-blueGray-400 uppercase font-bold text-xs">
+                          1.1-aboutme.louislabs.com
+                        </h5>
+                      </div>
+                    </div>
+                    <div>
+                      <div>
+                        <a href="https://aboutme.louislabs.com" target="_blank">
+                          <p class="text-sm text-blueGray-400 mt-2">
+                            <img src="https://status.iamon99.com/api/badge/41/status?label=aboutme.louislabs.com" />
+                          </p>
+                        </a>
                       </div>
                       <div>
-                        <div>
-                          <a
-                            href="https://aboutme.louislabs.com"
-                            target="_blank"
-                          >
-                            <p class="text-sm text-blueGray-400 mt-2">
-                              <img
-                                src="https://status.iamon99.com/api/badge/41/status?label=aboutme.louislabs.com"
-                              />
-                            </p>
-                          </a>
-                        </div>
-                        <div>
-                          <a
-                            href="https://aboutme.louislabs.com/pay"
-                            target="_blank"
-                          >
-                            <p class="text-sm text-blueGray-400 mt-2">
-                              <img
-                                src="https://status.iamon99.com/api/badge/89/status?label=aboutme.louislabs.com/pay"
-                              />
-                            </p>
-                          </a>
-                        </div>
-                        <div>
-                          <a href="https://fs.louislabs.com" target="_blank">
-                            <p class="text-sm text-blueGray-400 mt-2">
-                              <img
-                                src="https://status.iamon99.com/api/badge/96/status?label=fs.louislabs.com"
-                              />
-                            </p>
-                          </a>
-                        </div>
-                        <div>
-                          <a href="https://git.louislabs.com" target="_blank">
-                            <p class="text-sm text-blueGray-400 mt-2">
-                              <img
-                                src="https://status.iamon99.com/api/badge/95/status?label=git.louislabs.com"
-                              />
-                            </p>
-                          </a>
-                        </div>
+                        <a href="https://aboutme.louislabs.com/pay" target="_blank">
+                          <p class="text-sm text-blueGray-400 mt-2">
+                            <img src="https://status.iamon99.com/api/badge/89/status?label=aboutme.louislabs.com/pay" />
+                          </p>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="https://fs.louislabs.com" target="_blank">
+                          <p class="text-sm text-blueGray-400 mt-2">
+                            <img src="https://status.iamon99.com/api/badge/96/status?label=fs.louislabs.com" />
+                          </p>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="https://git.louislabs.com" target="_blank">
+                          <p class="text-sm text-blueGray-400 mt-2">
+                            <img src="https://status.iamon99.com/api/badge/95/status?label=git.louislabs.com" />
+                          </p>
+                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="w-full lg:w-6/12 xl:w-1/6 px-2">
-                  <div
-                    class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg"
-                  >
-                    <div class="flex-auto p-4">
-                      <div class="flex flex-wrap">
-                        <div
-                          class="relative w-full pr-4 max-w-full flex-grow flex-1"
-                        >
-                          <h5
-                            class="text-blueGray-400 uppercase font-bold text-xs"
-                          >
-                            1.2-healthcheck
-                          </h5>
-                        </div>
+              </div>
+              <div class="w-full lg:w-6/12 xl:w-1/6 px-2">
+                <div class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
+                  <div class="flex-auto p-4">
+                    <div class="flex flex-wrap">
+                      <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
+                        <h5 class="text-blueGray-400 uppercase font-bold text-xs">
+                          1.2-healthcheck
+                        </h5>
                       </div>
+                    </div>
+                    <p class="text-sm text-blueGray-400 mt-2">
+                      <a href="https://healthcheck.iamon99.com" target="_blank">
+                        <img src="https://status.iamon99.com/api/badge/10/status?label=healthcheck.iamon99.com" />
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--  -->
+              <div class="w-full lg:w-6/12 xl:w-1/6 px-2">
+                <div class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
+                  <div class="flex-auto p-4">
+                    <div class="flex flex-wrap">
+                      <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
+                        <h5 class="text-blueGray-400 uppercase font-bold text-xs">
+                          1.3-change-detect
+                        </h5>
+                      </div>
+                    </div>
+                    <div>
                       <p class="text-sm text-blueGray-400 mt-2">
-                        <a
-                          href="https://healthcheck.iamon99.com"
-                          target="_blank"
-                        >
-                          <img
-                            src="https://status.iamon99.com/api/badge/10/status?label=healthcheck.iamon99.com"
-                          />
+                        <a href="https://private-changedetect.iamon99.com" target="_blank">
+                          <img src="https://status.iamon99.com/api/badge/10/status?label=private-changedetect" />
+                        </a>
+                      </p>
+                    </div>
+
+                    <div>
+                      <p class="text-sm text-blueGray-400 mt-2">
+                        <a href="https://carousell-changedetect.iamon99.com" target="_blank">
+                          <img src="https://status.iamon99.com/api/badge/10/status?label=carousell-changedetect" />
+                        </a>
+                      </p>
+                    </div>
+
+                    <div>
+                      <p class="text-sm text-blueGray-400 mt-2">
+                        <a href="https://job-changedetect.iamon99.com" target="_blank">
+                          <img src="https://status.iamon99.com/api/badge/24/status?label=job-changedetect" />
+                        </a>
+                      </p>
+                    </div>
+
+                    <div>
+                      <p class="text-sm text-blueGray-400 mt-2">
+                        <a href="https://new-changedetect.iamon99.com" target="_blank">
+                          <img src="https://status.iamon99.com/api/badge/10/status?label=new-changedetect" />
                         </a>
                       </p>
                     </div>
                   </div>
                 </div>
+              </div>
+              <!--  -->
 
-                <!--  -->
-                <div class="w-full lg:w-6/12 xl:w-1/6 px-2">
-                  <div
-                    class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg"
-                  >
-                    <div class="flex-auto p-4">
-                      <div class="flex flex-wrap">
-                        <div
-                          class="relative w-full pr-4 max-w-full flex-grow flex-1"
-                        >
-                          <h5
-                            class="text-blueGray-400 uppercase font-bold text-xs"
-                          >
-                            1.3-change-detect
-                          </h5>
-                        </div>
-                      </div>
-                      <div>
-                        <p class="text-sm text-blueGray-400 mt-2">
-                          <a
-                            href="https://private-changedetect.iamon99.com"
-                            target="_blank"
-                          >
-                            <img
-                              src="https://status.iamon99.com/api/badge/10/status?label=private-changedetect"
-                            />
-                          </a>
-                        </p>
-                      </div>
-
-                      <div>
-                        <p class="text-sm text-blueGray-400 mt-2">
-                          <a
-                            href="https://carousell-changedetect.iamon99.com"
-                            target="_blank"
-                          >
-                            <img
-                              src="https://status.iamon99.com/api/badge/10/status?label=carousell-changedetect"
-                            />
-                          </a>
-                        </p>
-                      </div>
-
-                      <div>
-                        <p class="text-sm text-blueGray-400 mt-2">
-                          <a
-                            href="https://job-changedetect.iamon99.com"
-                            target="_blank"
-                          >
-                            <img
-                              src="https://status.iamon99.com/api/badge/24/status?label=job-changedetect"
-                            />
-                          </a>
-                        </p>
-                      </div>
-
-                      <div>
-                        <p class="text-sm text-blueGray-400 mt-2">
-                          <a
-                            href="https://new-changedetect.iamon99.com"
-                            target="_blank"
-                          >
-                            <img
-                              src="https://status.iamon99.com/api/badge/10/status?label=new-changedetect"
-                            />
-                          </a>
-                        </p>
+              <!--  -->
+              <div class="w-full lg:w-6/12 xl:w-1/6 px-2">
+                <div class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
+                  <div class="flex-auto p-4">
+                    <div class="flex flex-wrap">
+                      <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
+                        <h5 class="text-blueGray-400 uppercase font-bold text-xs">
+                          1.4-REST/function server
+                        </h5>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <!--  -->
-
-                <!--  -->
-                <div class="w-full lg:w-6/12 xl:w-1/6 px-2">
-                  <div
-                    class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg"
-                  >
-                    <div class="flex-auto p-4">
-                      <div class="flex flex-wrap">
-                        <div
-                          class="relative w-full pr-4 max-w-full flex-grow flex-1"
-                        >
-                          <h5
-                            class="text-blueGray-400 uppercase font-bold text-xs"
-                          >
-                            1.4-REST/function server
-                          </h5>
-                        </div>
-                      </div>
-                      <div>
-                        <p class="text-sm text-blueGray-400 mt-2">
-                          <a href="https://api.iamon99.com" target="_blank">
-                            <img
-                              src="https://status.iamon99.com/api/badge/10/status?label=api.iamon99.com"
-                            />
-                          </a>
-                        </p>
-                      </div>
-
-                      <div>
-                        <p class="text-sm text-blueGray-400 mt-2">
-                          <a href="https://event.iamon99.com" target="_blank">
-                            <img
-                              src="https://status.iamon99.com/api/badge/10/status?label=event.iamon99.com"
-                            />
-                          </a>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!--  -->
-
-                <div class="w-full lg:w-6/12 xl:w-1/6 px-2">
-                  <div
-                    class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg"
-                  >
-                    <div class="flex-auto p-4">
-                      <div class="flex flex-wrap">
-                        <div
-                          class="relative w-full pr-4 max-w-full flex-grow flex-1"
-                        >
-                          <h5
-                            class="text-blueGray-400 uppercase font-bold text-xs"
-                          >
-                            1.5-post rest result
-                          </h5>
-                        </div>
-                      </div>
-                      <div>
-                        <p class="text-sm text-blueGray-400 mt-2">
-                          <a href="https://nocodb.iamon99.com" target="_blank">
-                            <img
-                              src="https://status.iamon99.com/api/badge/10/status?label=nocodb.iamon99.com"
-                            />
-                          </a>
-                        </p>
-                      </div>
-                      <div>
-                        <p class="text-sm text-blueGray-400 mt-2">
-                          <a href="https://nocodb.iamon99.com" target="_blank">
-                            <img
-                              src="https://status.iamon99.com/api/badge/10/status?label=nocodb.iamon99.com"
-                            />
-                          </a>
-                        </p>
-                      </div>
-                      <div>
-                        <p class="text-sm text-blueGray-400 mt-2">
-                          <a href="https://nocodb.iamon99.com" target="_blank">
-                            <img
-                              src="https://status.iamon99.com/api/badge/10/status?label=nocodb.iamon99.com"
-                            />
-                          </a>
-                        </p>
-                      </div>
-                      <div>
-                        <p class="text-sm text-blueGray-400 mt-2">
-                          <a href="https://nocodb.iamon99.com" target="_blank">
-                            <img
-                              src="https://status.iamon99.com/api/badge/10/status?label=nocodb.iamon99.com"
-                            />
-                          </a>
-                        </p>
-                      </div>
-                      <div>
-                        <p class="text-sm text-blueGray-400 mt-2">
-                          <a href="https://nocodb.iamon99.com" target="_blank">
-                            <img
-                              src="https://status.iamon99.com/api/badge/10/status?label=nocodb.iamon99.com"
-                            />
-                          </a>
-                        </p>
-                      </div>
-                      <div>
-                        <p class="text-sm text-blueGray-400 mt-2">
-                          <a href="https://nocodb.iamon99.com" target="_blank">
-                            <img
-                              src="https://status.iamon99.com/api/badge/10/status?label=nocodb.iamon99.com"
-                            />
-                          </a>
-                        </p>
-                      </div>
-                      <div>
-                        <p class="text-sm text-blueGray-400 mt-2">
-                          <a href="https://nocodb.iamon99.com" target="_blank">
-                            <img
-                              src="https://status.iamon99.com/api/badge/10/status?label=nocodb.iamon99.com"
-                            />
-                          </a>
-                        </p>
-                      </div>
-                      <div>
-                        <p class="text-sm text-blueGray-400 mt-2">
-                          <a href="https://nocodb.iamon99.com" target="_blank">
-                            <img
-                              src="https://status.iamon99.com/api/badge/10/status?label=nocodb.iamon99.com"
-                            />
-                          </a>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!--  -->
-                <div class="w-full lg:w-6/12 xl:w-1/6 px-2">
-                  <div
-                    class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg"
-                  >
-                    <div class="flex-auto p-4">
-                      <div class="flex flex-wrap">
-                        <div
-                          class="relative w-full pr-4 max-w-full flex-grow flex-1"
-                        >
-                          <h5
-                            class="text-blueGray-400 uppercase font-bold text-xs"
-                          >
-                            1.6-DB
-                          </h5>
-                        </div>
-                      </div>
-                      <div>
-                        <p class="text-sm text-blueGray-400 mt-2">
-                          <a href="https://nocodb.iamon99.com" target="_blank">
-                            <img
-                              src="https://status.iamon99.com/api/badge/999/status?label=nocodb.iamon99.com"
-                            />
-                          </a>
-                        </p>
-                      </div>
-
-                      <!--  -->
-                      <div>
-                        <p class="text-sm text-blueGray-400 mt-2">
-                          <a href="https://bb.iamon99.com" target="_blank">
-                            <img
-                              src="https://status.iamon99.com/api/badge/100/status?label=bb.iamon99.com"
-                            />
-                          </a>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!--  -->
-
-                <!--  -->
-                <div class="w-full lg:w-6/12 xl:w-1/6 px-2">
-                  <div
-                    class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg"
-                  >
-                    <div class="flex-auto p-4">
-                      <div class="flex flex-wrap">
-                        <div
-                          class="relative w-full pr-4 max-w-full flex-grow flex-1"
-                        >
-                          <h5
-                            class="text-blueGray-400 uppercase font-bold text-xs"
-                          >
-                            1.7-carousell
-                          </h5>
-                        </div>
-                      </div>
-
-                      <div>
-                        <p class="text-sm text-blueGray-400 mt-2">
-                          <a href="http://192.168.10.21:6099" target="_blank">
-                            <img
-                              src="https://status.iamon99.com/api/badge/10/status?label=carousell-exercise-1"
-                            />
-                          </a>
-                        </p>
-                      </div>
-
-                      <div>
-                        <p class="text-sm text-blueGray-400 mt-2">
-                          <a href="http://192.168.10.21:6070" target="_blank">
-                            <img
-                              src="https://status.iamon99.com/api/badge/10/status?label=carousell-exercise-2"
-                            />
-                          </a>
-                        </p>
-                      </div>
-
-                      <div>
-                        <p class="text-sm text-blueGray-400 mt-2">
-                          <a href="http://192.168.10.21:6140/" target="_blank">
-                            <img
-                              src="https://status.iamon99.com/api/badge/10/status?label=carousell-fetcher"
-                            />
-                          </a>
-                        </p>
-                      </div>
-
-                      <div>
-                        <p class="text-sm text-blueGray-400 mt-2">
-                          <a href="http://192.168.10.21:8090/_" target="_blank">
-                            <img
-                              src="https://status.iamon99.com/api/badge/10/status?label=carousell-fetcher-db"
-                            />
-                          </a>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!--  -->
-
-                <!--  -->
-                <div class="w-full lg:w-6/12 xl:w-1/6 px-2">
-                  <div
-                    class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg"
-                  >
-                    <div class="flex-auto p-4">
-                      <div class="flex flex-wrap">
-                        <div
-                          class="relative w-full pr-4 max-w-full flex-grow flex-1"
-                        >
-                          <h5
-                            class="text-blueGray-400 uppercase font-bold text-xs"
-                          >
-                            1.8-jobsdb-fetcher
-                          </h5>
-                        </div>
-                      </div>
-                      <div>
-                        <p class="text-sm text-blueGray-400 mt-2">
-                          <a href="http://192.168.10.21:6109/" target="_blank">
-                            <img
-                              src="https://status.iamon99.com/api/badge/10/status?label=192.168.10.21:6109"
-                            />
-                          </a>
-                        </p>
-                      </div>
-
-                      <div>
-                        <p class="text-sm text-blueGray-400 mt-2">
-                          <a
-                            href="http://192.168.10.21:8092/_/"
-                            target="_blank"
-                          >
-                            <img
-                              src="https://status.iamon99.com/api/badge/10/status?label=fetcher-db"
-                            />
-                          </a>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!--  -->
-                <div class="w-full lg:w-6/12 xl:w-1/6 px-2">
-                  <div
-                    class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg"
-                  >
-                    <div class="flex-auto p-4">
-                      <div class="flex flex-wrap">
-                        <div
-                          class="relative w-full pr-4 max-w-full flex-grow flex-1"
-                        >
-                          <h5
-                            class="text-blueGray-400 uppercase font-bold text-xs"
-                          >
-                            2.3-automation
-                          </h5>
-                        </div>
-                      </div>
-                      <p class="text-sm text-blueGray-400 mt-2"> </p
-                      ><div>
-                        <p class="text-sm text-blueGray-400 mt-2">
-                          <a href="https://n8n.iamon99.com/" target="_blank">
-                            <img
-                              src="https://status.iamon99.com/api/badge/10/status?label=n8n.iamon99.com"
-                            />
-                          </a>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!--  -->
-
-                <!--  -->
-                <div class="w-full lg:w-6/12 xl:w-1/6 px-2">
-                  <div
-                    class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg"
-                  >
-                    <div class="flex-auto p-4">
-                      <div class="flex flex-wrap">
-                        <div
-                          class="relative w-full pr-4 max-w-full flex-grow flex-1"
-                        >
-                          <h5
-                            class="text-blueGray-400 uppercase font-bold text-xs"
-                          >
-                            2.4-android farm
-                          </h5>
-                        </div>
-                      </div>
-                      <div>
-                        <p class="text-sm text-blueGray-400 mt-2">
-                          <img
-                            src="https://status.iamon99.com/api/badge/999/status?label=farm1"
-                          />
-                        </p>
-                      </div>
-                      <div>
-                        <p class="text-sm text-blueGray-400 mt-2">
-                          <img
-                            src="https://status.iamon99.com/api/badge/999/status?label=farm1"
-                          />
-                        </p>
-                      </div>
-                      <div>
-                        <p class="text-sm text-blueGray-400 mt-2">
-                          <img
-                            src="https://status.iamon99.com/api/badge/999/status?label=farm1"
-                          />
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!--  -->
-
-                <!--  -->
-                <div class="w-full lg:w-6/12 xl:w-1/6 px-2">
-                  <div
-                    class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg"
-                  >
-                    <div class="flex-auto p-4">
-                      <div class="flex flex-wrap">
-                        <div
-                          class="relative w-full pr-4 max-w-full flex-grow flex-1"
-                        >
-                          <h5
-                            class="text-blueGray-400 uppercase font-bold text-xs"
-                          >
-                            2.5-object store
-                          </h5>
-                        </div>
-                      </div>
+                    <div>
                       <p class="text-sm text-blueGray-400 mt-2">
-                        <img
-                          src="https://status.iamon99.com/api/badge/41/status"
-                        />
+                        <a href="https://api.iamon99.com" target="_blank">
+                          <img src="https://status.iamon99.com/api/badge/10/status?label=api.iamon99.com" />
+                        </a>
+                      </p>
+                    </div>
+
+                    <div>
+                      <p class="text-sm text-blueGray-400 mt-2">
+                        <a href="https://event.iamon99.com" target="_blank">
+                          <img src="https://status.iamon99.com/api/badge/10/status?label=event.iamon99.com" />
+                        </a>
                       </p>
                     </div>
                   </div>
                 </div>
-                <!--  -->
-
-                <!--  -->
-                <div class="w-full lg:w-6/12 xl:w-1/6 px-2">
-                  <div
-                    class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg"
-                  >
-                    <div class="flex-auto p-4">
-                      <div class="flex flex-wrap">
-                        <div
-                          class="relative w-full pr-4 max-w-full flex-grow flex-1"
-                        >
-                          <h5
-                            class="text-blueGray-400 uppercase font-bold text-xs"
-                          >
-                            2.6-shop.louislabs.com
-                          </h5>
-                        </div>
-                      </div>
-                      <div>
-                        <p class="text-sm text-blueGray-400 mt-2">
-                          <a href="https://shop.louislabs.com" target="_blank">
-                            <img
-                              src="https://status.iamon99.com/api/badge/97/status?label=shop.louislabs.com"
-                            />
-                          </a>
-                        </p>
-                      </div>
-                      <!--  -->
-                      <div>
-                        <p class="text-sm text-blueGray-400 mt-2">
-                          <a href="http://192.168.10.61:35000" target="_blank">
-                            <img
-                              src="https://status.iamon99.com/api/badge/99/status?label=changedetect"
-                            />
-                          </a>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!--  -->
-                <div class="w-full lg:w-6/12 xl:w-1/6 px-2">
-                  <div
-                    class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg"
-                  >
-                    <div class="flex-auto p-4">
-                      <div class="flex flex-wrap">
-                        <div
-                          class="relative w-full pr-4 max-w-full flex-grow flex-1"
-                        >
-                          <h5
-                            class="text-blueGray-400 uppercase font-bold text-xs"
-                          >
-                            2.7-youtube-backup
-                          </h5>
-                        </div>
-                      </div>
-                      <div>
-                        <p class="text-sm text-blueGray-400 mt-2">
-                          <a href="https://shop.louislabs.com" target="_blank">
-                            <img
-                              src="https://status.iamon99.com/api/badge/999/status?label=monitor"
-                            />
-                          </a>
-                        </p>
-                      </div>
-                      <!--  -->
-                      <div>
-                        <p class="text-sm text-blueGray-400 mt-2">
-                          <a href="http://192.168.10.61:35000" target="_blank">
-                            <img
-                              src="https://status.iamon99.com/api/badge/999/status?label=downloader"
-                            />
-                          </a>
-                        </p>
-                      </div>
-
-                      <!--  -->
-                      <div>
-                        <p class="text-sm text-blueGray-400 mt-2">
-                          <a href="http://192.168.10.61:35000" target="_blank">
-                            <img
-                              src="https://status.iamon99.com/api/badge/999/status?label=uploader"
-                            />
-                          </a>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!--  -->
               </div>
+              <!--  -->
+
+              <div class="w-full lg:w-6/12 xl:w-1/6 px-2">
+                <div class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
+                  <div class="flex-auto p-4">
+                    <div class="flex flex-wrap">
+                      <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
+                        <h5 class="text-blueGray-400 uppercase font-bold text-xs">
+                          1.5-post rest result
+                        </h5>
+                      </div>
+                    </div>
+                    <div>
+                      <p class="text-sm text-blueGray-400 mt-2">
+                        <a href="https://nocodb.iamon99.com" target="_blank">
+                          <img src="https://status.iamon99.com/api/badge/10/status?label=nocodb.iamon99.com" />
+                        </a>
+                      </p>
+                    </div>
+                    <div>
+                      <p class="text-sm text-blueGray-400 mt-2">
+                        <a href="https://nocodb.iamon99.com" target="_blank">
+                          <img src="https://status.iamon99.com/api/badge/10/status?label=nocodb.iamon99.com" />
+                        </a>
+                      </p>
+                    </div>
+                    <div>
+                      <p class="text-sm text-blueGray-400 mt-2">
+                        <a href="https://nocodb.iamon99.com" target="_blank">
+                          <img src="https://status.iamon99.com/api/badge/10/status?label=nocodb.iamon99.com" />
+                        </a>
+                      </p>
+                    </div>
+                    <div>
+                      <p class="text-sm text-blueGray-400 mt-2">
+                        <a href="https://nocodb.iamon99.com" target="_blank">
+                          <img src="https://status.iamon99.com/api/badge/10/status?label=nocodb.iamon99.com" />
+                        </a>
+                      </p>
+                    </div>
+                    <div>
+                      <p class="text-sm text-blueGray-400 mt-2">
+                        <a href="https://nocodb.iamon99.com" target="_blank">
+                          <img src="https://status.iamon99.com/api/badge/10/status?label=nocodb.iamon99.com" />
+                        </a>
+                      </p>
+                    </div>
+                    <div>
+                      <p class="text-sm text-blueGray-400 mt-2">
+                        <a href="https://nocodb.iamon99.com" target="_blank">
+                          <img src="https://status.iamon99.com/api/badge/10/status?label=nocodb.iamon99.com" />
+                        </a>
+                      </p>
+                    </div>
+                    <div>
+                      <p class="text-sm text-blueGray-400 mt-2">
+                        <a href="https://nocodb.iamon99.com" target="_blank">
+                          <img src="https://status.iamon99.com/api/badge/10/status?label=nocodb.iamon99.com" />
+                        </a>
+                      </p>
+                    </div>
+                    <div>
+                      <p class="text-sm text-blueGray-400 mt-2">
+                        <a href="https://nocodb.iamon99.com" target="_blank">
+                          <img src="https://status.iamon99.com/api/badge/10/status?label=nocodb.iamon99.com" />
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--  -->
+              <div class="w-full lg:w-6/12 xl:w-1/6 px-2">
+                <div class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
+                  <div class="flex-auto p-4">
+                    <div class="flex flex-wrap">
+                      <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
+                        <h5 class="text-blueGray-400 uppercase font-bold text-xs">
+                          1.6-DB
+                        </h5>
+                      </div>
+                    </div>
+                    <div>
+                      <p class="text-sm text-blueGray-400 mt-2">
+                        <a href="https://nocodb.iamon99.com" target="_blank">
+                          <img src="https://status.iamon99.com/api/badge/999/status?label=nocodb.iamon99.com" />
+                        </a>
+                      </p>
+                    </div>
+
+                    <!--  -->
+                    <div>
+                      <p class="text-sm text-blueGray-400 mt-2">
+                        <a href="https://bb.iamon99.com" target="_blank">
+                          <img src="https://status.iamon99.com/api/badge/100/status?label=bb.iamon99.com" />
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+
+              <!--  -->
+              <div class="w-full lg:w-6/12 xl:w-1/6 px-2">
+                <div class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
+                  <div class="flex-auto p-4">
+                    <div class="flex flex-wrap">
+                      <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
+                        <h5 class="text-blueGray-400 uppercase font-bold text-xs">
+                          1.7-carousell
+                        </h5>
+                      </div>
+                    </div>
+
+                    <div>
+                      <p class="text-sm text-blueGray-400 mt-2">
+                        <a href="http://192.168.10.21:6099" target="_blank">
+                          <img src="https://status.iamon99.com/api/badge/10/status?label=carousell-exercise-1" />
+                        </a>
+                      </p>
+                    </div>
+
+                    <div>
+                      <p class="text-sm text-blueGray-400 mt-2">
+                        <a href="http://192.168.10.21:6070" target="_blank">
+                          <img src="https://status.iamon99.com/api/badge/10/status?label=carousell-exercise-2" />
+                        </a>
+                      </p>
+                    </div>
+
+                    <div>
+                      <p class="text-sm text-blueGray-400 mt-2">
+                        <a href="http://192.168.10.21:6140/" target="_blank">
+                          <img src="https://status.iamon99.com/api/badge/10/status?label=carousell-fetcher" />
+                        </a>
+                      </p>
+                    </div>
+
+                    <div>
+                      <p class="text-sm text-blueGray-400 mt-2">
+                        <a href="http://192.168.10.21:8090/_" target="_blank">
+                          <img src="https://status.iamon99.com/api/badge/10/status?label=carousell-fetcher-db" />
+                        </a>
+                      </p>
+                    </div>
+
+                    <div>
+                      <p class="text-sm text-blueGray-400 mt-2">
+                        <a href="http://192.168.10.21:8090/_" target="_blank">
+                          <img src="https://healthcheck.iamon99.com/b/2/f1d68974-3186-4d58-907a-a54d99f5bda0.svg" />
+                        </a>
+                      </p>
+                    </div>
+
+                    <div>
+                      <p class="text-sm text-blueGray-400 mt-2">
+                        <a href="http://192.168.10.21:8090/_" target="_blank">
+                          <img src="https://healthcheck.iamon99.com/b/2/bd9fb3a6-05f7-4d38-bca6-e321196aabf8.svg" />
+                        </a>
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+
+              <!--  -->
+              <div class="w-full lg:w-6/12 xl:w-1/6 px-2">
+                <div class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
+                  <div class="flex-auto p-4">
+                    <div class="flex flex-wrap">
+                      <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
+                        <h5 class="text-blueGray-400 uppercase font-bold text-xs">
+                          1.8-jobsdb-fetcher
+                        </h5>
+                      </div>
+                    </div>
+                    <div>
+                      <p class="text-sm text-blueGray-400 mt-2">
+                        <a href="http://192.168.10.21:6109/" target="_blank">
+                          <img src="https://status.iamon99.com/api/badge/10/status?label=192.168.10.21:6109" />
+                        </a>
+                      </p>
+                    </div>
+
+                    <div>
+                      <p class="text-sm text-blueGray-400 mt-2">
+                        <a href="http://192.168.10.21:8092/_/" target="_blank">
+                          <img src="https://status.iamon99.com/api/badge/10/status?label=fetcher-db" />
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--  -->
+              <div class="w-full lg:w-6/12 xl:w-1/6 px-2">
+                <div class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
+                  <div class="flex-auto p-4">
+                    <div class="flex flex-wrap">
+                      <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
+                        <h5 class="text-blueGray-400 uppercase font-bold text-xs">
+                          2.3-automation
+                        </h5>
+                      </div>
+                    </div>
+                    <p class="text-sm text-blueGray-400 mt-2"> </p>
+                    <div>
+                      <p class="text-sm text-blueGray-400 mt-2">
+                        <a href="https://n8n.iamon99.com/" target="_blank">
+                          <img src="https://status.iamon99.com/api/badge/10/status?label=n8n.iamon99.com" />
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+
+              <!--  -->
+              <div class="w-full lg:w-6/12 xl:w-1/6 px-2">
+                <div class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
+                  <div class="flex-auto p-4">
+                    <div class="flex flex-wrap">
+                      <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
+                        <h5 class="text-blueGray-400 uppercase font-bold text-xs">
+                          2.4-android farm
+                        </h5>
+                      </div>
+                    </div>
+                    <div>
+                      <p class="text-sm text-blueGray-400 mt-2">
+                        <img src="https://status.iamon99.com/api/badge/999/status?label=farm1" />
+                      </p>
+                    </div>
+                    <div>
+                      <p class="text-sm text-blueGray-400 mt-2">
+                        <img src="https://status.iamon99.com/api/badge/999/status?label=farm1" />
+                      </p>
+                    </div>
+                    <div>
+                      <p class="text-sm text-blueGray-400 mt-2">
+                        <img src="https://status.iamon99.com/api/badge/999/status?label=farm1" />
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+
+              <!--  -->
+              <div class="w-full lg:w-6/12 xl:w-1/6 px-2">
+                <div class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
+                  <div class="flex-auto p-4">
+                    <div class="flex flex-wrap">
+                      <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
+                        <h5 class="text-blueGray-400 uppercase font-bold text-xs">
+                          2.5-object store
+                        </h5>
+                      </div>
+                    </div>
+                    <p class="text-sm text-blueGray-400 mt-2">
+                      <img src="https://status.iamon99.com/api/badge/41/status" />
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+
+              <!--  -->
+              <div class="w-full lg:w-6/12 xl:w-1/6 px-2">
+                <div class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
+                  <div class="flex-auto p-4">
+                    <div class="flex flex-wrap">
+                      <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
+                        <h5 class="text-blueGray-400 uppercase font-bold text-xs">
+                          2.6-shop.louislabs.com
+                        </h5>
+                      </div>
+                    </div>
+                    <div>
+                      <p class="text-sm text-blueGray-400 mt-2">
+                        <a href="https://shop.louislabs.com" target="_blank">
+                          <img src="https://status.iamon99.com/api/badge/97/status?label=shop.louislabs.com" />
+                        </a>
+                      </p>
+                    </div>
+                    <!--  -->
+                    <div>
+                      <p class="text-sm text-blueGray-400 mt-2">
+                        <a href="http://192.168.10.61:35000" target="_blank">
+                          <img src="https://status.iamon99.com/api/badge/99/status?label=changedetect" />
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+              <div class="w-full lg:w-6/12 xl:w-1/6 px-2">
+                <div class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
+                  <div class="flex-auto p-4">
+                    <div class="flex flex-wrap">
+                      <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
+                        <h5 class="text-blueGray-400 uppercase font-bold text-xs">
+                          2.7-youtube-backup
+                        </h5>
+                      </div>
+                    </div>
+                    <div>
+                      <p class="text-sm text-blueGray-400 mt-2">
+                        <a href="https://shop.louislabs.com" target="_blank">
+                          <img src="https://status.iamon99.com/api/badge/999/status?label=monitor" />
+                        </a>
+                      </p>
+                    </div>
+                    <!--  -->
+                    <div>
+                      <p class="text-sm text-blueGray-400 mt-2">
+                        <a href="http://192.168.10.61:35000" target="_blank">
+                          <img src="https://status.iamon99.com/api/badge/999/status?label=downloader" />
+                        </a>
+                      </p>
+                    </div>
+
+                    <!--  -->
+                    <div>
+                      <p class="text-sm text-blueGray-400 mt-2">
+                        <a href="http://192.168.10.61:35000" target="_blank">
+                          <img src="https://status.iamon99.com/api/badge/999/status?label=uploader" />
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--  -->
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
-      charset="utf-8"
-    ></script>
-    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
-    <script type="text/javascript">
-      /* Make dynamic date appear */
-      (function () {
-        if (document.getElementById('get-current-year')) {
-          document.getElementById('get-current-year').innerHTML =
-            new Date().getFullYear();
-        }
-      })();
-      /* Sidebar - Side navigation menu on mobile/responsive mode */
-      function toggleNavbar(collapseID) {
-        document.getElementById(collapseID).classList.toggle('hidden');
-        document.getElementById(collapseID).classList.toggle('bg-white');
-        document.getElementById(collapseID).classList.toggle('m-2');
-        document.getElementById(collapseID).classList.toggle('py-3');
-        document.getElementById(collapseID).classList.toggle('px-6');
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" charset="utf-8"></script>
+  <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+  <script type="text/javascript">
+    /* Make dynamic date appear */
+    (function () {
+      if (document.getElementById('get-current-year')) {
+        document.getElementById('get-current-year').innerHTML =
+          new Date().getFullYear();
       }
-      /* Function for dropdowns */
-      function openDropdown(event, dropdownID) {
-        let element = event.target;
-        while (element.nodeName !== 'A') {
-          element = element.parentNode;
-        }
-        Popper.createPopper(element, document.getElementById(dropdownID), {
-          placement: 'bottom-start',
-        });
-        document.getElementById(dropdownID).classList.toggle('hidden');
-        document.getElementById(dropdownID).classList.toggle('block');
+    })();
+    /* Sidebar - Side navigation menu on mobile/responsive mode */
+    function toggleNavbar(collapseID) {
+      document.getElementById(collapseID).classList.toggle('hidden');
+      document.getElementById(collapseID).classList.toggle('bg-white');
+      document.getElementById(collapseID).classList.toggle('m-2');
+      document.getElementById(collapseID).classList.toggle('py-3');
+      document.getElementById(collapseID).classList.toggle('px-6');
+    }
+    /* Function for dropdowns */
+    function openDropdown(event, dropdownID) {
+      let element = event.target;
+      while (element.nodeName !== 'A') {
+        element = element.parentNode;
       }
+      Popper.createPopper(element, document.getElementById(dropdownID), {
+        placement: 'bottom-start',
+      });
+      document.getElementById(dropdownID).classList.toggle('hidden');
+      document.getElementById(dropdownID).classList.toggle('block');
+    }
 
-      (function () {
-        /* Chart initialisations */
-        /* Line Chart */
-        var config = {
-          type: 'line',
-          data: {
-            labels: [
-              'January',
-              'February',
-              'March',
-              'April',
-              'May',
-              'June',
-              'July',
-            ],
-            datasets: [
-              {
-                label: new Date().getFullYear(),
-                backgroundColor: '#4c51bf',
-                borderColor: '#4c51bf',
-                data: [65, 78, 66, 44, 56, 67, 75],
-                fill: false,
-              },
-              {
-                label: new Date().getFullYear() - 1,
-                fill: false,
-                backgroundColor: '#fff',
-                borderColor: '#fff',
-                data: [40, 68, 86, 74, 56, 60, 87],
-              },
-            ],
+    (function () {
+      /* Chart initialisations */
+      /* Line Chart */
+      var config = {
+        type: 'line',
+        data: {
+          labels: [
+            'January',
+            'February',
+            'March',
+            'April',
+            'May',
+            'June',
+            'July',
+          ],
+          datasets: [
+            {
+              label: new Date().getFullYear(),
+              backgroundColor: '#4c51bf',
+              borderColor: '#4c51bf',
+              data: [65, 78, 66, 44, 56, 67, 75],
+              fill: false,
+            },
+            {
+              label: new Date().getFullYear() - 1,
+              fill: false,
+              backgroundColor: '#fff',
+              borderColor: '#fff',
+              data: [40, 68, 86, 74, 56, 60, 87],
+            },
+          ],
+        },
+        options: {
+          maintainAspectRatio: false,
+          responsive: true,
+          title: {
+            display: false,
+            text: 'Sales Charts',
+            fontColor: 'white',
           },
-          options: {
-            maintainAspectRatio: false,
-            responsive: true,
-            title: {
-              display: false,
-              text: 'Sales Charts',
+          legend: {
+            labels: {
               fontColor: 'white',
             },
-            legend: {
-              labels: {
-                fontColor: 'white',
-              },
-              align: 'end',
-              position: 'bottom',
-            },
-            tooltips: {
-              mode: 'index',
-              intersect: false,
-            },
-            hover: {
-              mode: 'nearest',
-              intersect: true,
-            },
-            scales: {
-              xAxes: [
-                {
-                  ticks: {
-                    fontColor: 'rgba(255,255,255,.7)',
-                  },
-                  display: true,
-                  scaleLabel: {
-                    display: false,
-                    labelString: 'Month',
-                    fontColor: 'white',
-                  },
-                  gridLines: {
-                    display: false,
-                    borderDash: [2],
-                    borderDashOffset: [2],
-                    color: 'rgba(33, 37, 41, 0.3)',
-                    zeroLineColor: 'rgba(0, 0, 0, 0)',
-                    zeroLineBorderDash: [2],
-                    zeroLineBorderDashOffset: [2],
-                  },
-                },
-              ],
-              yAxes: [
-                {
-                  ticks: {
-                    fontColor: 'rgba(255,255,255,.7)',
-                  },
-                  display: true,
-                  scaleLabel: {
-                    display: false,
-                    labelString: 'Value',
-                    fontColor: 'white',
-                  },
-                  gridLines: {
-                    borderDash: [3],
-                    borderDashOffset: [3],
-                    drawBorder: false,
-                    color: 'rgba(255, 255, 255, 0.15)',
-                    zeroLineColor: 'rgba(33, 37, 41, 0)',
-                    zeroLineBorderDash: [2],
-                    zeroLineBorderDashOffset: [2],
-                  },
-                },
-              ],
-            },
+            align: 'end',
+            position: 'bottom',
           },
-        };
-        var ctx = document.getElementById('line-chart').getContext('2d');
-        window.myLine = new Chart(ctx, config);
-
-        /* Bar Chart */
-        config = {
-          type: 'bar',
-          data: {
-            labels: [
-              'January',
-              'February',
-              'March',
-              'April',
-              'May',
-              'June',
-              'July',
-            ],
-            datasets: [
-              {
-                label: new Date().getFullYear(),
-                backgroundColor: '#ed64a6',
-                borderColor: '#ed64a6',
-                data: [30, 78, 56, 34, 100, 45, 13],
-                fill: false,
-                barThickness: 8,
-              },
-              {
-                label: new Date().getFullYear() - 1,
-                fill: false,
-                backgroundColor: '#4c51bf',
-                borderColor: '#4c51bf',
-                data: [27, 68, 86, 74, 10, 4, 87],
-                barThickness: 8,
-              },
-            ],
+          tooltips: {
+            mode: 'index',
+            intersect: false,
           },
-          options: {
-            maintainAspectRatio: false,
-            responsive: true,
-            title: {
-              display: false,
-              text: 'Orders Chart',
-            },
-            tooltips: {
-              mode: 'index',
-              intersect: false,
-            },
-            hover: {
-              mode: 'nearest',
-              intersect: true,
-            },
-            legend: {
-              labels: {
-                fontColor: 'rgba(0,0,0,.4)',
-              },
-              align: 'end',
-              position: 'bottom',
-            },
-            scales: {
-              xAxes: [
-                {
+          hover: {
+            mode: 'nearest',
+            intersect: true,
+          },
+          scales: {
+            xAxes: [
+              {
+                ticks: {
+                  fontColor: 'rgba(255,255,255,.7)',
+                },
+                display: true,
+                scaleLabel: {
                   display: false,
-                  scaleLabel: {
-                    display: true,
-                    labelString: 'Month',
-                  },
-                  gridLines: {
-                    borderDash: [2],
-                    borderDashOffset: [2],
-                    color: 'rgba(33, 37, 41, 0.3)',
-                    zeroLineColor: 'rgba(33, 37, 41, 0.3)',
-                    zeroLineBorderDash: [2],
-                    zeroLineBorderDashOffset: [2],
-                  },
+                  labelString: 'Month',
+                  fontColor: 'white',
                 },
-              ],
-              yAxes: [
-                {
-                  display: true,
-                  scaleLabel: {
-                    display: false,
-                    labelString: 'Value',
-                  },
-                  gridLines: {
-                    borderDash: [2],
-                    drawBorder: false,
-                    borderDashOffset: [2],
-                    color: 'rgba(33, 37, 41, 0.2)',
-                    zeroLineColor: 'rgba(33, 37, 41, 0.15)',
-                    zeroLineBorderDash: [2],
-                    zeroLineBorderDashOffset: [2],
-                  },
+                gridLines: {
+                  display: false,
+                  borderDash: [2],
+                  borderDashOffset: [2],
+                  color: 'rgba(33, 37, 41, 0.3)',
+                  zeroLineColor: 'rgba(0, 0, 0, 0)',
+                  zeroLineBorderDash: [2],
+                  zeroLineBorderDashOffset: [2],
                 },
-              ],
-            },
+              },
+            ],
+            yAxes: [
+              {
+                ticks: {
+                  fontColor: 'rgba(255,255,255,.7)',
+                },
+                display: true,
+                scaleLabel: {
+                  display: false,
+                  labelString: 'Value',
+                  fontColor: 'white',
+                },
+                gridLines: {
+                  borderDash: [3],
+                  borderDashOffset: [3],
+                  drawBorder: false,
+                  color: 'rgba(255, 255, 255, 0.15)',
+                  zeroLineColor: 'rgba(33, 37, 41, 0)',
+                  zeroLineBorderDash: [2],
+                  zeroLineBorderDashOffset: [2],
+                },
+              },
+            ],
           },
-        };
-        ctx = document.getElementById('bar-chart').getContext('2d');
-        window.myBar = new Chart(ctx, config);
-      })();
-    </script>
-  </body>
+        },
+      };
+      var ctx = document.getElementById('line-chart').getContext('2d');
+      window.myLine = new Chart(ctx, config);
+
+      /* Bar Chart */
+      config = {
+        type: 'bar',
+        data: {
+          labels: [
+            'January',
+            'February',
+            'March',
+            'April',
+            'May',
+            'June',
+            'July',
+          ],
+          datasets: [
+            {
+              label: new Date().getFullYear(),
+              backgroundColor: '#ed64a6',
+              borderColor: '#ed64a6',
+              data: [30, 78, 56, 34, 100, 45, 13],
+              fill: false,
+              barThickness: 8,
+            },
+            {
+              label: new Date().getFullYear() - 1,
+              fill: false,
+              backgroundColor: '#4c51bf',
+              borderColor: '#4c51bf',
+              data: [27, 68, 86, 74, 10, 4, 87],
+              barThickness: 8,
+            },
+          ],
+        },
+        options: {
+          maintainAspectRatio: false,
+          responsive: true,
+          title: {
+            display: false,
+            text: 'Orders Chart',
+          },
+          tooltips: {
+            mode: 'index',
+            intersect: false,
+          },
+          hover: {
+            mode: 'nearest',
+            intersect: true,
+          },
+          legend: {
+            labels: {
+              fontColor: 'rgba(0,0,0,.4)',
+            },
+            align: 'end',
+            position: 'bottom',
+          },
+          scales: {
+            xAxes: [
+              {
+                display: false,
+                scaleLabel: {
+                  display: true,
+                  labelString: 'Month',
+                },
+                gridLines: {
+                  borderDash: [2],
+                  borderDashOffset: [2],
+                  color: 'rgba(33, 37, 41, 0.3)',
+                  zeroLineColor: 'rgba(33, 37, 41, 0.3)',
+                  zeroLineBorderDash: [2],
+                  zeroLineBorderDashOffset: [2],
+                },
+              },
+            ],
+            yAxes: [
+              {
+                display: true,
+                scaleLabel: {
+                  display: false,
+                  labelString: 'Value',
+                },
+                gridLines: {
+                  borderDash: [2],
+                  drawBorder: false,
+                  borderDashOffset: [2],
+                  color: 'rgba(33, 37, 41, 0.2)',
+                  zeroLineColor: 'rgba(33, 37, 41, 0.15)',
+                  zeroLineBorderDash: [2],
+                  zeroLineBorderDashOffset: [2],
+                },
+              },
+            ],
+          },
+        },
+      };
+      ctx = document.getElementById('bar-chart').getContext('2d');
+      window.myBar = new Chart(ctx, config);
+    })();
+  </script>
+</body>
+
 </html>
