@@ -68,21 +68,43 @@ const Cell1_3 = (
     <div className="cell">
       <div className="cell_title">cell1.3 (changedetect)</div>
       <ShowUptimeKumaBadge
-        imgsrc={`${GetUptimeKumaBadgeLink(5)}?label=private-changedetect`}
-        target_src={'//private-changedetect.iamon99.com/'}
+        imgsrc={`${GetUptimeKumaBadgeLink(5)}?label=private`}
+        target_src={'http://192.168.10.21:5001/'}
+      />
+
+      <ShowUptimeKumaBadge
+        imgsrc={`${GetUptimeKumaBadgeLink(5)}?label=upsangel`}
+        target_src={'http://192.168.10.21:5008/'}
       />
       <ShowUptimeKumaBadge
         imgsrc={`${GetUptimeKumaBadgeLink(41)}?label=carousell.louislabs.com`}
-        target_src={'//carousell.louislabs.com/'}
+        target_src={'http://192.168.10.21:5003/'}
       />
       <ShowUptimeKumaBadge
-        imgsrc={`${GetUptimeKumaBadgeLink(24)}?label=job.louislabs.com`}
-        target_src={'//job.louislabs.com/'}
+        imgsrc={`${GetUptimeKumaBadgeLink(24)}?label=jobsdb`}
+        target_src={'http://192.168.10.21:5002/'}
       />
+
       <ShowUptimeKumaBadge
-        imgsrc={`${GetUptimeKumaBadgeLink(90)}?label=new.louislabs.com`}
-        target_src={'//new.louislabs.com/'}
+        imgsrc={`${GetUptimeKumaBadgeLink(90)}?label=apple-refurbished`}
+        target_src={'http://192.168.10.21:5009/'}
       />
+
+      <ShowUptimeKumaBadge
+        imgsrc={`${GetUptimeKumaBadgeLink(90)}?label=threads`}
+        target_src={'http://192.168.10.21:5010/'}
+      />
+
+      <ShowUptimeKumaBadge
+        imgsrc={`${GetUptimeKumaBadgeLink(90)}?label=debug`}
+        target_src={'http://192.168.10.21:5015/'}
+      />
+
+      <ShowUptimeKumaBadge
+        imgsrc={`${GetUptimeKumaBadgeLink(90)}?label=misc`}
+        target_src={'http://192.168.10.21:5016/'}
+      />
+
     </div>
   </>
 );
@@ -108,7 +130,7 @@ const Cell1_5 = (
     <div className="cell">
       <div className="cell_title">cell1.5 (DB)</div>
       <ShowUptimeKumaBadge
-        imgsrc={`${GetUptimeKumaBadgeLink(41)}?label=nocodb.louislabs.com`}
+        imgsrc={`${GetUptimeKumaBadgeLink(105)}?label=nocodb.louislabs.com`}
         target_src={'//nocodb.louislabs.com/'}
       />
       <ShowUptimeKumaBadge
@@ -211,6 +233,18 @@ const Cell2_2 = (
   </>
 );
 
+const Cell2_3 = (
+  <>
+    <div className="cell">
+      <div className="cell_title">cell2.3 (lettersoup-demo)</div>
+      <ShowUptimeKumaBadge
+        imgsrc={`${GetUptimeKumaBadgeLink(41)}?label=n8n.louislabs.com`}
+        target_src={'//n8n.louislabs.com/'}
+      />
+    </div>
+  </>
+)
+
 function App() {
   return (
     <div className="App">
@@ -238,6 +272,7 @@ function App() {
 
         {Cell2_1}
         {Cell2_2}
+        {Cell2_3}
       </div>
     </div>
   );
