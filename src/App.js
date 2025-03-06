@@ -18,10 +18,26 @@ function ShowUptimeKumaBadge({ imgsrc, target_src }) {
   );
 }
 
+function ShowHealthCheckBadge({ imgsrc, target_src }) {
+  if (target_src) {
+    return (
+      <div>
+        <a href={target_src} target="_blank" rel="noreferrer">
+          <img src={imgsrc} />
+        </a>
+      </div>
+    );
+  }
+  return (
+    <div>
+      <img src={imgsrc} />
+    </div>
+  );
+}
+
 function GetUptimeKumaBadgeLink(status_idx) {
   return `//status.iamon99.com/api/badge/${status_idx}/status`;
 }
-
 
 function GetHealthCheckBadgeLink(status_idx) {
   return `//status.iamon99.com/api/badge/${status_idx}/status`;
@@ -104,7 +120,6 @@ const Cell1_3 = (
         imgsrc={`${GetUptimeKumaBadgeLink(90)}?label=misc`}
         target_src={'http://192.168.10.21:5016/'}
       />
-
     </div>
   </>
 );
@@ -224,10 +239,14 @@ const Cell2_1 = (
 const Cell2_2 = (
   <>
     <div className="cell">
-      <div className="cell_title">cell2.2 (xxx not filled)</div>
+      <div className="cell_title">cell2.2 (n8n)</div>
       <ShowUptimeKumaBadge
-        imgsrc={`${GetUptimeKumaBadgeLink(41)}?label=n8n.louislabs.com`}
-        target_src={'//n8n.louislabs.com/'}
+        imgsrc={`${GetUptimeKumaBadgeLink(41)}?label=n8n.iamon99.com`}
+        target_src={'//n8n.iamon99.com/'}
+      />
+      <ShowHealthCheckBadge
+        imgsrc={`https://healthcheck.iamon99.com/b/2/bb1602a5-33c3-4d06-86e3-08860cc152a5.svg`}
+        target_src={'//n8n.iamon99.com/'}
       />
     </div>
   </>
@@ -243,7 +262,7 @@ const Cell2_3 = (
       />
     </div>
   </>
-)
+);
 
 function App() {
   return (
