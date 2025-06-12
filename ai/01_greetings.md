@@ -14,7 +14,7 @@ project source code located in `project` directory.
 ## steps
 
 please read `ai` directory to understand the project background
-please read `project` directory to understand the structure
+please read `project` directory to understand the structure, it contains source code
 
 ## Rules
 
