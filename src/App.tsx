@@ -1,6 +1,8 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import { Cell2_4 } from "./Cell2_4";
+import { Cell2_5 } from "./Cell2_5";
 
 function ShowUptimeKumaBadge({
   imgsrc,
@@ -293,6 +295,23 @@ const Cell2_3 = (
   </>
 );
 
+export function StatusByNumber({
+  idx,
+  label,
+}: {
+  idx: number;
+  label: string;
+}): React.JSX.Element {
+  return (
+    <>
+      <ShowUptimeKumaBadge
+        imgsrc={`${GetUptimeKumaBadgeLink(idx)}?label=${label}`}
+        target_src={"//n8n.louislabs.com/"}
+      />
+    </>
+  );
+}
+
 function App() {
   return (
     <div className="App">
@@ -304,7 +323,7 @@ function App() {
         style={{
           display: "flex",
           flexDirection: "row",
-          justifyContent: "center",
+          justifyContent: "flex-start",
           flexWrap: "wrap",
           gap: "1rem",
         }}
@@ -320,7 +339,9 @@ function App() {
         {Cell2_1}
         {Cell2_2}
         {Cell2_3}
+        {Cell2_4}
       </div>
+      <div style={{ marginTop: "5rem", marginBottom: "10rem" }}>end</div>
     </div>
   );
 }
