@@ -1,5 +1,5 @@
 import React from "react";
-import { GetUptimeKumaBadgeLink } from "./App";
+import { GetUptimeKumaBadgeLink } from "../App";
 import { ShowUptimeKumaBadge } from "./ShowUptimeKumaBadge";
 
 export function StatusByNumber({

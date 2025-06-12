@@ -1,5 +1,5 @@
 import React from "react";
-import { StatusByNumber } from "../StatusByNumber";
+import { StatusByNumber } from "../utils/StatusByNumber";
 
 import style from "./style.module.scss";
 
