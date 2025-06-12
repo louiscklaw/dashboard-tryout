@@ -13,6 +13,7 @@ import { Cell1_6 } from "./Cell1_6";
 import { Cell1_4 } from "./Cell1_4";
 import { Cell1_5 } from "./Cell1_5";
 import { Cell1_3 } from "./Cell1_3";
+import { Cell1_1 } from "./Cell1_1";
 import { Cell1_2 } from "./Cell1_2";
 
 export function ShowHealthCheckBadge({
@@ -45,46 +46,6 @@ export function GetUptimeKumaBadgeLink(status_idx: number) {
 function GetHealthCheckBadgeLink(status_idx: string) {
   return `//status.iamon99.com/api/badge/${status_idx}/status`;
 }
-
-const Cell1_1 = (
-  <>
-    <div className="cell">
-      <div className="cell_title">cell1.1 (portfolio)</div>
-      <ShowUptimeKumaBadge
-        imgsrc={`${GetUptimeKumaBadgeLink(106)}?label=portfolio.louislabs.com`}
-        target_src={"//portfolio.louislabs.com/"}
-      />
-      <ShowUptimeKumaBadge
-        imgsrc={`${GetUptimeKumaBadgeLink(
-          106
-        )}?label=portfolio.louislabs.com/pay`}
-        target_src={"//portfolio.louislabs.com/pay"}
-      />
-      <ShowUptimeKumaBadge
-        imgsrc={`${GetUptimeKumaBadgeLink(
-          106
-        )}?label=portfolio.louislabs.com/beg-comment`}
-        target_src={"//portfolio.louislabs.com/beg-comment"}
-      />
-      <ShowUptimeKumaBadge
-        imgsrc={`${GetUptimeKumaBadgeLink(41)}?label=aboutme.louislabs.com`}
-        target_src={"//aboutme.louislabs.com/"}
-      />
-      <ShowUptimeKumaBadge
-        imgsrc={`${GetUptimeKumaBadgeLink(89)}?label=aboutme.louislabs.com/pay`}
-        target_src={"//aboutme.louislabs.com/pay/"}
-      />
-      <ShowUptimeKumaBadge
-        imgsrc={`${GetUptimeKumaBadgeLink(96)}?label=fs.louislabs.com`}
-        target_src={"//fs.louislabs.com/"}
-      />
-      <ShowUptimeKumaBadge
-        imgsrc={`${GetUptimeKumaBadgeLink(95)}?label=git.louislabs.com`}
-        target_src={"//git.louislabs.com/"}
-      />{" "}
-    </div>
-  </>
-);
 
 export function StatusByNumber({
   idx,
