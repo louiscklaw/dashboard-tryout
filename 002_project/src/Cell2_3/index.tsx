@@ -1,6 +1,6 @@
-import React from "react";
-import styles from "./style.module.scss";
-import { StatusByNumber } from "../utils/StatusByNumber";
+import React from 'react';
+import { StatusByNumber } from '../utils/StatusByNumber';
+import styles from './style.module.scss';
 
 function Cell2_3(): React.JSX.Element {
   return (

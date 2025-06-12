@@ -1,14 +1,8 @@
-import React from "react";
-import { GetUptimeKumaBadgeLink } from "../App";
-import { ShowUptimeKumaBadge } from "./ShowUptimeKumaBadge";
+import React from 'react';
+import { GetUptimeKumaBadgeLink } from '../App';
+import { ShowUptimeKumaBadge } from './ShowUptimeKumaBadge';
 
-export function StatusByNumber({
-  idx,
-  label,
-}: {
-  idx: number;
-  label: string;
-}): React.JSX.Element {
+export function StatusByNumber({ idx, label }: { idx: number; label: string }): React.JSX.Element {
   return (
     <>
       <ShowUptimeKumaBadge
