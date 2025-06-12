@@ -9,6 +9,8 @@ import { Cell2_3 } from "./Cell2_3";
 import { Cell2_4 } from "./Cell2_4";
 import { Cell2_5 } from "./Cell2_5";
 import { ShowUptimeKumaBadge } from "./ShowUptimeKumaBadge";
+import { Cell1_6 } from "./Cell1_6";
+import { Cell1_5 } from "./Cell1_5";
 
 export function ShowHealthCheckBadge({
   imgsrc,
@@ -149,54 +151,6 @@ const Cell1_4 = (
       <ShowUptimeKumaBadge
         imgsrc={`${GetUptimeKumaBadgeLink(41)}?label=event.louislabs.com`}
         target_src={"//event.louislabs.com/"}
-      />
-    </div>
-  </>
-);
-
-const Cell1_5 = (
-  <>
-    <div className="cell">
-      <div className="cell_title">cell1.5 (DB)</div>
-      <ShowUptimeKumaBadge
-        imgsrc={`${GetUptimeKumaBadgeLink(105)}?label=nocodb.louislabs.com`}
-        target_src={"//nocodb.louislabs.com/"}
-      />
-      <ShowUptimeKumaBadge
-        imgsrc={`${GetUptimeKumaBadgeLink(100)}?label=bb.louislabs.com`}
-        target_src={"//bb.louislabs.com/"}
-      />
-    </div>
-  </>
-);
-
-const Cell1_6 = (
-  <>
-    <div className="cell">
-      <div className="cell_title">cell1.6 (carousell)</div>
-      <ShowUptimeKumaBadge
-        imgsrc={`${GetUptimeKumaBadgeLink(41)}?label=fetcher`}
-        target_src={"//api.louislabs.com/"}
-      />
-      <ShowUptimeKumaBadge
-        imgsrc={`${GetUptimeKumaBadgeLink(41)}?label=fetcher-db`}
-        target_src={"//api.louislabs.com/"}
-      />
-      <ShowUptimeKumaBadge
-        imgsrc={`${GetUptimeKumaBadgeLink(101)}?label=carousell-exercise-1`}
-        target_src={"http://192.168.10.21:6099/"}
-      />
-      <ShowUptimeKumaBadge
-        imgsrc={`https://healthcheck.iamon99.com/b/2/f1d68974-3186-4d58-907a-a54d99f5bda0.svg`}
-        target_src={"http://192.168.10.21:6099/"}
-      />
-      <ShowUptimeKumaBadge
-        imgsrc={`${GetUptimeKumaBadgeLink(102)}?label=carousell-exercise-2`}
-        target_src={"http://192.168.10.21:6070/"}
-      />
-      <ShowUptimeKumaBadge
-        imgsrc={`https://healthcheck.iamon99.com/b/2/bd9fb3a6-05f7-4d38-bca6-e321196aabf8.svg`}
-        target_src={"http://192.168.10.21:6070/"}
       />
     </div>
   </>
