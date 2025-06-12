@@ -11,14 +11,14 @@ export function ShowUptimeKumaBadge({
     return (
       <div>
         <a href={target_src} target="_blank" rel="noreferrer">
-          <img src={imgsrc} />
+          <img src={imgsrc} alt="" />
         </a>
       </div>
     );
   }
   return (
     <div>
-      <img src={imgsrc} />
+      <img src={imgsrc} alt="" />
     </div>
   );
 }

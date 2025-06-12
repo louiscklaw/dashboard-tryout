@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./style.module.scss";
 import { ShowUptimeKumaBadge } from "../ShowUptimeKumaBadge";
 import { GetUptimeKumaBadgeLink } from "../App";
 

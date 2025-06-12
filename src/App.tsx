@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import { Cell1_7 } from "./Cell1_7";
 import { Cell1_8 } from "./Cell1_8";
@@ -7,7 +6,6 @@ import { Cell2_1 } from "./Cell2_1";
 import { Cell2_2 } from "./Cell2_2";
 import { Cell2_3 } from "./Cell2_3";
 import { Cell2_4 } from "./Cell2_4";
-import { Cell2_5 } from "./Cell2_5";
 import { ShowUptimeKumaBadge } from "./ShowUptimeKumaBadge";
 import { Cell1_6 } from "./Cell1_6";
 import { Cell1_4 } from "./Cell1_4";
@@ -27,24 +25,20 @@ export function ShowHealthCheckBadge({
     return (
       <div>
         <a href={target_src} target="_blank" rel="noreferrer">
-          <img src={imgsrc} />
+          <img src={imgsrc} alt="Health check status badge" />
         </a>
       </div>
     );
   }
   return (
     <div>
-      <img src={imgsrc} />
+      <img src={imgsrc} alt="Health check status badge" />
     </div>
   );
 }
 
 export function GetUptimeKumaBadgeLink(status_idx: number) {
   return `//status.iamon99.com/api/badge/${status_idx.toString()}/status`;
-}
-
-function GetHealthCheckBadgeLink(status_idx: string) {
-  return `//status.iamon99.com/api/badge/${status_idx}/status`;
 }
 
 export function StatusByNumber({

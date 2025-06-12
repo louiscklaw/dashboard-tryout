@@ -1,6 +1,4 @@
 import React from "react";
-// import { ShowUptimeKumaBadge } from "../App";
-import styles from "./style.module.scss";
 import { ShowUptimeKumaBadge } from "../ShowUptimeKumaBadge";
 
 export const Cell2_3 = (
