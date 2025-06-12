@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`has clear button after typing 1`] = `
+<div>
+  <div
+    class="cell"
+  >
+    <div>
+      cell2.3 (lettersoup-demo)
+    </div>
+    <div
+      class="cellContent"
+    >
+      <div>
+        <a
+          href="//lettersoup-demo.louislabs.com/"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img
+            alt=""
+            src="//status.iamon99.com/api/badge/41/status?label=lettersoup-demo.louislabs.com"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

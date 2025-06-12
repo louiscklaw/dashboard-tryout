@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`has clear button after typing 1`] = `
+<div>
+  <div
+    class="cell"
+  >
+    <div
+      class="cell_title"
+    >
+      cell2.4 (hksingleparty-demo)
+    </div>
+    <div
+      class="cellContent"
+    >
+      <div>
+        <a
+          href="//pa_admin.louislabs.com/"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img
+            alt=""
+            src="//status.iamon99.com/api/badge/111/status?label=pa_admin.louislabs.com"
+          />
+        </a>
+      </div>
+      <div>
+        <a
+          href="//pa_mobile.louislabs.com/"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img
+            alt=""
+            src="//status.iamon99.com/api/badge/112/status?label=pa_mobile.louislabs.com"
+          />
+        </a>
+      </div>
+      <div>
+        <a
+          href="//pa_backend.louislabs.com/"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img
+            alt=""
+            src="//status.iamon99.com/api/badge/113/status?label=pa_backend.louislabs.com"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
