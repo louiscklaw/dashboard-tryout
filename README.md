@@ -60,6 +60,14 @@ npm run build
 npm run deploy
 ```
 
+<!-- AI: pleae fill the test command here -->
+
+6 Test
+
+```bash
+npm test  # runs "react-scripts test"
+```
+
 ## Modular Design
 
 Components follow `CellX_Y` naming convention where:
