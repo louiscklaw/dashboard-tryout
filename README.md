@@ -30,31 +30,31 @@ A React-based dashboard for monitoring service status using Uptime Kuma.
 
 ## Getting Started
 
-0. AI tools/co-pilot
+1 AI tools/co-pilot
 
 ```prompt
 please read and follow steps in the markdown files in `000_ai` folder thanks.
 ```
 
-1. Install dependencies:
+2 Install dependencies:
 
 ```bash
 npm install
 ```
 
-2. Run development server:
+3 Run development server:
 
 ```bash
 npm start
 ```
 
-3. Build for production:
+4 Build for production:
 
 ```bash
 npm run build
 ```
 
-4. Deploy to GitHub Pages:
+5 Deploy to GitHub Pages:
 
 ```bash
 npm run deploy
