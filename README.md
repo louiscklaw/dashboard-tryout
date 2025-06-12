@@ -18,8 +18,8 @@ A React-based dashboard for monitoring service status using Uptime Kuma.
 
 ## Project Structure
 
-```
-project/
+```tree
+002_project/
 ├── src/
 │   ├── CellX_Y/          # Modular components (e.g. Cell1_1, Cell2_3)
 │   │   ├── index.tsx     # Component logic
@@ -30,10 +30,10 @@ project/
 
 ## Getting Started
 
-0. AI tools
+0. AI tools/co-pilot
 
 ```prompt
-please read and follow steps in the markdown files in `ai` folder thanks.
+please read and follow steps in the markdown files in `000_ai` folder thanks.
 ```
 
 1. Install dependencies:

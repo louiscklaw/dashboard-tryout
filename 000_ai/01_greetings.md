@@ -11,10 +11,11 @@ mcp tools available, please make use of it. e.g:
 
 project source code located in `project` directory.
 
-## steps
+## directory structure
 
-please read `ai` directory to understand the project background
-please read `project` directory to understand the structure, it contains source code
+read `000_ai` directory to understand the project background
+read `001_documentation` directory to contains the documentation and requirements of this project
+read `002_project` directory to understand the structure, it contains source code
 
 ## Rules
 
