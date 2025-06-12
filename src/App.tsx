@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import { Cell1_8 } from "./Cell1_8";
 import { Cell2_1 } from "./Cell2_1";
 import { Cell2_2 } from "./Cell2_2";
 import { Cell2_3 } from "./Cell2_3";
@@ -211,22 +212,6 @@ const Cell1_7 = (
       <ShowUptimeKumaBadge
         imgsrc={`${GetUptimeKumaBadgeLink(104)}?label=fetcher-db`}
         target_src={"http://192.168.10.21:8196/_/#/login/"}
-      />
-    </div>
-  </>
-);
-
-const Cell1_8 = (
-  <>
-    <div className="cell">
-      <div className="cell_title">cell1.8 (automation)</div>
-      <ShowUptimeKumaBadge
-        imgsrc={`${GetUptimeKumaBadgeLink(23)}?label=n8n_health_check`}
-        target_src={"//n8n.louislabs.com/"}
-      />
-      <ShowUptimeKumaBadge
-        imgsrc={`${GetUptimeKumaBadgeLink(22)}?label=n8n.louislabs.com`}
-        target_src={"//n8n.louislabs.com/"}
       />
     </div>
   </>
