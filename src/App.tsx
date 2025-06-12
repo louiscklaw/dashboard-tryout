@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import { Cell2_1 } from "./Cell2_1";
 import { Cell2_2 } from "./Cell2_2";
 import { Cell2_3 } from "./Cell2_3";
 import { Cell2_4 } from "./Cell2_4";
@@ -30,7 +31,7 @@ export function ShowHealthCheckBadge({
   );
 }
 
-function GetUptimeKumaBadgeLink(status_idx: number) {
+export function GetUptimeKumaBadgeLink(status_idx: number) {
   return `//status.iamon99.com/api/badge/${status_idx.toString()}/status`;
 }
 
@@ -226,22 +227,6 @@ const Cell1_8 = (
       <ShowUptimeKumaBadge
         imgsrc={`${GetUptimeKumaBadgeLink(22)}?label=n8n.louislabs.com`}
         target_src={"//n8n.louislabs.com/"}
-      />
-    </div>
-  </>
-);
-
-const Cell2_1 = (
-  <>
-    <div className="cell">
-      <div className="cell_title">cell2.1 (shop.louislabs.com)</div>
-      <ShowUptimeKumaBadge
-        imgsrc={`${GetUptimeKumaBadgeLink(97)}?label=shop.louislabs.com`}
-        target_src={"//shop.louislabs.com/"}
-      />
-      <ShowUptimeKumaBadge
-        imgsrc={`${GetUptimeKumaBadgeLink(41)}?label=changedetect`}
-        target_src={"//shop.louislabs.com/"}
       />
     </div>
   </>
