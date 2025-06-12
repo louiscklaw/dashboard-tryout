@@ -30,6 +30,12 @@ project/
 
 ## Getting Started
 
+0. AI tools
+
+```prompt
+please read and follow steps in the markdown files in `ai` folder thanks.
+```
+
 1. Install dependencies:
 
 ```bash
