@@ -3,13 +3,17 @@ import { StatusByNumber } from "../StatusByNumber";
 
 import style from "./style.module.scss";
 
-export const Cell2_4 = (
-  <div className={style.cell}>
-    <div className="cell_title">cell2.4 (hksingleparty-demo)</div>
-    <div className={style.cellContent}>
-      <StatusByNumber idx={111} label={"pa_admin.louislabs.com"} />
-      <StatusByNumber idx={112} label={"pa_mobile.louislabs.com"} />
-      <StatusByNumber idx={113} label={"pa_backend.louislabs.com"} />
+function Cell2_4() {
+  return (
+    <div className={style.cell}>
+      <div className="cell_title">cell2.4 (hksingleparty-demo)</div>
+      <div className={style.cellContent}>
+        <StatusByNumber idx={111} label={"pa_admin.louislabs.com"} />
+        <StatusByNumber idx={112} label={"pa_mobile.louislabs.com"} />
+        <StatusByNumber idx={113} label={"pa_backend.louislabs.com"} />
+      </div>
     </div>
-  </div>
-);
+  );
+}
+
+export { Cell2_4 };

@@ -1,18 +1,16 @@
 import React from "react";
-import { ShowUptimeKumaBadge } from "../ShowUptimeKumaBadge";
+import styles from "./style.module.scss";
+import { StatusByNumber } from "../StatusByNumber";
 
-export const Cell2_3 = (
-  <>
-    <div className="cell">
-      <div className="cell_title">cell2.3 (lettersoup-demo)</div>
-      <ShowUptimeKumaBadge
-        imgsrc={`${GetUptimeKumaBadgeLink(41)}?label=n8n.louislabs.com`}
-        target_src={"//n8n.louislabs.com/"}
-      />
+function Cell2_3(): React.JSX.Element {
+  return (
+    <div className={styles.cell}>
+      <div>cell2.3 (lettersoup-demo)</div>
+      <div className={styles.cellContent}>
+        <StatusByNumber idx={41} label="lettersoup-demo.louislabs.com" />
+      </div>
     </div>
-  </>
-);
-
-function GetUptimeKumaBadgeLink(status_idx: number) {
-  return `//status.iamon99.com/api/badge/${status_idx.toString()}/status`;
+  );
 }
+
+export { Cell2_3 };
