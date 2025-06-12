@@ -10,6 +10,7 @@ import { Cell2_4 } from "./Cell2_4";
 import { Cell2_5 } from "./Cell2_5";
 import { ShowUptimeKumaBadge } from "./ShowUptimeKumaBadge";
 import { Cell1_6 } from "./Cell1_6";
+import { Cell1_4 } from "./Cell1_4";
 import { Cell1_5 } from "./Cell1_5";
 
 export function ShowHealthCheckBadge({
@@ -135,22 +136,6 @@ const Cell1_3 = (
       <ShowUptimeKumaBadge
         imgsrc={`${GetUptimeKumaBadgeLink(90)}?label=misc`}
         target_src={"http://192.168.10.21:5016/"}
-      />
-    </div>
-  </>
-);
-
-const Cell1_4 = (
-  <>
-    <div className="cell">
-      <div className="cell_title">cell1.4 (REST/functions)</div>
-      <ShowUptimeKumaBadge
-        imgsrc={`${GetUptimeKumaBadgeLink(41)}?label=api.louislabs.com`}
-        target_src={"//api.louislabs.com/"}
-      />
-      <ShowUptimeKumaBadge
-        imgsrc={`${GetUptimeKumaBadgeLink(41)}?label=event.louislabs.com`}
-        target_src={"//event.louislabs.com/"}
       />
     </div>
   </>
