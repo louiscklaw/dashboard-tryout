@@ -1,5 +1,5 @@
 import React from 'react';
-import { GetUptimeKumaBadgeLink } from '../utils';
+import { GetUptimeKumaBadgeLink } from '../utils/GetUptimeKumaBadgeLink';
 import { ShowUptimeKumaBadge } from '../utils/ShowUptimeKumaBadge';
 import styles from './style.module.scss';
 

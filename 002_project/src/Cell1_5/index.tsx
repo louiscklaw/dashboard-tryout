@@ -1,5 +1,5 @@
 import React from 'react';
-import { GetUptimeKumaBadgeLink } from '../App';
+import { GetUptimeKumaBadgeLink } from '../utils/GetUptimeKumaBadgeLink';
 import { ShowUptimeKumaBadge } from '../utils/ShowUptimeKumaBadge';
 
 export const Cell1_5 = (
