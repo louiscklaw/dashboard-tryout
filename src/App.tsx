@@ -1,33 +1,13 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import { Cell2_2 } from "./Cell2_2";
+import { Cell2_3 } from "./Cell2_3";
 import { Cell2_4 } from "./Cell2_4";
 import { Cell2_5 } from "./Cell2_5";
+import { ShowUptimeKumaBadge } from "./ShowUptimeKumaBadge";
 
-function ShowUptimeKumaBadge({
-  imgsrc,
-  target_src,
-}: {
-  imgsrc: string;
-  target_src?: string;
-}) {
-  if (target_src) {
-    return (
-      <div>
-        <a href={target_src} target="_blank" rel="noreferrer">
-          <img src={imgsrc} />
-        </a>
-      </div>
-    );
-  }
-  return (
-    <div>
-      <img src={imgsrc} />
-    </div>
-  );
-}
-
-function ShowHealthCheckBadge({
+export function ShowHealthCheckBadge({
   imgsrc,
   target_src,
 }: {
@@ -262,34 +242,6 @@ const Cell2_1 = (
       <ShowUptimeKumaBadge
         imgsrc={`${GetUptimeKumaBadgeLink(41)}?label=changedetect`}
         target_src={"//shop.louislabs.com/"}
-      />
-    </div>
-  </>
-);
-
-const Cell2_2 = (
-  <>
-    <div className="cell">
-      <div className="cell_title">cell2.2 (n8n)</div>
-      <ShowUptimeKumaBadge
-        imgsrc={`${GetUptimeKumaBadgeLink(41)}?label=n8n.iamon99.com`}
-        target_src={"//n8n.iamon99.com/"}
-      />
-      <ShowHealthCheckBadge
-        imgsrc={`https://healthcheck.iamon99.com/b/2/bb1602a5-33c3-4d06-86e3-08860cc152a5.svg`}
-        target_src={"//n8n.iamon99.com/"}
-      />
-    </div>
-  </>
-);
-
-const Cell2_3 = (
-  <>
-    <div className="cell">
-      <div className="cell_title">cell2.3 (lettersoup-demo)</div>
-      <ShowUptimeKumaBadge
-        imgsrc={`${GetUptimeKumaBadgeLink(41)}?label=n8n.louislabs.com`}
-        target_src={"//n8n.louislabs.com/"}
       />
     </div>
   </>
