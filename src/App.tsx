@@ -6,7 +6,6 @@ import { Cell2_1 } from "./Cell2_1";
 import { Cell2_2 } from "./Cell2_2";
 import { Cell2_3 } from "./Cell2_3";
 import { Cell2_4 } from "./Cell2_4";
-import { ShowUptimeKumaBadge } from "./ShowUptimeKumaBadge";
 import { Cell1_6 } from "./Cell1_6";
 import { Cell1_4 } from "./Cell1_4";
 import { Cell1_5 } from "./Cell1_5";
@@ -39,23 +38,6 @@ export function ShowHealthCheckBadge({
 
 export function GetUptimeKumaBadgeLink(status_idx: number) {
   return `//status.iamon99.com/api/badge/${status_idx.toString()}/status`;
-}
-
-export function StatusByNumber({
-  idx,
-  label,
-}: {
-  idx: number;
-  label: string;
-}): React.JSX.Element {
-  return (
-    <>
-      <ShowUptimeKumaBadge
-        imgsrc={`${GetUptimeKumaBadgeLink(idx)}?label=${label}`}
-        target_src={"//n8n.louislabs.com/"}
-      />
-    </>
-  );
 }
 
 function App() {
